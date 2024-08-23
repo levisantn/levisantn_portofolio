@@ -7,9 +7,11 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint .",
-    "format": "npx prettier . --write",
-    "check": "npx prettier . --check"
+    "build-preview": "npm-run-all --silent build preview",
+    "lint": "eslint . && echo '\\n----- Linting complete -----\\n' || echo '\\n----- Linting Failed -----\\n'",
+    "format": "npx prettier . --write && echo '\\n----- Formating complete -----\\n' || echo '\\n----- Formating Failed -----\\n'",
+    "check": "npx prettier . --check && echo '\\n----- Check Formatting complete -----\\n' || echo '\\n----- Check Formating Failed -----\\n'",
+    "prepare": "npm-run-all --silent lint format"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.8.2",
@@ -17,8 +19,10 @@
     "@emotion/styled": "^11.13.0",
     "@fortawesome/fontawesome-free": "^6.6.0",
     "framer-motion": "^11.3.29",
+    "npm-run-all": "^4.1.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "save-dev": "^0.0.1-security",
     "styled-components": "^6.1.12",
     "styled-theming": "^2.2.0"
   },

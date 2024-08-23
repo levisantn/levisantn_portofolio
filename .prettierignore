@@ -1,0 +1,13 @@
+# By default prettier ignores files in version control systems directories (".git", ".sl", ".svn" and ".hg") and node_modules
+
+# Ignore artifacts:
+build
+coverage
+dist
+
+# specific files
+LICENSE
+
+# # can be usefull
+# # Exclude files containing "// prettier-ignore"
+# // prettier-ignore
