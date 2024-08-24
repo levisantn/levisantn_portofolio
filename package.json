@@ -1,8 +1,9 @@
 {
-  "name": "react_website",
+  "name": "levisantn_portofolio",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
+  "homepage": "https://levisantn.github.io",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -11,7 +12,12 @@
     "lint": "eslint . && echo '\\n----- Linting complete -----\\n' || echo '\\n----- Linting Failed -----\\n'",
     "format": "npx prettier . --write && echo '\\n----- Formating complete -----\\n' || echo '\\n----- Formating Failed -----\\n'",
     "check": "npx prettier . --check && echo '\\n----- Check Formatting complete -----\\n' || echo '\\n----- Check Formating Failed -----\\n'",
-    "prepare": "npm-run-all --silent lint format"
+    "prepare": "husky",
+    "deploy": "gh-pages -b main -d build"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": "eslint",
+    "*": "prettier --ignore-unknown --write"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.8.2",
@@ -38,7 +44,10 @@
     "eslint-plugin-react": "^7.35.0",
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",
     "eslint-plugin-react-refresh": "^0.4.9",
+    "gh-pages": "^6.1.1",
     "globals": "^15.9.0",
+    "husky": "^9.1.5",
+    "lint-staged": "^15.2.9",
     "prettier": "^3.3.3",
     "vite": "^5.4.1"
   }
