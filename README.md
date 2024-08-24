@@ -33,6 +33,8 @@ TODO
 - [prettier](https://prettier.io/)
 - [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)
 - [eslint-plugin-css](https://github.com/ota-meshi/eslint-plugin-css#readme)
+- [husky](https://typicode.github.io/husky/)
+- [lint-staged](https://github.com/lint-staged/lint-staged)
 
 **Components:**
 

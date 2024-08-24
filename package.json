@@ -16,7 +16,7 @@
     "deploy": "gh-pages -b main -d build"
   },
   "lint-staged": {
-    "*.{js,jsx}": "eslint",
+    "*.{js,jsx}": "eslint --fix",
     "*": "prettier --ignore-unknown --write"
   },
   "dependencies": {
