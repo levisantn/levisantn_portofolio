@@ -27,6 +27,7 @@ TODO
 - [github pages](https://docs.github.com/en/pages)
 - [npm-run-all](https://github.com/mysticatea/npm-run-all)
 - [react developer tools](https://react.dev/learn/react-developer-tools)
+- [sass](https://sass-lang.com/guide/)
 
 **Formatting & linting:**
 
