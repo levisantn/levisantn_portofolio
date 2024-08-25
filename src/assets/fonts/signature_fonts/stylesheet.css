@@ -1,0 +1,119 @@
+@font-face {
+  font-family: 'Astro Jack';
+  src:
+    url('./assets/fonts/signature_fonts/AstroJackFreePersonalUse-Script.woff2') format('woff2'),
+    url('./assets/fonts/signature_fonts/AstroJackFreePersonalUse-Script.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display:
+    swap optimizer,
+    swap;
+}
+
+@font-face {
+  font-family: 'ThePrestigeSignature';
+  src:
+    url('./assets/fonts/signature_fonts/ThePrestigeSignatureRegular.woff2') format('woff2'),
+    url('./assets/fonts/signature_fonts/ThePrestigeSignatureRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display:
+    swap optimizer,
+    swap;
+}
+
+@font-face {
+  font-family: 'Bulgatti';
+  src:
+    url('./assets/fonts/signature_fonts/BulgattiRegular.woff2') format('woff2'),
+    url('./assets/fonts/signature_fonts/BulgattiRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display:
+    swap optimizer,
+    swap;
+}
+
+@font-face {
+  font-family: 'Autography';
+  src:
+    url('./assets/fonts/signature_fonts/Autography.woff2') format('woff2'),
+    url('./assets/fonts/signature_fonts/Autography.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display:
+    swap optimizer,
+    swap;
+}
+
+@font-face {
+  font-family: 'Motterdam';
+  src:
+    url('./assets/fonts/signature_fonts/Motterdam.woff2') format('woff2'),
+    url('./assets/fonts/signature_fonts/Motterdam.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display:
+    swap optimizer,
+    swap;
+}
+
+@font-face {
+  font-family: 'Sattria Handsome';
+  src:
+    url('./assets/fonts/signature_fonts/SattriaHandsome.woff2') format('woff2'),
+    url('./assets/fonts/signature_fonts/SattriaHandsome.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display:
+    swap optimizer,
+    swap;
+}
+
+@font-face {
+  font-family: 'Mately';
+  src:
+    url('./assets/fonts/signature_fonts/MatelyBoldDEMO.woff2') format('woff2'),
+    url('./assets/fonts/signature_fonts/MatelyBoldDEMO.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display:
+    swap optimizer,
+    swap;
+}
+
+@font-face {
+  font-family: 'Tomatoes';
+  src:
+    url('./assets/fonts/signature_fonts/Tomatoes.woff2') format('woff2'),
+    url('./assets/fonts/signature_fonts/Tomatoes.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display:
+    swap optimizer,
+    swap;
+}
+
+@font-face {
+  font-family: 'Magellin';
+  src:
+    url('./assets/fonts/signature_fonts/Magellin-Regular.woff2') format('woff2'),
+    url('./assets/fonts/signature_fonts/Magellin-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display:
+    swap optimizer,
+    swap;
+}
+
+@font-face {
+  font-family: 'Agustina';
+  src:
+    url('./assets/fonts/signature_fonts/Agustina.woff2') format('woff2'),
+    url('./assets/fonts/signature_fonts/Agustina.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display:
+    swap optimizer,
+    swap;
+}
