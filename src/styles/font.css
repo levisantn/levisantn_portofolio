@@ -1,0 +1,410 @@
+/* ------------------------------- */
+/* signature font - Autography     */
+/* headers font - Rubik            */
+/* text font - Google Sans         */
+/* code font - Jetbrains Mono      */
+/* ------------------------------- */
+
+/* signature fonts */
+@font-face {
+  font-family: 'Autography';
+  src:
+    url('../assets/fonts/signature_fonts/Autography.woff2') format('woff2'),
+    url('../assets/fonts/signature_fonts/Autography.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bulgatti';
+  src:
+    url('../assets/fonts/signature_fonts/BulgattiRegular.woff2') format('woff2'),
+    url('../assets/fonts/signature_fonts/BulgattiRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Agustina';
+  src:
+    url('../assets/fonts/signature_fonts/Agustina.woff2') format('woff2'),
+    url('../assets/fonts/signature_fonts/Agustina.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Magellin';
+  src:
+    url('../assets/fonts/signature_fonts/Magellin-Regular.woff2') format('woff2'),
+    url('../assets/fonts/signature_fonts/Magellin-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Motterdam';
+  src:
+    url('../assets/fonts/signature_fonts/Motterdam.woff2') format('woff2'),
+    url('../assets/fonts/signature_fonts/Motterdam.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tomatoes';
+  src:
+    url('../assets/fonts/signature_fonts/Tomatoes.woff2') format('woff2'),
+    url('../assets/fonts/signature_fonts/Tomatoes.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ThePrestigeSignature';
+  src:
+    url('../assets/fonts/signature_fonts/ThePrestigeSignatureRegular.woff2') format('woff2'),
+    url('../assets/fonts/signature_fonts/ThePrestigeSignatureRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SattriaHandsome';
+  src:
+    url('../assets/fonts/signature_fonts/SattriaHandsome.woff2') format('woff2'),
+    url('../assets/fonts/signature_fonts/SattriaHandsome.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* header font */
+@font-face {
+  font-family: 'Rubik';
+  src:
+    url('../assets/fonts/Rubik/Rubik-BlackItalic.woff2') format('woff2'),
+    url('../assets/fonts/Rubik/Rubik-BlackItalic.ttf')   format('truetype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src:
+    url('../assets/fonts/Rubik/Rubik-Bold.woff2') format('woff2'),
+    url('../assets/fonts/Rubik/Rubik-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src:
+    url('../assets/fonts/Rubik/Rubik-BoldItalic.woff2') format('woff2'),
+    url('../assets/fonts/Rubik/Rubik-BoldItalic.ttf')   format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src:
+    url('../assets/fonts/Rubik/Rubik-Medium.woff2') format('woff2'),
+    url('../assets/fonts/Rubik/Rubik-Medium.ttf')   format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src:
+    url('../assets/fonts/Rubik/Rubik-Italic.woff2') format('woff2'),
+    url('../assets/fonts/Rubik/Rubik-Italic.ttf')   format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src:
+    url('../assets/fonts/Rubik/Rubik-MediumItalic.woff2') format('woff2'),
+    url('../assets/fonts/Rubik/Rubik-MediumItalic.ttf')   format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src:
+    url('../assets/fonts/Rubik/Rubik-Regular.woff2') format('woff2'),
+    url('../assets/fonts/Rubik/Rubik-Regular.ttf')   format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src:
+    url('../assets/fonts/Rubik/Rubik-Black.woff2') format('woff2'),
+    url('../assets/fonts/Rubik/Rubik-Black.ttf')   format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src:
+    url('../assets/fonts/Rubik/Rubik-Light.woff2') format('woff2'),
+    url('../assets/fonts/Rubik/Rubik-Light.ttf')   format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src:
+    url('../assets/fonts/Rubik/Rubik-LightItalic.woff2') format('woff2'),
+    url('../assets/fonts/Rubik/Rubik-LightItalic.ttf')   format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* body font */
+@font-face {
+  font-family: 'Google Sans';
+  src:
+    url('../assets/fonts/Google_Sans/GoogleSans-MediumItalic.woff2') format('woff2'),
+    url('../assets/fonts/Google_Sans/GoogleSans-MediumItalic.ttf')   format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Google Sans';
+  src:
+    url('../assets/fonts/Google_Sans/GoogleSans-Bold.woff2') format('woff2'),
+    url('../assets/fonts/Google_Sans/GoogleSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Google Sans';
+  src:
+    url('../assets/fonts/Google_Sans/GoogleSans-Italic.woff2') format('woff2'),
+    url('../assets/fonts/Google_Sans/GoogleSans-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Google Sans';
+  src:
+    url('../assets/fonts/Google_Sans/GoogleSans-Medium.woff2') format('woff2'),
+    url('../assets/fonts/Google_Sans/GoogleSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Google Sans';
+  src:
+    url('../assets/fonts/Google_Sans/GoogleSans-Regular.woff2') format('woff2'),
+    url('../assets/fonts/Google_Sans/GoogleSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Google Sans';
+  src:
+    url('../assets/fonts/Google_Sans/GoogleSans-BoldItalic.woff2') format('woff2'),
+    url('../assets/fonts/Google_Sans/GoogleSans-BoldItalic.ttf')   format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* code font */
+@font-face {
+  font-family: 'JetBrains Mono';
+  src:
+    url('../assets/fonts/JetBrains_Mono/JetBrainsMono-ExtraBold.woff2') format('woff2'),
+    url('../assets/fonts/JetBrains_Mono/JetBrainsMono-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src:
+    url('../assets/fonts/JetBrains_Mono/JetBrainsMono-ExtraBoldItalic.woff2') format('woff2'),
+    url('../assets/fonts/JetBrains_Mono/JetBrainsMono-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src:
+    url('../assets/fonts/JetBrains_Mono/JetBrainsMono-Bold.woff2') format('woff2'),
+    url('../assets/fonts/JetBrains_Mono/JetBrainsMono-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src:
+    url('../assets/fonts/JetBrains_Mono/JetBrainsMono-BoldItalic.woff2') format('woff2'),
+    url('../assets/fonts/JetBrains_Mono/JetBrainsMono-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src:
+    url('../assets/fonts/JetBrains_Mono/JetBrainsMono-SemiBold.woff2') format('woff2'),
+    url('../assets/fonts/JetBrains_Mono/JetBrainsMono-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src:
+    url('../assets/fonts/JetBrains_Mono/JetBrainsMono-SemiBoldItalic.woff2') format('woff2'),
+    url('../assets/fonts/JetBrains_Mono/JetBrainsMono-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src:
+    url('../assets/fonts/JetBrains_Mono/JetBrainsMono-Medium.woff2') format('woff2'),
+    url('../assets/fonts/JetBrains_Mono/JetBrainsMono-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src:
+    url('./JetBrainsMono-MediumItalic.woff2') format('woff2'),
+    url('./JetBrainsMono-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src:
+    url('../assets/fonts/JetBrains_Mono/JetBrainsMono-Regular.woff2') format('woff2'),
+    url('../assets/fonts/JetBrains_Mono/JetBrainsMono-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src:
+    url('../assets/fonts/JetBrains_Mono/JetBrainsMono-Italic.woff2') format('woff2'),
+    url('../assets/fonts/JetBrains_Mono/JetBrainsMono-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src:
+    url('../assets/fonts/JetBrains_Mono/JetBrainsMono-Light.woff2') format('woff2'),
+    url('../assets/fonts/JetBrains_Mono/JetBrainsMono-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src:
+    url('../assets/fonts/JetBrains_Mono/JetBrainsMono-LightItalic.woff2') format('woff2'),
+    url('../assets/fonts/JetBrains_Mono/JetBrainsMono-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src:
+    url('../assets/fonts/JetBrains_Mono/JetBrainsMono-ExtraLight.woff2') format('woff2'),
+    url('../assets/fonts/JetBrains_Mono/JetBrainsMono-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src:
+    url('../assets/fonts/JetBrains_Mono/JetBrainsMono-ExtraLightItalic.woff2') format('woff2'),
+    url('../assets/fonts/JetBrains_Mono/JetBrainsMono-ExtraLightItalic.ttf') format('truetype');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src:
+    url('../assets/fonts/JetBrains_Mono/JetBrainsMono-Thin.woff2') format('woff2'),
+    url('../assets/fonts/JetBrains_Mono/JetBrainsMono-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src:
+    url('../assets/fonts/JetBrains_Mono/JetBrainsMono-ThinItalic.woff2') format('woff2'),
+    url('../assets/fonts/JetBrains_Mono/JetBrainsMono-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
