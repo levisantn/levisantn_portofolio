@@ -1,6 +1,3 @@
-/* normalize browsers default styles, browsers render elements more consistently */
-@import url('./styles/normalize.css');
-
 /* theme schemes */
 @import url('./styles/theme.css');
 
