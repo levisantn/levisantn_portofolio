@@ -22,7 +22,7 @@
   /* app colors */
   --primary-color: #17202a;
   --secondary-color: #273746;
-  --accent-color: #273746;
+  --accent-color: #7b241c;
   --primary-text-color: #abb2b9;
   --secondary-text-color: #566573;
 
@@ -46,10 +46,14 @@
   --text-rendering: optimizeLegibility;
 }
 
+html {
+  font-size: var(--font-size-base);
+}
+
 /* global styles */
 body {
   font-family: 'Google Sans', var(--sans-serif-font-stack);
-  font-size: var(--font-size-base);
+  font-size: 1rem;
   font-weight: var(--font-weight-base);
   line-height: var(--line-height-base);
   margin: 0;
@@ -63,18 +67,41 @@ h4,
 h5,
 h6 {
   font-family: 'Rubik', var(--sans-serif-font-stack);
-  font-size: 2em;
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
+}
+
+h6 {
+  font-size: 1.2rem;
+}
+h5 {
+  font-size: 1.44rem;
+}
+h4 {
+  font-size: 1.728rem;
+}
+h3 {
+  font-size: 2.074rem;
+}
+h2 {
+  font-size: 2.488rem;
+}
+h1 {
+  font-size: 2.986rem;
 }
 
 p {
   margin-bottom: 0.5rem;
+  width: 50ch;
+}
+
+p + p {
+  text-indent: 1rem;
 }
 
 a {
   font-family: 'JetBrains Mono', var(--mono-font-stack);
   font-weight: 500;
-  color: var(--primary-color);
+  color: var(--accent-color);
   text-decoration: none;
 }
 
@@ -84,7 +111,7 @@ a:hover {
 
 code {
   font-family: 'JetBrains Mono', var(--mono-font-stack);
-  font-size: 13px;
+  font-size: 1rem;
   background-color: var(--off-white);
   padding: 5px;
   border: var(--dark-gray);
