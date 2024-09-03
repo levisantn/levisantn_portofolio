@@ -39,12 +39,11 @@ TODO
 
 **Components:**
 
-- [chakra UI](https://v2.chakra-ui.com/)
+- [material UI](...)
 - [styled-components](https://styled-components.com/) with the [babel plugin](https://styled-components.com/) ???
 
 **Icons, themes & fonts:**
 
-- [font awesome (free package)](https://docs.fontawesome.com/web/)
 - [color codes](https://htmlcolorcodes.com/)
 - [learnui-design tool](https://www.learnui.design/tools/data-color-picker.html#palette)
 - [google fonts](https://fonts.google.com/)
