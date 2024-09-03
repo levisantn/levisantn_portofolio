@@ -3,6 +3,7 @@ import { createTheme } from '@mui/material/styles';
 // css variables in main.css
 const myTheme = createTheme({
   colorSchemes: {
+    cssVariables: true,
     light: {
       palette: {
         primary: {
