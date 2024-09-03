@@ -1,29 +1,41 @@
-/* theme schemes */
-@import url('./styles/theme.css');
-
 /* fonts */
 @import url('./styles/font.css');
 
 /* global variables  */
 :root {
-  /* default colors */
-  --default-bg-color: #fff;
-  --default-text: #000;
+  /* default colors light */
+  --primary-color-light: #2980b9;
+  --secondary-color-light: #c0392b;
+  --bg-default-color-light: #eaecee;
+  --bg-paper-color-light: #d5d8dc;
+  --text-color-light: #212f3d;
+  --divider-color-light: #abb2b9;
+
+  /* default colors dark */
+  --primary-color-dark: #1a5276;
+  --secondary-color-dark: #7b241c;
+  --bg-default-color-dark: #17202a;
+  --bg-paper-color-dark: #273746;
+  --text-color-dark: #eaecee;
+  --divider-color-dark: #566573;
 
   /* neutral colors */
+  --black: #fff;
+  --white: #000;
   --off-white: #f2f2f2;
   --light-gray: #d9d9d9;
   --medium-gray: #a0a0a0;
   --dark-gray: #606060;
 
-  /* app colors */
-  --primary-color: #17202a;
-  --secondary-color: #273746;
-  --accent-color: #7b241c;
-  --primary-text-color: #abb2b9;
-  --secondary-text-color: #566573;
-
   /* fonts */
+  --headers-font: 'Rubik';
+  --sans-serif-font: 'Google Sans';
+  --mono-font: 'JetBrains Mono';
+  --signature-font: 'Autography';
+
+  /* Typography */
+  /* TODO */
+
   --sans-serif-font-stack: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica,
     Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   --mono-font-stack: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
@@ -37,8 +49,6 @@
   --breakpoint-desktop: 1440px;
 
   /* theme */
-  --color-scheme: light dark;
-
   --font-synthesis: none;
   --text-rendering: optimizeLegibility;
 }
@@ -49,7 +59,7 @@ html {
 
 /* global styles */
 body {
-  font-family: 'Google Sans', var(--sans-serif-font-stack);
+  font-family: var(--sans-serif-font-stack);
   font-size: 1rem;
   font-weight: var(--font-weight-base);
   line-height: var(--line-height-base);
@@ -64,7 +74,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Rubik', var(--sans-serif-font-stack);
+  font-family: var(--sans-serif-font-stack);
   margin-bottom: 1rem;
 }
 h6 {
@@ -106,7 +116,7 @@ a:hover {
 }
 
 code {
-  font-family: 'JetBrains Mono', var(--mono-font-stack);
+  font-family: var(--mono-font-stack);
   font-size: 1rem;
   background-color: var(--off-white);
   padding: 5px;
