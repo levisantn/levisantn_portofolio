@@ -5,13 +5,6 @@ function App() {
   return (
     <>
       <MainLayout />
-      <p>Hello world !</p>
-      <code>
-        hthis is a code area LOhthis is a code area LOhthis is a code area LOhthis is a code area LOhthis is a code area
-        LOhthis is a code area LOhthis is a code area LOhthis is a code area LOhthis is a code area LOhthis is a code
-        area LOhthis is a code area LOhthis is a code area LOhthis is a code area LOhthis is a code area LOhthis is a
-        code area LOhthis is a code area LOL
-      </code>
     </>
   );
 }

@@ -39,15 +39,33 @@ TODO
 
 **Components:**
 
-- [material UI](...)
-- [styled-components](https://styled-components.com/) with the [babel plugin](https://styled-components.com/) ???
+- [material UI](https://mui.com/material-ui/all-components/)
 
-**Icons, themes & fonts:**
+**----Theme----**
+
+[MUI default theme viewer](https://mui.com/material-ui/customization/default-theme/)
+
+**Color:**
 
 - [color codes](https://htmlcolorcodes.com/)
-- [learnui-design tool](https://www.learnui.design/tools/data-color-picker.html#palette)
+- [mui color-picker](https://mui.com/material-ui/customization/color/)
+- [mui theme creator](https://bareynol.github.io/mui-theme-creator/)
+- [cssgradient.io](https://cssgradient.io/)
+
+**font:**
+
 - [google fonts](https://fonts.google.com/)
+- [font squirrel](https://www.fontsquirrel.com/tools/webfont-generator)
 - [font space](https://www.fontspace.com/)
+- [mui typography](https://mui.com/material-ui/customization/typography/)
+- [typescale](https://typescale.com/)
+
+**breakpoint:**
+
+- [css theme variables](https://mui.com/material-ui/customization/css-theme-variables/overview/)
+- [device breakpoints](https://mui.com/material-ui/customization/typography/)
+
+**Icons**
 
 **Illustrations:**
 

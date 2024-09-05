@@ -85,10 +85,10 @@ let myTheme = createTheme({
   },
   breakpoints: {
     values: {
-      mobile: 0,
-      tablet: 640,
-      laptop: 1024,
-      desktop: 1200,
+      mobile: 'var(--breakpoint-mobile)',
+      tablet: 'var(--breakpoint-tablet)',
+      laptop: 'var(--breakpoint-laptop)',
+      desktop: 'var(--breakpoint-desktop)',
     },
   },
   shape: {

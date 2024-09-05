@@ -6,16 +6,30 @@ const Header = () => {
   return (
     <AppBar position='static' color='transparent'>
       <Toolbar>
-        <Typography variant='h6' component='div' sx={{ flexGrow: 1 }}>
-          LOGO
+        <Typography variant='subtitle1' component='div' sx={{ flexGrow: 1 }}>
+          {`<LOGO>`}
         </Typography>
-        <Button color='inherit'>Home</Button>
-        <Button color='inherit'>About me</Button>
-        <Button color='inherit'>Playground</Button>
-        <Button color='inherit'>Projects</Button>
-        <Button color='inherit'>Cheatsheets</Button>
-        <Button color='inherit'>References</Button>
-        <Button color='inherit'>Contact me</Button>
+        <Button color='inherit'>
+          <Typography variant='subtitle1'>Home</Typography>
+        </Button>
+        <Button color='inherit'>
+          <Typography variant='subtitle1'>About me</Typography>
+        </Button>
+        <Button color='inherit'>
+          <Typography variant='subtitle1'>Playground</Typography>
+        </Button>
+        <Button color='inherit'>
+          <Typography variant='subtitle1'>Projects</Typography>
+        </Button>
+        <Button color='inherit'>
+          <Typography variant='subtitle1'>Cheatsheets</Typography>
+        </Button>
+        <Button color='inherit'>
+          <Typography variant='subtitle1'>References</Typography>
+        </Button>
+        <Button color='inherit'>
+          <Typography variant='subtitle1'>Contact me</Typography>
+        </Button>
         <ModeSwitcherButton />
       </Toolbar>
     </AppBar>
