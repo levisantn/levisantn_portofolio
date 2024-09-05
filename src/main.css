@@ -27,103 +27,29 @@
   --medium-gray: #a0a0a0;
   --dark-gray: #606060;
 
+  /* Typography */
   /* fonts */
   --headers-font: 'Rubik';
   --sans-serif-font: 'Google Sans';
   --mono-font: 'JetBrains Mono';
   --signature-font: 'Autography';
 
-  /* Typography */
-  /* TODO */
-
+  /* font stacks */
   --sans-serif-font-stack: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica,
     Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   --mono-font-stack: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
-  --font-size-base: 16px;
-  --font-weight-base: 400;
-  --line-height-base: 1.5;
+
+  --font-size-base: 62.5%; /* 62.5% of 16px = 10px */
 
   /* device breakpoints */
-  --breakpoint-mobile: 768px;
-  --breakpoint-tablet: 1024px;
-  --breakpoint-desktop: 1440px;
-
-  /* theme */
-  --font-synthesis: none;
-  --text-rendering: optimizeLegibility;
+  --breakpoint-mobile: 0px;
+  --breakpoint-tablet: 640px;
+  --breakpoint-laptop: 1024px;
+  --breakpoint-desktop: 1200px;
 }
 
 html {
   font-size: var(--font-size-base);
-}
-
-/* global styles */
-body {
-  font-family: var(--sans-serif-font-stack);
-  font-size: 1rem;
-  font-weight: var(--font-weight-base);
-  line-height: var(--line-height-base);
-  margin: 0;
-  padding: 0;
-}
-
-/* headers */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--sans-serif-font-stack);
-  margin-bottom: 1rem;
-}
-h6 {
-  font-size: 1.2rem;
-}
-h5 {
-  font-size: 1.44rem;
-}
-h4 {
-  font-size: 1.728rem;
-}
-h3 {
-  font-size: 2.074rem;
-}
-h2 {
-  font-size: 2.488rem;
-}
-h1 {
-  font-size: 2.986rem;
-}
-
-/* paragraph */
-p {
-  margin-bottom: 0.5rem;
-  width: 50ch;
-}
-p + p {
-  text-indent: 1rem;
-}
-
-/* links */
-a {
-  font-weight: 500;
-  color: var(--accent-color);
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-
-code {
-  font-family: var(--mono-font-stack);
-  font-size: 1rem;
-  background-color: var(--off-white);
-  padding: 5px;
-  border: var(--dark-gray);
-  border-radius: 3px;
-  white-space: pre-wrap; /* Preserve line breaks */
-  overflow-x: auto; /* Allow horizontal scrolling if necessary */
 }
 
 /* Media queries */
@@ -131,8 +57,12 @@ code {
   /* Mobile-specific styles */
 }
 
-@media (min-width: var(--breakpoint-tablet)) and (max-width: var(--breakpoint-desktop)) {
+@media (min-width: var(--breakpoint-tablet)) and (max-width: var(--breakpoint-laptop)) {
   /* Tablet-specific styles */
+}
+
+@media (min-width: var(--breakpoint-laptop)) and (max-width: var(--breakpoint-desktop)) {
+  /* Laptop-specific styles */
 }
 
 @media (min-width: var(--breakpoint-desktop)) {

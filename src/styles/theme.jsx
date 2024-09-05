@@ -1,9 +1,9 @@
-import { createTheme } from '@mui/material/styles';
+import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 
 // css variables in main.css
-const myTheme = createTheme({
+let myTheme = createTheme({
   colorSchemes: {
-    cssVariables: true,
+    cssVariables: { cssVarPrefix: '' },
     light: {
       palette: {
         primary: {
@@ -43,49 +43,59 @@ const myTheme = createTheme({
     },
   },
   typography: {
-    fontFamily: 'var(--sans-serif-font)',
+    htmlFontSize: 10,
+    fontFamily: ['var(--sans-serif-font-stack)', 'var(--sans-serif-font)'],
     h1: {
-      fontFamily: 'var(--headers-font)',
+      fontFamily: ['var(--sans-serif-font-stack)', 'var(--headers-font)'],
     },
     h2: {
-      fontFamily: 'var(--headers-font)',
+      fontFamily: ['var(--sans-serif-font-stack)', 'var(--headers-font)'],
     },
     h3: {
-      fontFamily: 'var(--headers-font)',
+      fontFamily: ['var(--sans-serif-font-stack)', 'var(--headers-font)'],
     },
     h4: {
-      fontFamily: 'var(--headers-font)',
+      fontFamily: ['var(--sans-serif-font-stack)', 'var(--headers-font)'],
     },
     h5: {
-      fontFamily: 'var(--headers-font)',
+      fontFamily: ['var(--sans-serif-font-stack)', 'var(--headers-font)'],
     },
     h6: {
-      fontFamily: 'var(--headers-font)',
+      fontFamily: ['var(--sans-serif-font-stack)', 'var(--headers-font)'],
     },
     code: {
-      fontFamily: 'var(--mono-font)',
+      fontFamily: ['var(--mono-font-stack)', 'var(--mono-font)'],
     },
     button: {
-      fontWeight: 400,
-      fontFamily: 'var(--mono-font)',
+      fontFamily: ['var(--mono-font-stack)', 'var(--mono-font)'],
     },
     subtitle1: {
-      fontFamily: 'var(--headers-font)',
+      fontFamily: ['var(--sans-serif-font-stack)', 'var(--headers-font)'],
     },
     subtitle2: {
-      fontFamily: 'var(--headers-font)',
+      fontFamily: ['var(--sans-serif-font-stack)', 'var(--headers-font)'],
     },
     caption: {
-      fontFamily: 'var(--mono-font)',
+      fontFamily: ['var(--mono-font-stack)', 'var(--mono-font)'],
       fontSize: '0.7rem',
     },
     overline: {
-      fontFamily: 'var(--mono-font)',
+      fontFamily: ['var(--mono-font-stack)', 'var(--mono-font)'],
+    },
+  },
+  breakpoints: {
+    values: {
+      mobile: 0,
+      tablet: 640,
+      laptop: 1024,
+      desktop: 1200,
     },
   },
   shape: {
     borderRadius: 8,
   },
 });
+
+myTheme = responsiveFontSizes(myTheme);
 
 export default myTheme;

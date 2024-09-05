@@ -1,0 +1,68 @@
+/* global styles */
+body {
+  font-family: var(--sans-serif-font-stack);
+  font-size: 1rem;
+  font-weight: var(--font-weight-base);
+  line-height: var(--line-height-base);
+  margin: 0;
+  padding: 0;
+}
+
+/* headers */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--sans-serif-font-stack);
+  margin-bottom: 1rem;
+}
+h6 {
+  font-size: 1.2rem;
+}
+h5 {
+  font-size: 1.44rem;
+}
+h4 {
+  font-size: 1.728rem;
+}
+h3 {
+  font-size: 2.074rem;
+}
+h2 {
+  font-size: 2.488rem;
+}
+h1 {
+  font-size: 2.986rem;
+}
+
+/* paragraph */
+p {
+  margin-bottom: 0.5rem;
+  width: 50ch;
+}
+p + p {
+  text-indent: 1rem;
+}
+
+/* links */
+a {
+  font-weight: 500;
+  color: var(--accent-color);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+code {
+  font-family: var(--mono-font-stack);
+  font-size: 1rem;
+  background-color: var(--light-gray);
+  padding: 6px;
+  border: var(--dark-gray);
+  border-radius: 3px;
+  white-space: pre-wrap; /* Preserve line breaks */
+  overflow-x: auto; /* Allow horizontal scrolling if necessary */
+}

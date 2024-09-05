@@ -1,6 +1,6 @@
 // import React from 'react';
 import { AppBar, Toolbar, Typography, Button } from '@mui/material';
-import ToggleModeButton from '../Button/ToggleModeButton/ToggleModeButton';
+import ModeSwitcherButton from '../Button/ToggleModeButton/ModeSwitcherButton';
 
 const Header = () => {
   return (
@@ -16,7 +16,7 @@ const Header = () => {
         <Button color='inherit'>Cheatsheets</Button>
         <Button color='inherit'>References</Button>
         <Button color='inherit'>Contact me</Button>
-        <ToggleModeButton />
+        <ModeSwitcherButton />
       </Toolbar>
     </AppBar>
   );
