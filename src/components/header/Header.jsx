@@ -1,10 +1,10 @@
 // import React from 'react';
 import { AppBar, Toolbar, Typography, Button } from '@mui/material';
-import ModeSwitcherButton from '../Button/ToggleModeButton/ModeSwitcherButton';
+import ModeSwitcherButton from '../button/ToggleModeButton/ModeSwitcherButton';
 
 const Header = () => {
   return (
-    <AppBar position='static' color='transparent'>
+    <AppBar position='sticky' sx={{ padding: 2 }}>
       <Toolbar>
         <Typography variant='subtitle1' component='div' sx={{ flexGrow: 1 }}>
           {`<LOGO>`}
@@ -30,7 +30,7 @@ const Header = () => {
         <Button color='inherit'>
           <Typography variant='subtitle1'>Contact me</Typography>
         </Button>
-        <ModeSwitcherButton />
+        <ModeSwitcherButton color='inhirit' />
       </Toolbar>
     </AppBar>
   );

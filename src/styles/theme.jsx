@@ -1,44 +1,63 @@
-import { createTheme, responsiveFontSizes } from '@mui/material/styles';
+import { createTheme } from '@mui/material/styles';
 
 // css variables in main.css
-let myTheme = createTheme({
+const myTheme = createTheme({
   colorSchemes: {
-    cssVariables: { cssVarPrefix: '' },
+    cssVariables: true,
     light: {
       palette: {
         primary: {
-          main: 'var(--primary-color-light)',
+          main: '#2980b9',
         },
         secondary: {
-          main: 'var(--secondary-color-light)',
+          main: '#c0392b',
         },
         background: {
-          default: 'var(--bg-default-color-light)',
-          paper: 'var(--bg-paper-color-light)',
+          default: '#eaecee',
+          paper: '#d5d8dc',
         },
         text: {
-          primary: 'var(--text-color-light)',
+          primary: '#212f3d',
         },
-        divider: 'var(--divider-color-light)',
+        divider: '#abb2b9',
       },
     },
     dark: {
       palette: {
         mode: 'dark',
         primary: {
-          main: 'var(--primary-color-dark)',
+          main: '#1a5276',
         },
         secondary: {
-          main: 'var(--secondary-color-dark)',
+          main: '#7b241c',
         },
         background: {
-          default: 'var(--bg-default-color-dark)',
-          paper: 'var(--bg-paper-color-dark)',
+          default: '#17202a',
+          paper: '#273746',
         },
         text: {
-          primary: 'var(--text-color-dark)',
+          primary: '#eaecee',
         },
-        divider: 'var(--divider-color-dark)',
+        divider: '#566573',
+      },
+    },
+  },
+  components: {
+    MuiContainer: {
+      styleOverrides: {
+        root: {
+          backgroundColor: 'var(--mui-palette-background-default)',
+          color: 'var(--mui-palette-text-primary)',
+        },
+      },
+    },
+    MuiAppBar: {
+      styleOverrides: {
+        root: {
+          backgroundColor: 'var(--mui-palette-background-default)',
+          color: 'inherit',
+          backgroundImage: 'var(--mui-palette-background-default)',
+        },
       },
     },
   },
@@ -95,7 +114,5 @@ let myTheme = createTheme({
     borderRadius: 8,
   },
 });
-
-myTheme = responsiveFontSizes(myTheme);
 
 export default myTheme;
