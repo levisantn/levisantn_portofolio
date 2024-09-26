@@ -1,36 +1,37 @@
 // import React from 'react';
-import { AppBar, Toolbar, Typography, Button } from '@mui/material';
+import { AppBar, Toolbar, Typography, Button, Box } from '@mui/material';
 import ModeSwitcherButton from '../button/ToggleModeButton/ModeSwitcherButton';
+
+const pages = ['Home', 'About me', 'Playground', 'Projects', 'Cheatsheets', 'References', 'Contact me'];
 
 const Header = () => {
   return (
-    <AppBar position='sticky' sx={{ padding: 2 }}>
-      <Toolbar id='back-to-top-anchor'>
-        <Typography variant='subtitle1' component='div' sx={{ flexGrow: 1 }}>
-          {`<LOGO>`}
-        </Typography>
+    <AppBar position='sticky' sx={{ padding: 1 }}>
+      <Toolbar id='back-to-top-anchor' sx={{ display: 'flex', justifyContent: 'space-between' }}>
         <Button color='inherit'>
-          <Typography variant='subtitle1'>Home</Typography>
+          <Typography
+            sx={{
+              textTransform: 'none',
+              flexGrow: 1,
+              textAlign: 'left',
+              fontFamily: 'var(--signature-font)',
+              fontSize: 34,
+            }}
+          >
+            {`- Levisantn -`}
+          </Typography>
         </Button>
-        <Button color='inherit'>
-          <Typography variant='subtitle1'>About me</Typography>
-        </Button>
-        <Button color='inherit'>
-          <Typography variant='subtitle1'>Playground</Typography>
-        </Button>
-        <Button color='inherit'>
-          <Typography variant='subtitle1'>Projects</Typography>
-        </Button>
-        <Button color='inherit'>
-          <Typography variant='subtitle1'>Cheatsheets</Typography>
-        </Button>
-        <Button color='inherit'>
-          <Typography variant='subtitle1'>References</Typography>
-        </Button>
-        <Button color='inherit'>
-          <Typography variant='subtitle1'>Contact me</Typography>
-        </Button>
-        <ModeSwitcherButton color='inhirit' />
+
+        <Box sx={{ display: 'flex', justifyContent: 'flex-end', flexGrow: 1 }}>
+          {pages.map((item) => (
+            <Button key={item} size='medium' color='inherit' sx={{ textTransform: 'capitalize' }}>
+              {item}
+            </Button>
+          ))}
+        </Box>
+        <Box sx={{ marginLeft: 4 }}>
+          <ModeSwitcherButton color='inhirit' />
+        </Box>
       </Toolbar>
     </AppBar>
   );

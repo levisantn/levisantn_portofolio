@@ -33,6 +33,7 @@
   --sans-serif-font: 'Google Sans';
   --mono-font: 'JetBrains Mono';
   --signature-font: 'Autography';
+  /* signature fonts: Autography, Bulgatti, Agustina, Magellin, Motterdam, Tomatoes, ThePrestigeSignature, SattriaHandsome */
 
   /* font stacks */
   --sans-serif-font-stack: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica,
