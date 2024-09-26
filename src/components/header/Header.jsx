@@ -5,7 +5,7 @@ import ModeSwitcherButton from '../button/ToggleModeButton/ModeSwitcherButton';
 const Header = () => {
   return (
     <AppBar position='sticky' sx={{ padding: 2 }}>
-      <Toolbar>
+      <Toolbar id='back-to-top-anchor'>
         <Typography variant='subtitle1' component='div' sx={{ flexGrow: 1 }}>
           {`<LOGO>`}
         </Typography>

@@ -1,12 +1,7 @@
-// import React from 'react';
-import MainLayout from './layouts/MainLayout';
+import RootLayout from './layouts/RootLayout';
 
 function App() {
-  return (
-    <>
-      <MainLayout />
-    </>
-  );
+  return <RootLayout />;
 }
 
 export default App;
