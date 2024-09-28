@@ -1,4 +1,5 @@
 import { createTheme } from '@mui/material/styles';
+import { alpha } from '@mui/material';
 
 // css variables in main.css
 const myTheme = createTheme({
@@ -7,10 +8,12 @@ const myTheme = createTheme({
     light: {
       palette: {
         primary: {
-          main: '#2980b9',
+          main: '#c0392b',
+          hover1: alpha('#c0392b', 0.2),
+          hover2: alpha('#c0392b', 0.075),
         },
         secondary: {
-          main: '#c0392b',
+          main: '#2980b9',
         },
         background: {
           default: '#eaecee',
@@ -27,6 +30,8 @@ const myTheme = createTheme({
         mode: 'dark',
         primary: {
           main: '#1a5276',
+          hover1: alpha('#1a5276', 0.4),
+          hover2: alpha('#1a5276', 0.15),
         },
         secondary: {
           main: '#7b241c',

@@ -8,23 +8,43 @@ const Header = () => {
   return (
     <AppBar position='sticky' sx={{ padding: 1 }}>
       <Toolbar id='back-to-top-anchor' sx={{ display: 'flex', justifyContent: 'space-between' }}>
-        <Button color='inherit'>
+        <Button
+          color='inherit'
+          sx={{
+            borderRadius: 3,
+            '&:hover': {
+              bgcolor: 'primary.hover2',
+            },
+          }}
+        >
           <Typography
             sx={{
               textTransform: 'none',
               flexGrow: 1,
               textAlign: 'left',
               fontFamily: 'var(--signature-font)',
-              fontSize: 34,
+              fontSize: 40,
             }}
           >
-            {`- Levisantn -`}
+            {`_ Levisantn _`}
           </Typography>
         </Button>
 
         <Box sx={{ display: 'flex', justifyContent: 'flex-end', flexGrow: 1 }}>
           {pages.map((item) => (
-            <Button key={item} size='medium' color='inherit' sx={{ textTransform: 'capitalize' }}>
+            <Button
+              key={item}
+              size='large'
+              color='inherit'
+              sx={{
+                textTransform: 'capitalize',
+                borderRadius: 1,
+                margin: 0.25,
+                '&:hover': {
+                  bgcolor: 'primary.hover1',
+                },
+              }}
+            >
               {item}
             </Button>
           ))}

@@ -39,7 +39,20 @@ export const ScrollToTopButton = (props) => {
   return (
     <>
       <ScrollToTop {...props}>
-        <Fab size='small' aria-label='scroll back to top'>
+        <Fab
+          size='medium'
+          aria-label='scroll back to top'
+          sx={{
+            bgcolor: 'primary.dark',
+            color: 'text.primary',
+            border: 2,
+            borderColor: 'primary.main',
+            '&:hover': {
+              bgcolor: 'primary.main',
+              color: 'text.primary',
+            },
+          }}
+        >
           <KeyboardArrowUpIcon />
         </Fab>
       </ScrollToTop>
