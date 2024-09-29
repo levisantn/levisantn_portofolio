@@ -24,7 +24,7 @@ const ScrollToTop = (props) => {
 
   return (
     <Fade in={trigger}>
-      <Box onClick={handleClick} role='presentation' sx={{ position: 'fixed', bottom: 16, right: 16 }}>
+      <Box onClick={handleClick} role='presentation' sx={{ position: 'fixed', bottom: 60, right: 20 }}>
         {children}
       </Box>
     </Fade>
