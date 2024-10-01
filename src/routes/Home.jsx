@@ -4,6 +4,7 @@ const Home = () => {
   return (
     <Container maxWidth='lg'>
       <h1>Main content</h1>
+
       <p>
         In duis excepteur magna elit esse eiusmod qui. Irure proident consectetur culpa aliquip ea. Quis velit non
         cillum id non. Excepteur enim cupidatat proident cillum.

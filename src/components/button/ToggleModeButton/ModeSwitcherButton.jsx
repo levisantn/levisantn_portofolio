@@ -50,6 +50,7 @@ const ModeSwitcherButton = () => {
           padding: '5px',
           color: 'primary.main',
           backgroundColor: 'primary.main',
+
           '& .MuiSvgIcon-root': { fontSize: 25, color: 'background.default' },
 
           '&:hover': {
