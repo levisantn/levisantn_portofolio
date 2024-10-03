@@ -15,7 +15,8 @@ const rootElement = document.getElementById('root');
 createRoot(rootElement).render(
   <StrictMode>
     <ThemeProvider theme={theme}>
-      <CssBaseline /> {/* normalize browsers default styles for MUI, browsers render elements more consistently */}
+      <CssBaseline enableColorScheme />
+      {/* normalize browsers default styles for MUI, browsers render elements more consistently */}
       <RouterProvider router={router} />
     </ThemeProvider>
   </StrictMode>,

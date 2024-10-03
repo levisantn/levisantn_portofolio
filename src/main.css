@@ -4,8 +4,8 @@
 /* global variables  */
 :root {
   /* default colors light */
-  --primary-color-light: #2980b9;
-  --secondary-color-light: #c0392b;
+  --primary-color-light: #c0392b;
+  --secondary-color-light: #2980b9;
   --bg-default-color-light: #eaecee;
   --bg-paper-color-light: #d5d8dc;
   --text-color-light: #212f3d;
@@ -47,10 +47,22 @@
   --breakpoint-tablet: 640px;
   --breakpoint-laptop: 1024px;
   --breakpoint-desktop: 1200px;
+
+  --scrollbar-thumb-color: #c0392b40;
+  --scrollbar-thumb-color-hover: #c0392b90;
 }
 
 html {
   font-size: var(--font-size-base);
+  overflow-y: auto;
+  /* scrollbar-gutter: stable both-edges; */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --scrollbar-thumb-color: #1a527640;
+    --scrollbar-thumb-color-hover: #1a527690;
+  }
 }
 
 /* Media queries */
@@ -68,4 +80,18 @@ html {
 
 @media (min-width: var(--breakpoint-desktop)) {
   /* Desktop-specific styles */
+}
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb-color);
+  border-radius: 1px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scrollbar-thumb-color-hover);
 }

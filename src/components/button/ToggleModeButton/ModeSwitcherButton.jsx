@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useColorScheme } from '@mui/material/styles';
 import { FormControlLabel, Checkbox, Tooltip, Zoom } from '@mui/material';
 import SettingsIcon from '@mui/icons-material/Settings';
@@ -7,12 +7,25 @@ import LightModeIcon from '@mui/icons-material/LightMode';
 import RemoveCircleIcon from '@mui/icons-material/RemoveCircle';
 
 const ModeSwitcherButton = () => {
-  const [useSystemMode, setUseSystemMode] = useState(false);
-  const [indeterminate, setIndeterminate] = useState(false);
+  const [useSystemMode, setUseSystemMode] = useState(true);
+  const [indeterminate, setIndeterminate] = useState(true);
   const { mode, setMode } = useColorScheme();
-  // if (!mode) {
-  //   return null;
-  // }
+  const isMountedRef = useRef(false);
+
+  const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+  const lightColor = window.getComputedStyle(document.documentElement).getPropertyValue('--primary-color-light');
+  const darkColor = window.getComputedStyle(document.documentElement).getPropertyValue('--primary-color-dark');
+
+  // update the scrollbar color
+  const setScrollbarColor = (mode) => {
+    const getScrollbarColor = (mode, hover = false) => {
+      const thumbColor = mode === 'light' ? darkColor : lightColor;
+      const thumbColorHover = hover ? '90' : '40';
+      return `${thumbColor}${thumbColorHover}`;
+    };
+    document.documentElement.style.setProperty('--scrollbar-thumb-color', getScrollbarColor(mode));
+    document.documentElement.style.setProperty('--scrollbar-thumb-color-hover', getScrollbarColor(mode, true));
+  };
 
   const handleToggleSystemMode = (event) => {
     setUseSystemMode(event.target.checked);
@@ -21,6 +34,7 @@ const ModeSwitcherButton = () => {
       setMode('system');
     } else {
       setMode(mode === 'dark' ? 'light' : 'dark');
+      setScrollbarColor('light');
     }
   };
 
@@ -30,47 +44,71 @@ const ModeSwitcherButton = () => {
       return;
     }
     setIndeterminate(false);
-
     setMode(event.target.checked ? 'light' : 'dark');
+    // set color for scrollbar
+    setScrollbarColor(mode);
   };
+
+  // Media query listener for detecting system color scheme changes
+  useEffect(() => {
+    const handleMediaQueryChange = () => {
+      // console.log('system color scheme changed:', mediaQuery.matches);
+      // console.log('system color scheme changed:', mode);
+
+      if (useSystemMode) {
+        // Update mode if system mode is active
+        setScrollbarColor(mediaQuery.matches ? 'light' : 'dark');
+      }
+    };
+    mediaQuery.addEventListener('change', handleMediaQueryChange);
+
+    handleMediaQueryChange(); // Call initially to capture the current system preference
+
+    return () => {
+      mediaQuery.removeEventListener('change', handleMediaQueryChange);
+    };
+  }, [useSystemMode]); // Only re-run the effect when `useSystemMode` changes
+
+  useEffect(() => {
+    if (isMountedRef.current) {
+      setMode('system'); // Set the initial mode to 'light' on page refresh
+    } else {
+      isMountedRef.current = true;
+    }
+  }, []); // Empty dependency array ensures it runs only once on initial render
+
   return (
     <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
       <Checkbox
         checked={mode === 'light' || indeterminate} // Set checked state based on current mode
         onChange={handleToggle}
         disabled={useSystemMode}
-        icon={<DarkModeIcon />}
-        checkedIcon={<LightModeIcon sx={{ color: 'primary.main' }} />}
+        icon={<LightModeIcon />}
+        checkedIcon={<DarkModeIcon />}
         indeterminate={indeterminate}
         indeterminateIcon={<RemoveCircleIcon />}
-        color='primary'
         sx={{
           border: 2,
           borderRadius: 3,
           padding: '5px',
-          color: 'primary.main',
-          backgroundColor: 'primary.main',
-
-          '& .MuiSvgIcon-root': { fontSize: 25, color: 'background.default' },
-
+          color: 'secondary.main',
+          backgroundColor: 'secondary.hover1',
+          '& .MuiSvgIcon-root': { fontSize: 25, color: 'text.primary' },
           '&:hover': {
-            bgcolor: 'primary.dark',
-          },
-          '&.Mui-disabled': {
-            border: 0,
-            color: 'text.disabled',
-            backgroundColor: 'background.default',
-            '& .MuiSvgIcon-root': {
-              color: 'text.disabled',
-            },
+            bgcolor: 'secondary.main',
           },
           '&.Mui-checked': {
-            color: 'primary.main',
+            color: 'secondary.main',
+            backgroundColor: 'secondary.hover1',
             '& .MuiSvgIcon-root': {
-              color: 'background.default',
+              color: 'text.primary',
+            },
+            '&:hover': {
+              bgcolor: 'secondary.main',
             },
           },
           '&.MuiCheckbox-indeterminate': {
+            border: 0,
             color: 'text.disabled', // Set indeterminate icon color
             backgroundColor: 'background.default', // Set indeterminate background color
             '& .MuiSvgIcon-root': {
@@ -92,7 +130,7 @@ const ModeSwitcherButton = () => {
               checked={useSystemMode}
               onChange={handleToggleSystemMode}
               icon={<SettingsIcon />}
-              checkedIcon={<SettingsIcon sx={{ color: 'primary.main' }} />}
+              checkedIcon={<SettingsIcon />}
               size='medium'
               sx={{
                 padding: '5px',
@@ -113,12 +151,12 @@ const ModeSwitcherButton = () => {
                 '&.Mui-checked': {
                   border: 2,
                   color: 'primary.main',
-                  backgroundColor: 'primary.main',
+                  backgroundColor: 'primary.hover1',
                   '& .MuiSvgIcon-root': {
-                    color: 'background.default',
+                    color: 'text.primary',
                   },
                   '&:hover': {
-                    bgcolor: 'primary.dark',
+                    bgcolor: 'primary.main',
                   },
                 },
               }}

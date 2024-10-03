@@ -14,6 +14,8 @@ const myTheme = createTheme({
         },
         secondary: {
           main: '#2980b9',
+          hover1: alpha('#2980b9', 0.2),
+          hover2: alpha('#2980b9', 0.075),
         },
         background: {
           default: '#eaecee',
@@ -35,6 +37,8 @@ const myTheme = createTheme({
         },
         secondary: {
           main: '#7b241c',
+          hover1: alpha('#7b241c', 0.4),
+          hover2: alpha('#7b241c', 0.15),
         },
         background: {
           default: '#17202a',
