@@ -5,7 +5,7 @@ import { leetCode, TableauSoftwareRounded } from '../../assets/imgs/icons/Custom
 
 const RowStackContact = () => {
   return (
-    <Stack direction='row' paddingTop={4} spacing={5}>
+    <Stack direction='row' paddingTop={4} spacing={3}>
       <IconButton
         href='https://github.com/levisantn'
         target='_blank'
