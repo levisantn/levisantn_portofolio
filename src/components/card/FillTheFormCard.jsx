@@ -1,11 +1,14 @@
-import { Grid2, Typography, Stack, Box, Link } from '@mui/material';
+import { Grid2, Stack, Typography } from '@mui/material';
+import ContactForm from '../forms/ContactForm';
 
-const WriteMeAMailCard = () => {
+const FillTheFormCard = () => {
   return (
     <Grid2
       container
       spacing={1}
+      padding={2}
       borderRadius={1}
+      direction={'column'}
       sx={{
         width: '100%',
         height: '100%',
@@ -14,13 +17,12 @@ const WriteMeAMailCard = () => {
     >
       <Grid2
         display='flex'
-        size={'grow'}
-        direction='column'
+        size={'auto'}
         borderRadius={1}
         sx={{
           backgroundColor: 'background.default',
-          justifyContent: 'flex-end',
-          alignItems: 'center',
+          justifyContent: 'center',
+          margin: '2rem',
         }}
       >
         <Stack
@@ -32,44 +34,29 @@ const WriteMeAMailCard = () => {
           }}
         >
           <Typography variant='h2' sx={{ fontWeight: 'regular' }}>
-            Write Me A Mail
+            Fill The Form
           </Typography>
           <Typography
             variant='code'
             sx={{ textAlign: 'center', whiteSpace: 'pre-wrap', '& span:first-of-type': { color: 'primary.main' } }}
           >
-            <span>Click</span> on the image to open your
-            <br />
-            OS email client
+            To <span>get in touch</span> by mail
           </Typography>
         </Stack>
       </Grid2>
-
       <Grid2
         display='flex'
-        size={5}
+        size={'grow'}
         borderRadius={1}
         sx={{
-          justifyContent: 'flex-start',
-          alignItems: 'center',
           backgroundColor: 'background.default',
+          justifyContent: 'center',
         }}
       >
-        <Link href='mailto:antonetti.levis@gmail.com'>
-          <Box
-            component='img'
-            alt='send mail happy bitmoji'
-            src='src/assets/imgs/bitmoji/send_mail_happy.png'
-            sx={{
-              width: '190px',
-              height: '190px',
-              borderRadius: 1,
-            }}
-          />
-        </Link>
+        <ContactForm />
       </Grid2>
     </Grid2>
   );
 };
 
-export default WriteMeAMailCard;
+export default FillTheFormCard;

@@ -1,8 +1,9 @@
 import { Grid2 } from '@mui/material';
 import FindMeOnCard from '../components/card/FindMeOnCard';
-import ContactForm from '../components/forms/ContactForm';
 import FindMeAroundCard from '../components/card/FindMeAroundCard';
 import WriteMeAMail from '../components/card/WriteMeAMailCard';
+import FillTheFormCard from '../components/card/FillTheFormCard';
+import LeaveAFeedbackCard from '../components/card/LeaveAFeedbackCard';
 
 const Contactme = () => {
   return (
@@ -46,7 +47,7 @@ const Contactme = () => {
       <Grid2
         container
         spacing={0.5}
-        size={8}
+        size={7}
         padding={0.5}
         borderRadius={1}
         sx={{
@@ -54,11 +55,21 @@ const Contactme = () => {
           textAlign: 'center',
         }}
       >
-        <ContactForm />
+        <FillTheFormCard />
       </Grid2>
 
-      <Grid2 size='grow' padding={1} borderRadius={1} sx={{ textAlign: 'center', backgroundColor: 'background.paper' }}>
-        leave a feedback
+      <Grid2
+        container
+        spacing={0.5}
+        size={'grow'}
+        padding={0.5}
+        borderRadius={1}
+        sx={{
+          backgroundColor: 'background.paper',
+          textAlign: 'center',
+        }}
+      >
+        <LeaveAFeedbackCard />
       </Grid2>
     </Grid2>
   );
