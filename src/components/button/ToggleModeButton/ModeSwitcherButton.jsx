@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import { useColorScheme } from '@mui/material/styles';
 import { FormControlLabel, Checkbox, Tooltip, Zoom } from '@mui/material';
 import SettingsIcon from '@mui/icons-material/Settings';
@@ -17,15 +17,18 @@ const ModeSwitcherButton = () => {
   const darkColor = window.getComputedStyle(document.documentElement).getPropertyValue('--primary-color-dark');
 
   // update the scrollbar color
-  const setScrollbarColor = (mode) => {
-    const getScrollbarColor = (mode, hover = false) => {
-      const thumbColor = mode === 'light' ? darkColor : lightColor;
-      const thumbColorHover = hover ? '90' : '40';
-      return `${thumbColor}${thumbColorHover}`;
-    };
-    document.documentElement.style.setProperty('--scrollbar-thumb-color', getScrollbarColor(mode));
-    document.documentElement.style.setProperty('--scrollbar-thumb-color-hover', getScrollbarColor(mode, true));
-  };
+  const setScrollbarColor = useCallback(
+    (mode) => {
+      const getScrollbarColor = (mode, hover = false) => {
+        const thumbColor = mode === 'light' ? darkColor : lightColor;
+        const thumbColorHover = hover ? '90' : '40';
+        return `${thumbColor}${thumbColorHover}`;
+      };
+      document.documentElement.style.setProperty('--scrollbar-thumb-color', getScrollbarColor(mode));
+      document.documentElement.style.setProperty('--scrollbar-thumb-color-hover', getScrollbarColor(mode, true));
+    },
+    [darkColor, lightColor],
+  );
 
   const handleToggleSystemMode = (event) => {
     setUseSystemMode(event.target.checked);
@@ -67,7 +70,7 @@ const ModeSwitcherButton = () => {
     return () => {
       mediaQuery.removeEventListener('change', handleMediaQueryChange);
     };
-  }, [useSystemMode]); // Only re-run the effect when `useSystemMode` changes
+  }, [useSystemMode, mediaQuery, setScrollbarColor]); // Only re-run the effect when `useSystemMode` changes
 
   useEffect(() => {
     if (isMountedRef.current) {
@@ -75,7 +78,7 @@ const ModeSwitcherButton = () => {
     } else {
       isMountedRef.current = true;
     }
-  }, []); // Empty dependency array ensures it runs only once on initial render
+  }, [setMode]); // Empty dependency array ensures it runs only once on initial render
 
   return (
     <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
@@ -93,7 +96,7 @@ const ModeSwitcherButton = () => {
           padding: '5px',
           color: 'secondary.main',
           backgroundColor: 'secondary.hover1',
-          '& .MuiSvgIcon-root': { fontSize: 25, color: 'text.primary' },
+          '& .MuiSvgIcon-root': { fontSize: '3rem', color: 'text.primary' },
           '&:hover': {
             bgcolor: 'secondary.main',
           },
@@ -136,7 +139,7 @@ const ModeSwitcherButton = () => {
                 padding: '5px',
                 marginLeft: 3,
 
-                '& .MuiSvgIcon-root': { fontSize: 25 },
+                '& .MuiSvgIcon-root': { fontSize: '3rem' },
                 '&:hover': {
                   bgcolor: 'primary.hover1',
                   borderRadius: 3,

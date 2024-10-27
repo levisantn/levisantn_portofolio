@@ -14,8 +14,8 @@ const RowStackFooter = () => {
           color: 'text.primary',
           width: '30px',
           height: '30px',
-          fontSize: '1.5em',
-          padding: '5px',
+          fontSize: '2.5rem',
+          padding: '1.55rem',
           '&:hover': {
             bgcolor: 'primary.hover1',
             borderRadius: 5,
@@ -29,17 +29,16 @@ const RowStackFooter = () => {
       </IconButton>
 
       <IconButton
-        disabled
+        // disabled
         href='https://www.kaggle.com/zhurax'
         sx={{
           color: 'text.primary',
           width: '30px',
           height: '30px',
-          fontSize: '1.25em',
-          padding: '5px',
-          borderRadius: 5,
-          paddingLeft: '7px',
-          paddingRight: '3px',
+          fontSize: '2.25rem',
+          padding: '1.55rem',
+          paddingLeft: '6px',
+          paddingRight: '4px',
           '&:hover': {
             bgcolor: 'primary.hover1',
             borderRadius: 5,
@@ -53,14 +52,14 @@ const RowStackFooter = () => {
       </IconButton>
 
       <IconButton
-        disabled
+        // disabled
         href='https://public.tableau.com/app/profile/levisantn/vizzes'
         sx={{
           color: 'text.primary',
           width: '30px',
           height: '30px',
-          fontSize: '1.5em',
-          padding: '5px',
+          fontSize: '2.5rem',
+          padding: '1.55rem',
           '&:hover': {
             bgcolor: 'primary.hover1',
             borderRadius: 5,
@@ -74,14 +73,14 @@ const RowStackFooter = () => {
       </IconButton>
 
       <IconButton
-        disabled
+        // disabled
         href='https://leetcode.com/u/levisantn/'
         sx={{
           color: 'text.primary',
           width: '30px',
           height: '30px',
-          fontSize: '1.5em',
-          padding: '5px',
+          fontSize: '2.25rem',
+          padding: '1.55rem',
           '&:hover': {
             bgcolor: 'primary.hover1',
             borderRadius: 5,
@@ -100,8 +99,8 @@ const RowStackFooter = () => {
           color: 'text.primary',
           width: '30px',
           height: '30px',
-          fontSize: '1.5em',
-          padding: '5px',
+          fontSize: '2.5rem',
+          padding: '1.55rem',
           '&:hover': {
             bgcolor: 'primary.hover1',
             borderRadius: 5,
@@ -115,14 +114,14 @@ const RowStackFooter = () => {
       </IconButton>
 
       <IconButton
-        disabled
+        // disabled
         href='https://x.com/levisantn'
         sx={{
           color: 'text.primary',
           width: '30px',
           height: '30px',
-          fontSize: '1.5em',
-          padding: '5px',
+          fontSize: '2.25rem',
+          padding: '1.55rem',
           '&:hover': {
             bgcolor: 'primary.hover1',
             borderRadius: 5,
@@ -136,14 +135,14 @@ const RowStackFooter = () => {
       </IconButton>
 
       <IconButton
-        disabled
+        // disabled
         href='https://medium.com/@levisantn'
         sx={{
           color: 'text.primary',
           width: '30px',
           height: '30px',
-          fontSize: '1.5em',
-          padding: '5px',
+          fontSize: '2.25rem',
+          padding: '1.55rem',
           '&:hover': {
             bgcolor: 'primary.hover1',
             borderRadius: 5,
@@ -163,8 +162,8 @@ const RowStackFooter = () => {
           color: 'text.primary',
           width: '30px',
           height: '30px',
-          fontSize: '1.5em',
-          padding: '5px',
+          fontSize: '2.25rem',
+          padding: '1.55rem',
           '&:hover': {
             bgcolor: 'primary.hover1',
             borderRadius: 5,

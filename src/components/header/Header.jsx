@@ -34,7 +34,7 @@ const Header = () => {
               flexGrow: 1,
               textAlign: 'left',
               fontFamily: 'var(--signature-font)',
-              fontSize: 40,
+              fontSize: '5rem',
             }}
           >
             {`_ Levisantn _`}
@@ -53,6 +53,7 @@ const Header = () => {
                 textTransform: 'none',
                 borderRadius: 2,
                 margin: 0.25,
+                fontSize: '1.75rem',
                 wordSpacing: '-4px',
                 '&:hover': {
                   bgcolor: 'primary.hover1',

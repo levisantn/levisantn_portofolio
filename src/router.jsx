@@ -7,6 +7,7 @@ import Projects from './routes/Projects';
 import Cheatsheets from './routes/Cheatsheets';
 import References from './routes/References';
 import Contactme from './routes/Contactme';
+import Error404 from './routes/Error404';
 
 const myRouter = createBrowserRouter([
   {
@@ -44,6 +45,10 @@ const myRouter = createBrowserRouter([
       {
         path: '/contact_me',
         Component: Contactme,
+      },
+      {
+        path: '*',
+        Component: Error404,
       },
     ],
   },
