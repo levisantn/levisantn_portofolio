@@ -1,10 +1,16 @@
-import { FormContainer, TextFieldElement, RadioButtonGroup, TextareaAutosizeElement } from 'react-hook-form-mui';
-
-import { Button } from '@mui/material';
+import { TextFieldElement, RadioButtonGroup, TextareaAutosizeElement, useForm } from 'react-hook-form-mui';
+import { Alert, Button } from '@mui/material';
 import { useTheme } from '@emotion/react';
+import emailjs from '@emailjs/browser';
+import { useState } from 'react';
 
 const ContactForm = () => {
   const theme = useTheme();
+  const SERVICE_ID = 'service_r9ib0n8';
+  const TEMPLATE_ID = 'template_h21czra';
+  const PUBLIC_KEY = 'c6OoWuOvzpAPDRizG';
+  const [successMessage, setSuccessMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
 
   const nameLenghtRule = (value) => {
     if (value.length > 70) {
@@ -25,30 +31,70 @@ const ContactForm = () => {
     }
   };
 
-  // const CustomHelperText = (props) => {
-  //   const { focused } = useFormControl() || {};
-  //   const { helperTextMsg, HelperTextMsgOnFocus } = props;
-  //   const helperText = React.useMemo(() => {
-  //     if (focused) {
-  //       return HelperTextMsgOnFocus;
-  //     }
-  //     return helperTextMsg;
-  //   }, [focused]);
+  const { control, handleSubmit, reset } = useForm({
+    defaultValues: {
+      name: '',
+      email: '',
+      subject: '',
+      message: '',
+    },
+  });
 
-  //   return (
-  //     <FormHelperText component={'span'} sx={{ margin: 0 }}>
-  //       {helperText}
-  //     </FormHelperText>
-  //   );
-  // };
+  const onSubmit = (data) => {
+    const templateParams = {
+      name: data.name,
+      email: data.email,
+      subject: data.subject,
+      message: data.message,
+    };
+    emailjs
+      .send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY)
+      .then(() => {
+        console.log('email sent succesfully');
+        reset();
+        setSuccessMessage('Email sent successfully!');
+      })
+      .catch((error) => {
+        console.error('Email sending error:', error);
+        setErrorMessage(`Something went wrong... Email has not been sent succesfully.`);
+      });
+  };
+
   return (
-    <FormContainer onSuccess={(data) => console.log(data)}>
+    <form onSubmit={handleSubmit(onSubmit)}>
+      {successMessage && (
+        <Alert
+          severity='success'
+          variant='filled'
+          sx={{
+            whiteSpace: 'pre-line',
+            marginBottom: '1rem',
+            color: 'text.primary',
+          }}
+        >
+          {successMessage}
+        </Alert>
+      )}
+      {errorMessage && (
+        <Alert
+          severity='error'
+          variant='filled'
+          sx={{
+            whiteSpace: 'pre-line',
+            marginBottom: '1rem',
+            color: 'text.primary',
+          }}
+        >
+          {errorMessage}
+        </Alert>
+      )}
+
       <TextFieldElement
         name='name'
         label='Name'
         margin='normal'
         placeholder='Full Name or Pseudo '
-        // helperText=<CustomHelperText helperTextMsg=' ' HelperTextMsgOnFocus='Fill with your full name or pseudo' />
+        control={control}
         required
         fullWidth
         rules={{ validate: nameLenghtRule }}
@@ -65,6 +111,7 @@ const ContactForm = () => {
         label={'Email'}
         type={'email'}
         placeholder='dummy@mail.com'
+        control={control}
         required
         fullWidth
         margin='normal'
@@ -80,13 +127,14 @@ const ContactForm = () => {
       <RadioButtonGroup
         name='subject'
         label='What is it about?'
+        control={control}
         options={[
           {
-            id: 'my-work',
+            id: 'work',
             label: 'My work',
           },
           {
-            id: 'job-opportunity',
+            id: 'job opportunity',
             label: 'Job opportunity',
           },
           {
@@ -102,6 +150,7 @@ const ContactForm = () => {
         name='message'
         label='Message'
         rows={12}
+        control={control}
         required
         fullWidth
         margin='normal'
@@ -129,8 +178,7 @@ const ContactForm = () => {
       >
         Submit
       </Button>
-    </FormContainer>
+    </form>
   );
 };
-
 export default ContactForm;
