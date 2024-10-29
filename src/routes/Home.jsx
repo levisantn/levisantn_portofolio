@@ -1,68 +1,236 @@
-import { Container } from '@mui/material';
+import { Typography, Grid2, Stack, Box, Divider, Avatar } from '@mui/material';
+import Typewriter from 'typewriter-effect';
+import FindMeOnCardHome from '../components/card/FindMeOnCardHome';
 
 const Home = () => {
+  const skills = ['Data Analyst', 'ML Developper', 'Open Source enthousiast'];
   return (
-    <Container maxWidth='lg'>
-      <h1>Main content</h1>
+    <Grid2
+      container
+      padding={2}
+      spacing={1}
+      sx={{
+        backgroundColor: 'background.default',
+        flexDirection: 'column',
+      }}
+    >
+      <Grid2
+        container
+        spacing={0.5}
+        padding={0.5}
+        size={12}
+        borderRadius={1}
+        sx={{
+          backgroundColor: 'background.paper',
+          height: '60rem',
+        }}
+      >
+        <Grid2
+          display='flex'
+          size={2}
+          borderRadius={1}
+          sx={{
+            backgroundColor: 'background.default',
+          }}
+        ></Grid2>
 
-      <p>
-        In duis excepteur magna elit esse eiusmod qui. Irure proident consectetur culpa aliquip ea. Quis velit non
-        cillum id non. Excepteur enim cupidatat proident cillum.
-      </p>
+        <Grid2
+          display='flex'
+          size={'grow'}
+          direction='column'
+          spacing={0.5}
+          padding={0.5}
+          borderRadius={1}
+          sx={{
+            backgroundColor: 'background.default',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
+        >
+          <Stack
+            direction='column'
+            spacing={'5rem'}
+            sx={{
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
+          >
+            <Typography
+              variant='h1'
+              sx={{ fontWeight: '400', whiteSpace: 'pre-wrap', '& span:first-of-type': { color: 'primary.main' } }}
+            >
+              Hi There! 👋🏼
+              <br />
+              I&apos;m <span style={{ fontWeight: '500' }}>Levis ANTONETTI</span>
+            </Typography>
 
-      <h2>section 1</h2>
-      <p>
-        Pariatur pariatur incididunt duis do ullamco minim excepteur veniam culpa irure pariatur. Nostrud non ad ea ad
-        adipisicing Lorem minim ea sit aliqua magna aliqua quis labore. Et aliqua sit labore minim ea nostrud irure
-        mollit qui ipsum. Mollit eu consequat mollit ea excepteur elit eiusmod aliqua non dolor. Sint aute enim Lorem
-        sunt cupidatat. Eiusmod qui Lorem elit irure officia sint.
-      </p>
+            <Typography variant='code' sx={{ fontSize: '3rem', fontWeight: '600', color: 'primary.light' }}>
+              <Typewriter
+                options={{
+                  strings: skills,
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </Typography>
+          </Stack>
+        </Grid2>
 
-      <h2>section 2</h2>
-      <p>
-        Aliqua adipisicing do ea anim sit minim. Eu ut do ut officia ullamco irure laboris. Lorem nisi laborum sint
-        minim ad ut esse qui aliqua Lorem aliquip proident ipsum velit.
-      </p>
+        <Grid2
+          display='flex'
+          size={'grow'}
+          borderRadius={1}
+          sx={{
+            backgroundColor: 'background.default',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
+        >
+          <Box
+            component='img'
+            alt='drinking soda bitmoji '
+            src='/src/assets/imgs/bitmoji/laptop_with_hello_hand.png'
+            sx={{
+              width: '400px',
+              height: '400px',
+              borderRadius: 1,
+            }}
+          />
+        </Grid2>
+        <Grid2
+          display='flex'
+          size={2}
+          borderRadius={1}
+          sx={{
+            backgroundColor: 'background.default',
+          }}
+        ></Grid2>
+      </Grid2>
+      {/* -------------------------------- */}
+      <Divider
+        sx={{
+          borderColor: 'background.paper',
+          borderWidth: 2,
+          borderRadius: 1,
+          // margin: '1rem',
+        }}
+      />
+      {/* -------------------------------- */}
+      <Grid2
+        container
+        spacing={0.5}
+        padding={0.5}
+        size={12}
+        borderRadius={1}
+        sx={{
+          backgroundColor: 'background.paper',
+          height: '40rem',
+        }}
+      >
+        <Grid2
+          display='flex'
+          size={1}
+          borderRadius={1}
+          sx={{
+            backgroundColor: 'background.default',
+          }}
+        ></Grid2>
+        <Grid2
+          display='flex'
+          size={2}
+          borderRadius={1}
+          sx={{
+            backgroundColor: 'background.default',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
+        >
+          <Avatar
+            alt='front face bitmoji '
+            src='/src/assets/imgs/bitmoji/front_face_rogner.png'
+            sx={{
+              width: '20rem',
+              height: 'auto',
+              backgroundColor: 'background.paper',
+            }}
+          />
+        </Grid2>
 
-      <h2>section 3</h2>
-      <p>
-        Consequat qui aute enim elit ullamco. Irure exercitation eu ad cillum qui. Commodo sint incididunt veniam ut
-        laborum magna minim esse culpa ea culpa aliqua. Sit enim commodo aliquip do nisi officia irure ad reprehenderit
-        incididunt consectetur elit nostrud mollit. Aute sunt commodo non nisi aute in deserunt in anim.
-      </p>
+        <Grid2
+          display='flex'
+          size={'grow'}
+          spacing={0.5}
+          padding={0.5}
+          direction='column'
+          borderRadius={1}
+          sx={{
+            backgroundColor: 'background.default',
+            justifyContent: 'flex-start',
+            alignItems: 'center',
+          }}
+        >
+          <Stack
+            direction='column'
+            spacing={'5rem'}
+            sx={{
+              justifyContent: 'center',
+              alignItems: 'flex-start',
+            }}
+          >
+            <Typography
+              variant='h2'
+              sx={{
+                fontWeight: '400',
+                '& span:first-of-type': { color: 'primary.main' },
+                paddingLeft: '5rem',
+              }}
+            >
+              Let me <span style={{ fontWeight: '500' }}>Introduce</span> myself,
+            </Typography>
 
-      <p>
-        Ad deserunt velit eu magna nulla enim enim ut est Lorem minim. In ut occaecat nisi nisi sint non. Adipisicing
-        magna est laboris duis aliquip aliqua qui id quis velit. Duis nostrud sunt ea mollit proident.
-      </p>
+            <Typography
+              variant='h5'
+              sx={{ fontWeight: '400', whiteSpace: 'pre-wrap', '& span:first-of-type': { color: 'primary.main' } }}
+            >
+              TODO
+              <br />
+              I fell in love with programming and I have at least learnt something, I think… 🤷‍♂️
+              <br />
+              <br />
+              I am fluent in classics like C++, Javascript and Go.
+              <br />
+              <br />
+              My field of Interest&apos;s are building new Web Technologies and Products and also in areas related to
+              Blockchain.
+              <br />
+              <br />
+              Whenever possible, I also apply my passion for developing products with Node.js and Modern Javascript
+              Library and Frameworks like React.js and Next.js
+            </Typography>
+          </Stack>
+        </Grid2>
+        <Grid2
+          display='flex'
+          size={1}
+          borderRadius={1}
+          sx={{
+            backgroundColor: 'background.default',
+          }}
+        ></Grid2>
+      </Grid2>
+      {/* -------------------------------- */}
+      <Divider
+        sx={{
+          borderColor: 'background.paper',
+          borderWidth: 2,
+          borderRadius: 1,
+          // margin: '1rem',
+        }}
+      />
+      {/* -------------------------------- */}
 
-      <h2>section 4</h2>
-      <p>
-        Do ea et nostrud quis aute tempor et et do. Consequat qui laboris voluptate consequat aute ad. Consequat fugiat
-        laboris tempor esse aliqua voluptate ut enim consectetur non in. Laboris exercitation duis sunt pariatur
-        reprehenderit aute ullamco proident esse do et.
-      </p>
-
-      <p>
-        Pariatur sunt velit amet deserunt ullamco in mollit magna. Anim enim consectetur tempor id. Nisi ipsum qui et
-        est ut eu. Mollit eiusmod mollit non consectetur. Dolor velit qui nulla tempor exercitation sit in mollit
-        reprehenderit occaecat voluptate ullamco.
-      </p>
-
-      <h2>section 5</h2>
-      <p>
-        Voluptate ex ut qui laborum. Voluptate cupidatat labore elit minim officia anim consequat id magna. Irure amet
-        do aute minim commodo amet nostrud incididunt ad. Sit ut duis velit anim. Elit aute minim irure adipisicing
-        excepteur pariatur id reprehenderit nulla nostrud enim aliquip minim.
-      </p>
-
-      <p>
-        Aliquip incididunt in voluptate ad ipsum anim. Anim culpa tempor eu aute in do. Exercitation deserunt do
-        consequat enim cupidatat eu excepteur amet qui consectetur esse ex tempor. Velit veniam consequat nostrud
-        voluptate voluptate. Laborum ipsum sit laborum sit mollit eu. Voluptate excepteur laboris laboris consequat
-        labore. Eu ut esse non consequat esse sint duis officia ullamco.
-      </p>
-    </Container>
+      <FindMeOnCardHome />
+    </Grid2>
   );
 };
 

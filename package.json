@@ -36,7 +36,8 @@
     "react-dom": "^18.3.1",
     "react-hook-form": "^7.53.0",
     "react-hook-form-mui": "^7.2.1",
-    "save-dev": "^0.0.1-security"
+    "save-dev": "^0.0.1-security",
+    "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",

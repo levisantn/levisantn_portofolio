@@ -9,7 +9,7 @@ const pages = [
   { page: 'Playground', route: '/playground' },
   { page: 'Projects', route: '/projects' },
   { page: 'Cheatsheets', route: '/cheatsheets' },
-  { page: 'References', route: '/references' },
+  // { page: 'References', route: '/references' },
   { page: 'Contact me', route: '/contact_me' },
 ];
 

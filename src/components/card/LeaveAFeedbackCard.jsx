@@ -56,10 +56,10 @@ const LeaveAFeedbackCard = () => {
         <Button
           variant='contained'
           sx={{
-            // Use sx prop for custom styling
-            backgroundColor: 'text.primary', // Set background color to black
+            backgroundColor: 'text.primary',
             minWidth: 'fit-content',
-            color: 'background.default', // Set text color to white
+            color: 'background.default',
+            fontWeight: '700',
           }}
           onClick={() => window.open('https://github.com/levisantn/react_website', '_blank')}
         >

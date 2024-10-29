@@ -1,7 +1,7 @@
 import { Box, Stack, Typography, Grid2 } from '@mui/material';
 import RowStackContact from '../social-media/RowStackContact';
 
-const FindMeOnCard = () => {
+const FindMeOnCardContact = () => {
   return (
     <Grid2
       container
@@ -69,4 +69,4 @@ const FindMeOnCard = () => {
   );
 };
 
-export default FindMeOnCard;
+export default FindMeOnCardContact;

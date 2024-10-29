@@ -1,5 +1,5 @@
 import { Grid2 } from '@mui/material';
-import FindMeOnCard from '../components/card/FindMeOnCard';
+import FindMeOnCardContact from '../components/card/FindMeOnCardContact';
 import FindMeAroundCard from '../components/card/FindMeAroundCard';
 import WriteMeAMail from '../components/card/WriteMeAMailCard';
 import FillTheFormCard from '../components/card/FillTheFormCard';
@@ -40,7 +40,7 @@ const Contactme = () => {
         }}
       >
         <Grid2>
-          <FindMeOnCard />
+          <FindMeOnCardContact />
         </Grid2>
       </Grid2>
 
