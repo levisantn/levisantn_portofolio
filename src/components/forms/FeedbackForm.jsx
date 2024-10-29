@@ -1,10 +1,16 @@
-import { FormContainer, TextFieldElement, TextareaAutosizeElement } from 'react-hook-form-mui';
-
-import { Button, Typography } from '@mui/material';
+import { TextFieldElement, TextareaAutosizeElement, useForm } from 'react-hook-form-mui';
+import { Alert, Button, Typography } from '@mui/material';
 import { useTheme } from '@emotion/react';
+import { useState } from 'react';
+import emailjs from '@emailjs/browser';
 
 const FeedbackForm = () => {
   const theme = useTheme();
+  const SERVICE_ID = 'service_r9ib0n8';
+  const TEMPLATE_ID = 'template_pzztydc';
+  const PUBLIC_KEY = 'c6OoWuOvzpAPDRizG';
+  const [successMessage, setSuccessMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
 
   const nameLenghtRule = (value) => {
     if (value.length > 70) {
@@ -20,13 +26,70 @@ const FeedbackForm = () => {
     }
   };
 
+  const { control, handleSubmit, reset } = useForm({
+    defaultValues: {
+      from_name: '',
+      comment: '',
+      suggestion: '',
+      report_issue: '',
+    },
+  });
+
+  const onSubmit = (data) => {
+    const templateParams = {
+      from_name: data.name,
+      comment: data.comment,
+      suggestion: data.suggestion,
+      report_issue: data.report_issue,
+    };
+    emailjs
+      .send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY)
+      .then(() => {
+        console.log('Feedback sent succesfully');
+        reset();
+        setSuccessMessage('Feedback sent successfully!');
+      })
+      .catch((error) => {
+        console.error('Feedback sending error:', error);
+        setErrorMessage(`Something went wrong... Feedback has not been sent succesfully.`);
+      });
+  };
+
   return (
-    <FormContainer onSuccess={(data) => console.log(data)}>
+    <form onSubmit={handleSubmit(onSubmit)}>
+      {successMessage && (
+        <Alert
+          severity='success'
+          variant='filled'
+          sx={{
+            whiteSpace: 'pre-line',
+            marginBottom: '1rem',
+            color: 'text.primary',
+          }}
+        >
+          {successMessage}
+        </Alert>
+      )}
+      {errorMessage && (
+        <Alert
+          severity='error'
+          variant='filled'
+          sx={{
+            whiteSpace: 'pre-line',
+            marginBottom: '1rem',
+            color: 'text.primary',
+          }}
+        >
+          {errorMessage}
+        </Alert>
+      )}
+
       <TextFieldElement
         name='name'
         label='Name'
         margin='normal'
         placeholder='Name or Pseudo '
+        control={control}
         required
         fullWidth
         rules={{ validate: nameLenghtRule }}
@@ -43,6 +106,7 @@ const FeedbackForm = () => {
       <TextareaAutosizeElement
         name='comment'
         label='Comment'
+        control={control}
         minRows={4}
         maxRows={4}
         required
@@ -62,6 +126,7 @@ const FeedbackForm = () => {
         label='Suggest improvements'
         minRows={2}
         maxRows={3}
+        control={control}
         fullWidth
         margin='normal'
         rules={{ validate: messageLenghtRule }}
@@ -70,10 +135,11 @@ const FeedbackForm = () => {
         sx={{ marginTop: '1rem' }}
       />
       <TextareaAutosizeElement
-        name='report-issue'
+        name='report_issue'
         label='Report an issue'
         minRows={2}
         maxRows={3}
+        control={control}
         fullWidth
         margin='normal'
         rules={{ validate: messageLenghtRule }}
@@ -100,7 +166,7 @@ const FeedbackForm = () => {
       >
         Submit
       </Button>
-    </FormContainer>
+    </form>
   );
 };
 

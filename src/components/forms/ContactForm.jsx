@@ -33,24 +33,24 @@ const ContactForm = () => {
 
   const { control, handleSubmit, reset } = useForm({
     defaultValues: {
-      name: '',
-      email: '',
-      subject: '',
+      from_name: '',
+      from_email: '',
+      from_subject: '',
       message: '',
     },
   });
 
   const onSubmit = (data) => {
     const templateParams = {
-      name: data.name,
-      email: data.email,
-      subject: data.subject,
+      from_name: data.name,
+      from_email: data.email,
+      from_subject: data.subject,
       message: data.message,
     };
     emailjs
       .send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY)
       .then(() => {
-        console.log('email sent succesfully');
+        console.log('Email sent succesfully');
         reset();
         setSuccessMessage('Email sent successfully!');
       })
