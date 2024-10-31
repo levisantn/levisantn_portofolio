@@ -1,6 +1,7 @@
 import { Typography, Grid2, Stack, Box, Divider, Avatar } from '@mui/material';
 import Typewriter from 'typewriter-effect';
 import FindMeOnCardHome from '../components/card/FindMeOnCardHome';
+import 'animate.css';
 
 const Home = () => {
   const skills = ['Data Analyst', 'ML Developper', 'Open Source enthousiast'];
@@ -50,6 +51,7 @@ const Home = () => {
           <Stack
             direction='column'
             spacing={'5rem'}
+            padding={2}
             sx={{
               justifyContent: 'center',
               alignItems: 'center',
@@ -57,9 +59,19 @@ const Home = () => {
           >
             <Typography
               variant='h1'
-              sx={{ fontWeight: '400', whiteSpace: 'pre-wrap', '& span:first-of-type': { color: 'primary.main' } }}
+              sx={{
+                fontWeight: '400',
+                fontSize: '4.2rem',
+                whiteSpace: 'pre-wrap',
+                '& span:nth-of-type(2)': { color: 'primary.main' },
+              }}
             >
-              Hi There! 👋🏼
+              <br />
+              <br />
+              Hi There!{' '}
+              <span className='wave' role='img' aria-labelledby='wave'>
+                👋🏼
+              </span>
               <br />
               I&apos;m <span style={{ fontWeight: '500' }}>Levis ANTONETTI</span>
             </Typography>
@@ -192,20 +204,19 @@ const Home = () => {
               variant='h5'
               sx={{ fontWeight: '400', whiteSpace: 'pre-wrap', '& span:first-of-type': { color: 'primary.main' } }}
             >
-              TODO
-              <br />
-              I fell in love with programming and I have at least learnt something, I think… 🤷‍♂️
-              <br />
-              <br />
-              I am fluent in classics like C++, Javascript and Go.
+              My passion for computer science ignited in high School. I find joy in understanding the mechanisms of new
+              technologies and am driven by the satisfaction of solving problems.
               <br />
               <br />
-              My field of Interest&apos;s are building new Web Technologies and Products and also in areas related to
-              Blockchain.
+              More specifically, I specialize in data science. I am a data-driven guy, that understand data&apos;s value
+              as a tool for optimizing business processes and enhancing decision-making.
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products with Node.js and Modern Javascript
-              Library and Frameworks like React.js and Next.js
+              I am proficient in Python, Sql and Tableau and I prefer working in a Linux environment.
+              <br />
+              <br />
+              on my free time, I enjoy working on development projects, and solving algorithmic problems.
+              <br />
             </Typography>
           </Stack>
         </Grid2>
