@@ -7,15 +7,14 @@ import LeaveAFeedbackCard from '../components/card/LeaveAFeedbackCard';
 
 const Contactme = () => {
   return (
-    <Grid2 container padding={2} spacing={1}>
+    <Grid2 container padding={1} spacing={1}>
       <Grid2
         container
-        spacing={0.5}
-        padding={0.5}
+        spacing={1}
         size={'grow'}
         borderRadius={1}
         sx={{
-          backgroundColor: 'background.paper',
+          // backgroundColor: 'background.paper',
           flexDirection: 'column',
         }}
       >
@@ -30,28 +29,22 @@ const Contactme = () => {
 
       <Grid2
         container
-        spacing={0.5}
         size={'auto'}
-        padding={0.5}
         borderRadius={1}
         sx={{
-          backgroundColor: 'background.paper',
-          textAlign: 'center',
+          // backgroundColor: 'background.paper',
+          textAlign: 'flex-end',
         }}
       >
-        <Grid2>
-          <FindMeOnCardContact />
-        </Grid2>
+        <FindMeOnCardContact />
       </Grid2>
 
       <Grid2
         container
-        spacing={0.5}
         size={7}
-        padding={0.5}
         borderRadius={1}
         sx={{
-          backgroundColor: 'background.paper',
+          // backgroundColor: 'background.paper',
           textAlign: 'center',
         }}
       >
@@ -60,12 +53,10 @@ const Contactme = () => {
 
       <Grid2
         container
-        spacing={0.5}
         size={'grow'}
-        padding={0.5}
         borderRadius={1}
         sx={{
-          backgroundColor: 'background.paper',
+          // backgroundColor: 'background.paper',
           textAlign: 'center',
         }}
       >

@@ -2,16 +2,16 @@ import { Typography, Grid2, Stack, Box, Divider, Avatar } from '@mui/material';
 import Typewriter from 'typewriter-effect';
 import FindMeOnCardHome from '../components/card/FindMeOnCardHome';
 import 'animate.css';
+import { useTheme } from '@emotion/react';
 
 const Home = () => {
+  const theme = useTheme();
+
   const skills = ['Data Analyst', 'ML Developper', 'Open Source enthousiast'];
   return (
     <Grid2
       container
-      padding={2}
-      spacing={1}
       sx={{
-        backgroundColor: 'background.default',
         flexDirection: 'column',
       }}
     >
@@ -19,21 +19,16 @@ const Home = () => {
         container
         spacing={0.5}
         padding={0.5}
+        paddingTop='5rem'
+        paddingBottom='7.5rem'
         size={12}
         borderRadius={1}
         sx={{
-          backgroundColor: 'background.paper',
-          height: '60rem',
+          // backgroundColor: 'background.paper',
+          height: 'auto',
         }}
       >
-        <Grid2
-          display='flex'
-          size={2}
-          borderRadius={1}
-          sx={{
-            backgroundColor: 'background.default',
-          }}
-        ></Grid2>
+        <Grid2 display='flex' size={2} borderRadius={1}></Grid2>
 
         <Grid2
           display='flex'
@@ -43,7 +38,6 @@ const Home = () => {
           padding={0.5}
           borderRadius={1}
           sx={{
-            backgroundColor: 'background.default',
             justifyContent: 'center',
             alignItems: 'center',
           }}
@@ -93,14 +87,13 @@ const Home = () => {
           size={'grow'}
           borderRadius={1}
           sx={{
-            backgroundColor: 'background.default',
             justifyContent: 'center',
             alignItems: 'center',
           }}
         >
           <Box
             component='img'
-            alt='drinking soda bitmoji '
+            alt='laptop with hello hand bitmoji '
             src='/src/assets/imgs/bitmoji/laptop_with_hello_hand.png'
             sx={{
               width: '400px',
@@ -109,22 +102,16 @@ const Home = () => {
             }}
           />
         </Grid2>
-        <Grid2
-          display='flex'
-          size={2}
-          borderRadius={1}
-          sx={{
-            backgroundColor: 'background.default',
-          }}
-        ></Grid2>
+        <Grid2 display='flex' size={2} borderRadius={1}></Grid2>
       </Grid2>
       {/* -------------------------------- */}
       <Divider
         sx={{
-          borderColor: 'background.paper',
-          borderWidth: 2,
           borderRadius: 1,
-          // margin: '1rem',
+          marginLeft: '15rem',
+          marginRight: '15rem',
+          border: `0.25rem solid ${theme.palette.primary.hover1}`,
+          boxShadow: `0rem 0rem 0.75rem ${theme.palette.primary.hover1}`,
         }}
       />
       {/* -------------------------------- */}
@@ -132,27 +119,21 @@ const Home = () => {
         container
         spacing={0.5}
         padding={0.5}
+        paddingTop='7.5rem'
+        paddingBottom='7.5rem'
         size={12}
         borderRadius={1}
         sx={{
-          backgroundColor: 'background.paper',
-          height: '40rem',
+          // backgroundColor: 'background.paper',
+          height: 'auto',
         }}
       >
-        <Grid2
-          display='flex'
-          size={1}
-          borderRadius={1}
-          sx={{
-            backgroundColor: 'background.default',
-          }}
-        ></Grid2>
+        <Grid2 display='flex' size={1} borderRadius={1}></Grid2>
         <Grid2
           display='flex'
           size={2}
           borderRadius={1}
           sx={{
-            backgroundColor: 'background.default',
             justifyContent: 'center',
             alignItems: 'center',
           }}
@@ -163,7 +144,7 @@ const Home = () => {
             sx={{
               width: '20rem',
               height: 'auto',
-              backgroundColor: 'background.paper',
+              backgroundColor: 'primary.hover1',
             }}
           />
         </Grid2>
@@ -176,7 +157,6 @@ const Home = () => {
           direction='column'
           borderRadius={1}
           sx={{
-            backgroundColor: 'background.default',
             justifyContent: 'flex-start',
             alignItems: 'center',
           }}
@@ -220,27 +200,31 @@ const Home = () => {
             </Typography>
           </Stack>
         </Grid2>
-        <Grid2
-          display='flex'
-          size={1}
-          borderRadius={1}
-          sx={{
-            backgroundColor: 'background.default',
-          }}
-        ></Grid2>
+        <Grid2 display='flex' size={1} borderRadius={1}></Grid2>
       </Grid2>
       {/* -------------------------------- */}
       <Divider
         sx={{
-          borderColor: 'background.paper',
-          borderWidth: 2,
           borderRadius: 1,
-          // margin: '1rem',
+          marginLeft: '15rem',
+          marginRight: '15rem',
+          border: `0.25rem solid ${theme.palette.primary.hover1}`,
+          boxShadow: `0rem 0rem 0.75rem ${theme.palette.primary.hover1}`,
         }}
       />
       {/* -------------------------------- */}
 
       <FindMeOnCardHome />
+      {/* -------------------------------- */}
+      <Divider
+        sx={{
+          borderRadius: 1,
+          border: `0.25rem solid ${theme.palette.primary.hover1}`,
+          boxShadow: `0rem 0rem 0.75rem ${theme.palette.primary.hover1}`,
+          marginBottom: 1,
+        }}
+      />
+      {/* -------------------------------- */}
     </Grid2>
   );
 };

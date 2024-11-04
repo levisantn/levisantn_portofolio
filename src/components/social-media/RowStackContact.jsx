@@ -2,10 +2,12 @@ import { Stack, IconButton, SvgIcon } from '@mui/material';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faKaggle, faGithub, faInstagram, faXTwitter, faMedium } from '@fortawesome/free-brands-svg-icons';
 import { leetCode, TableauSoftwareRounded } from '../../assets/imgs/icons/CustomMuiSvgIcons';
+import { useTheme } from '@emotion/react';
 
 const RowStackContact = () => {
+  const theme = useTheme();
   return (
-    <Stack direction='row' paddingTop={4} spacing={3}>
+    <Stack direction='row' paddingTop={4} spacing={2.5}>
       <IconButton
         href='https://github.com/levisantn'
         target='_blank'
@@ -19,9 +21,12 @@ const RowStackContact = () => {
           borderColor: 'primary.main',
           color: 'text.primary',
           bgcolor: 'primary.hover1',
+          transition: 'all 0.1s ease-in-out',
           '&:hover': {
+            boxShadow: `0rem 0rem 0.75rem ${theme.palette.primary.main}`,
             bgcolor: 'primary.main',
             borderColor: 'primary.main',
+            transition: 'all 0.1s ease-in-out',
           },
           '&.Mui-disabled': {
             color: 'text.disabled',
@@ -46,9 +51,12 @@ const RowStackContact = () => {
           borderColor: 'primary.main',
           color: 'text.primary',
           bgcolor: 'primary.hover1',
+          transition: 'all 0.1s ease-in-out',
           '&:hover': {
+            boxShadow: `0rem 0rem 0.75rem ${theme.palette.primary.main}`,
             bgcolor: 'primary.main',
             borderColor: 'primary.main',
+            transition: 'all 0.1s ease-in-out',
           },
           '&.Mui-disabled': {
             color: 'text.disabled',
@@ -71,9 +79,12 @@ const RowStackContact = () => {
           borderColor: 'primary.main',
           color: 'text.primary',
           bgcolor: 'primary.hover1',
+          transition: 'all 0.1s ease-in-out',
           '&:hover': {
+            boxShadow: `0rem 0rem 0.75rem ${theme.palette.primary.main}`,
             bgcolor: 'primary.main',
             borderColor: 'primary.main',
+            transition: 'all 0.1s ease-in-out',
           },
           '&.Mui-disabled': {
             color: 'text.disabled',
@@ -96,9 +107,12 @@ const RowStackContact = () => {
           borderColor: 'primary.main',
           color: 'text.primary',
           bgcolor: 'primary.hover1',
+          transition: 'all 0.1s ease-in-out',
           '&:hover': {
+            boxShadow: `0rem 0rem 0.75rem ${theme.palette.primary.main}`,
             bgcolor: 'primary.main',
             borderColor: 'primary.main',
+            transition: 'all 0.1s ease-in-out',
           },
           '&.Mui-disabled': {
             color: 'text.disabled',
@@ -120,9 +134,12 @@ const RowStackContact = () => {
           borderColor: 'primary.main',
           color: 'text.primary',
           bgcolor: 'primary.hover1',
+          transition: 'all 0.1s ease-in-out',
           '&:hover': {
+            boxShadow: `0rem 0rem 0.75rem ${theme.palette.primary.main}`,
             bgcolor: 'primary.main',
             borderColor: 'primary.main',
+            transition: 'all 0.1s ease-in-out',
           },
           '&.Mui-disabled': {
             color: 'text.disabled',
@@ -145,9 +162,12 @@ const RowStackContact = () => {
           borderColor: 'primary.main',
           color: 'text.primary',
           bgcolor: 'primary.hover1',
+          transition: 'all 0.1s ease-in-out',
           '&:hover': {
+            boxShadow: `0rem 0rem 0.75rem ${theme.palette.primary.main}`,
             bgcolor: 'primary.main',
             borderColor: 'primary.main',
+            transition: 'all 0.1s ease-in-out',
           },
           '&.Mui-disabled': {
             color: 'text.disabled',
@@ -170,9 +190,12 @@ const RowStackContact = () => {
           borderColor: 'primary.main',
           color: 'text.primary',
           bgcolor: 'primary.hover1',
+          transition: 'all 0.1s ease-in-out',
           '&:hover': {
+            boxShadow: `0rem 0rem 0.75rem ${theme.palette.primary.main}`,
             bgcolor: 'primary.main',
             borderColor: 'primary.main',
+            transition: 'all 0.1s ease-in-out',
           },
           '&.Mui-disabled': {
             color: 'text.disabled',

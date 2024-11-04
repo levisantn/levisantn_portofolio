@@ -6,30 +6,23 @@ const FindMeOnCardHome = () => {
     <Grid2
       container
       spacing={0.5}
-      size={'auto'}
       padding={0.5}
+      paddingTop='5rem'
+      paddingBottom='5rem'
       borderRadius={1}
       sx={{
-        height: '30rem',
-        backgroundColor: 'background.paper',
+        height: 'auto',
+        // backgroundColor: 'background.paper',
         textAlign: 'center',
       }}
     >
-      <Grid2
-        display='flex'
-        size={1}
-        borderRadius={1}
-        sx={{
-          backgroundColor: 'background.default',
-        }}
-      ></Grid2>
+      <Grid2 display='flex' size={1} borderRadius={1}></Grid2>
       <Grid2
         spacing={1}
         padding={1}
         size={'grow'}
         borderRadius={1}
         sx={{
-          backgroundColor: 'background.default',
           justifyContent: 'center',
           alignItems: 'center',
         }}
@@ -55,14 +48,7 @@ const FindMeOnCardHome = () => {
           </Stack>
         </Box>
       </Grid2>
-      <Grid2
-        display='flex'
-        size={1}
-        borderRadius={1}
-        sx={{
-          backgroundColor: 'background.default',
-        }}
-      ></Grid2>
+      <Grid2 display='flex' size={1} borderRadius={1}></Grid2>
     </Grid2>
   );
 };

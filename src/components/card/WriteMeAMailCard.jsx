@@ -1,6 +1,8 @@
+import { useTheme } from '@emotion/react';
 import { Grid2, Typography, Stack, Box, Link } from '@mui/material';
 
 const WriteMeAMailCard = () => {
+  const theme = useTheme();
   return (
     <Grid2
       container
@@ -9,7 +11,14 @@ const WriteMeAMailCard = () => {
       sx={{
         width: '100%',
         height: '100%',
-        backgroundColor: 'background.default',
+        border: `0.25rem solid ${theme.palette.primary.hover2}`,
+        transition: 'all 0.1s ease-in-out',
+        '&:hover': {
+          border: `0.25rem solid ${theme.palette.background.default}`,
+          boxShadow: `0rem 0rem 0.75rem ${theme.palette.primary.main}`,
+          transform: 'translateY(-0.25rem)',
+          transition: 'all 0.1s ease-in-out',
+        },
       }}
     >
       <Grid2
@@ -18,7 +27,6 @@ const WriteMeAMailCard = () => {
         direction='column'
         borderRadius={1}
         sx={{
-          backgroundColor: 'background.default',
           justifyContent: 'flex-end',
           alignItems: 'center',
         }}
@@ -52,7 +60,6 @@ const WriteMeAMailCard = () => {
         sx={{
           justifyContent: 'flex-start',
           alignItems: 'center',
-          backgroundColor: 'background.default',
         }}
       >
         <Link href='mailto:antonetti.levis@gmail.com'>

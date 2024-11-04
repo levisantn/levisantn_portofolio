@@ -21,7 +21,7 @@ const ModeSwitcherButton = () => {
     (mode) => {
       const getScrollbarColor = (mode, hover = false) => {
         const thumbColor = mode === 'light' ? darkColor : lightColor;
-        const thumbColorHover = hover ? '90' : '40';
+        const thumbColorHover = hover ? '99' : '60';
         return `${thumbColor}${thumbColorHover}`;
       };
       document.documentElement.style.setProperty('--scrollbar-thumb-color', getScrollbarColor(mode));

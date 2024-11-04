@@ -1,7 +1,9 @@
 import { Button, Grid2, Stack, Typography } from '@mui/material';
 import FeedbackForm from '../forms/FeedbackForm';
+import { useTheme } from '@emotion/react';
 
 const LeaveAFeedbackCard = () => {
+  const theme = useTheme();
   return (
     <Grid2
       container
@@ -12,7 +14,14 @@ const LeaveAFeedbackCard = () => {
       sx={{
         width: '100%',
         height: '100%',
-        backgroundColor: 'background.default',
+        border: `0.25rem solid ${theme.palette.primary.hover2}`,
+        transition: 'all 0.1s ease-in-out',
+        '&:hover': {
+          border: `0.25rem solid ${theme.palette.background.default}`,
+          boxShadow: `0rem 0rem 0.75rem ${theme.palette.primary.main}`,
+          transform: 'translateY(-0.25rem)',
+          transition: 'all 0.1s ease-in-out',
+        },
       }}
     >
       <Grid2
@@ -20,7 +29,6 @@ const LeaveAFeedbackCard = () => {
         size={'auto'}
         borderRadius={1}
         sx={{
-          backgroundColor: 'background.default',
           justifyContent: 'center',
           margin: '2rem',
         }}
@@ -49,7 +57,6 @@ const LeaveAFeedbackCard = () => {
         size={'auto'}
         borderRadius={0.5}
         sx={{
-          backgroundColor: 'background.default',
           justifyContent: 'center',
         }}
       >
@@ -71,7 +78,6 @@ const LeaveAFeedbackCard = () => {
         size={'grow'}
         borderRadius={1}
         sx={{
-          backgroundColor: 'background.default',
           justifyContent: 'center',
         }}
       >
