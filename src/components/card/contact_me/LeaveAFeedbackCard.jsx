@@ -1,6 +1,6 @@
 import { Button, Grid2, Stack, Typography } from '@mui/material';
-import FeedbackForm from '../forms/FeedbackForm';
 import { useTheme } from '@emotion/react';
+import FeedbackForm from '../../forms/FeedbackForm';
 
 const LeaveAFeedbackCard = () => {
   const theme = useTheme();

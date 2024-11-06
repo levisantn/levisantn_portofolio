@@ -1,8 +1,8 @@
 import { Box, Stack, Typography, Grid2 } from '@mui/material';
-import RowStackContact from '../social-media/RowStackContact';
+import RowStackContact from '../../social-media/RowStackContact';
 import { useTheme } from '@emotion/react';
 
-const FindMeOnCardContact = () => {
+const FindMeOnCard = () => {
   const theme = useTheme();
   return (
     <Grid2
@@ -74,4 +74,4 @@ const FindMeOnCardContact = () => {
   );
 };
 
-export default FindMeOnCardContact;
+export default FindMeOnCard;

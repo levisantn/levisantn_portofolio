@@ -1,6 +1,6 @@
 import { Grid2, Stack, Typography } from '@mui/material';
-import ContactForm from '../forms/ContactForm';
 import { useTheme } from '@emotion/react';
+import ContactForm from '../../forms/ContactForm';
 
 const FillTheFormCard = () => {
   const theme = useTheme();

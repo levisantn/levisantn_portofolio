@@ -1,9 +1,9 @@
 import { Grid2 } from '@mui/material';
-import FindMeOnCardContact from '../components/card/FindMeOnCardContact';
-import FindMeAroundCard from '../components/card/FindMeAroundCard';
-import WriteMeAMail from '../components/card/WriteMeAMailCard';
-import FillTheFormCard from '../components/card/FillTheFormCard';
-import LeaveAFeedbackCard from '../components/card/LeaveAFeedbackCard';
+import WriteMeAMail from '../components/card/contact_me/WriteMeAMailCard';
+import FillTheFormCard from '../components/card/contact_me/FillTheFormCard';
+import FindMeOnCard from '../components/card/contact_me/FindMeOnCard';
+import FindMeAroundCard from '../components/card/contact_me/FindMeAroundCard';
+import LeaveAFeedbackCard from '../components/card/contact_me/LeaveAFeedbackCard';
 
 const Contactme = () => {
   return (
@@ -36,7 +36,7 @@ const Contactme = () => {
           textAlign: 'flex-end',
         }}
       >
-        <FindMeOnCardContact />
+        <FindMeOnCard />
       </Grid2>
 
       <Grid2

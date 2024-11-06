@@ -1,12 +1,10 @@
 import { Box, Stack, Typography, Grid2 } from '@mui/material';
-import RowStackContact from '../social-media/RowStackContact';
+import RowStackContact from '../../social-media/RowStackContact';
 
-const FindMeOnCardHome = () => {
+const FindMeOnCard = () => {
   return (
     <Grid2
       container
-      spacing={0.5}
-      padding={0.5}
       paddingTop='5rem'
       paddingBottom='5rem'
       borderRadius={1}
@@ -53,4 +51,4 @@ const FindMeOnCardHome = () => {
   );
 };
 
-export default FindMeOnCardHome;
+export default FindMeOnCard;

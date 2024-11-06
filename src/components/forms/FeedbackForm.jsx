@@ -153,6 +153,7 @@ const FeedbackForm = () => {
         color='primary'
         type='submit'
         sx={{
+          fontWeight: '700',
           borderRadius: 2,
           border: '0.2rem solid',
           borderColor: 'primary.main',
