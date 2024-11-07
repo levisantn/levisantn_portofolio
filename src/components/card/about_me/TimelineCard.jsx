@@ -5,8 +5,10 @@ import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import { Grid2, Stack, Typography } from '@mui/material';
+import { useTheme } from '@emotion/react';
 
 const TimelineCardHome = () => {
+  const theme = useTheme();
   return (
     <Grid2 container size={12}>
       <Grid2
@@ -62,13 +64,13 @@ const TimelineCardHome = () => {
       <Grid2
         container
         size={12}
-        borderRadius={1}
+        borderRadius='1rem'
         sx={{
           backgroundColor: 'background.default',
           height: 'grow',
         }}
       >
-        <Grid2 display='flex' size={1} borderRadius={1}></Grid2>
+        <Grid2 display='flex' size={1} borderRadius='1rem'></Grid2>
 
         <Grid2
           display='flex'
@@ -79,7 +81,7 @@ const TimelineCardHome = () => {
             justifyContent: 'center',
           }}
         >
-          <Timeline position='alternate-reverse' sx={{ paddingTop: '2.5rem', paddingBottom: '2.5rem' }}>
+          <Timeline position='alternate-reverse' sx={{ paddingTop: '2.5rem', paddingBottom: '5rem' }}>
             <TimelineItem>
               <TimelineSeparator>
                 <Typography variant='code' sx={{ fontSize: '3rem', color: 'primary.light' }}>
@@ -94,10 +96,16 @@ const TimelineCardHome = () => {
                   padding='2rem'
                   direction='column'
                   spacing={'1rem'}
-                  borderRadius='15px'
+                  borderRadius='1rem'
                   sx={{
                     backgroundColor: 'primary.hover2',
                     alignItems: 'flex-end',
+                    transition: 'all 0.5s ease-out',
+                    '&:hover': {
+                      boxShadow: `0rem 0rem 0.75rem ${theme.palette.primary.light}`,
+                      transform: 'scale(1.025)',
+                      transition: 'all 0.25s ease-out',
+                    },
                   }}
                 >
                   <Typography variant='h4' sx={{ fontWeight: '500' }}>
@@ -131,10 +139,16 @@ const TimelineCardHome = () => {
                   padding='2rem'
                   direction='column'
                   spacing={'1rem'}
-                  borderRadius='15px'
+                  borderRadius='1rem'
                   sx={{
                     backgroundColor: 'primary.hover2',
                     alignItems: 'flex-start',
+                    transition: 'all 0.5s ease-out',
+                    '&:hover': {
+                      boxShadow: `0rem 0rem 0.75rem ${theme.palette.primary.light}`,
+                      transform: 'scale(1.025)',
+                      transition: 'all 0.25s ease-out',
+                    },
                   }}
                 >
                   <Typography variant='h4' sx={{ fontWeight: '500' }}>
@@ -170,10 +184,16 @@ const TimelineCardHome = () => {
                   padding='2rem'
                   direction='column'
                   spacing={'1rem'}
-                  borderRadius='15px'
+                  borderRadius='1rem'
                   sx={{
                     backgroundColor: 'primary.hover2',
                     alignItems: 'flex-end',
+                    transition: 'all 0.5s ease-out',
+                    '&:hover': {
+                      boxShadow: `0rem 0rem 0.75rem ${theme.palette.primary.light}`,
+                      transform: 'scale(1.025)',
+                      transition: 'all 0.25s ease-out',
+                    },
                   }}
                 >
                   <Typography variant='h4' sx={{ fontWeight: '500' }}>
@@ -208,10 +228,16 @@ const TimelineCardHome = () => {
                   padding='2rem'
                   direction='column'
                   spacing={'1rem'}
-                  borderRadius='15px'
+                  borderRadius='1rem'
                   sx={{
                     backgroundColor: 'primary.hover2',
                     alignItems: 'flex-start',
+                    transition: 'all 0.5s ease-out',
+                    '&:hover': {
+                      boxShadow: `0rem 0rem 0.75rem ${theme.palette.primary.light}`,
+                      transform: 'scale(1.025)',
+                      transition: 'all 0.25s ease-out',
+                    },
                   }}
                 >
                   <Typography variant='h4' sx={{ fontWeight: '500', color: 'primary.light' }}>
@@ -251,10 +277,16 @@ const TimelineCardHome = () => {
                   padding='2rem'
                   direction='column'
                   spacing={'1rem'}
-                  borderRadius='15px'
+                  borderRadius='1rem'
                   sx={{
                     backgroundColor: 'primary.hover2',
                     alignItems: 'flex-end',
+                    transition: 'all 0.5s ease-out',
+                    '&:hover': {
+                      boxShadow: `0rem 0rem 0.75rem ${theme.palette.primary.light}`,
+                      transform: 'scale(1.025)',
+                      transition: 'all 0.25s ease-out',
+                    },
                   }}
                 >
                   <Typography variant='h4' sx={{ fontWeight: '500', color: 'primary.light' }}>
@@ -294,10 +326,16 @@ const TimelineCardHome = () => {
                   padding='2rem'
                   direction='column'
                   spacing={'1rem'}
-                  borderRadius='15px'
+                  borderRadius='1rem'
                   sx={{
                     backgroundColor: 'primary.hover2',
                     alignItems: 'flex-start',
+                    transition: 'all 0.5s ease-out',
+                    '&:hover': {
+                      boxShadow: `0rem 0rem 0.75rem ${theme.palette.primary.light}`,
+                      transform: 'scale(1.025)',
+                      transition: 'all 0.25s ease-out',
+                    },
                   }}
                 >
                   <Typography variant='h4' sx={{ fontWeight: '500', color: 'primary.light' }}>
@@ -339,10 +377,16 @@ const TimelineCardHome = () => {
                   padding='2rem'
                   direction='column'
                   spacing={'1rem'}
-                  borderRadius='15px'
+                  borderRadius='1rem'
                   sx={{
                     backgroundColor: 'primary.hover2',
                     alignItems: 'flex-end',
+                    transition: 'all 0.5s ease-out',
+                    '&:hover': {
+                      boxShadow: `0rem 0rem 0.75rem ${theme.palette.primary.light}`,
+                      transform: 'scale(1.025)',
+                      transition: 'all 0.25s ease-out',
+                    },
                   }}
                 >
                   <Typography variant='h4' sx={{ fontWeight: '500' }}>
@@ -386,10 +430,16 @@ const TimelineCardHome = () => {
                   padding='2rem'
                   direction='column'
                   spacing={'1rem'}
-                  borderRadius='15px'
+                  borderRadius='1rem'
                   sx={{
                     backgroundColor: 'primary.hover2',
                     alignItems: 'flex-start',
+                    transition: 'all 0.5s ease-out',
+                    '&:hover': {
+                      boxShadow: `0rem 0rem 0.75rem ${theme.palette.primary.light}`,
+                      transform: 'scale(1.025)',
+                      transition: 'all 0.25s ease-out',
+                    },
                   }}
                 >
                   <Typography variant='h4' sx={{ fontWeight: '500', color: 'primary.light' }}>
@@ -429,10 +479,16 @@ const TimelineCardHome = () => {
                   padding='2rem'
                   direction='column'
                   spacing={'1rem'}
-                  borderRadius='15px'
+                  borderRadius='1rem'
                   sx={{
                     backgroundColor: 'primary.hover2',
                     alignItems: 'flex-end',
+                    transition: 'all 0.5s ease-out',
+                    '&:hover': {
+                      boxShadow: `0rem 0rem 0.75rem ${theme.palette.primary.light}`,
+                      transform: 'scale(1.025)',
+                      transition: 'all 0.25s ease-out',
+                    },
                   }}
                 >
                   <Typography variant='h4' sx={{ fontWeight: '500' }}>
@@ -455,7 +511,7 @@ const TimelineCardHome = () => {
             </TimelineItem>
           </Timeline>
         </Grid2>
-        <Grid2 display='flex' size={1} borderRadius={1}></Grid2>
+        <Grid2 display='flex' size={1} borderRadius='1rem'></Grid2>
       </Grid2>
     </Grid2>
   );

@@ -56,22 +56,18 @@ const SkillsetCardHome = () => {
       <Grid2
         container
         paddingTop='2.5rem'
+        paddingBottom='2.5rem'
+        spacing='0.5rem'
         size={12}
         sx={{
           backgroundColor: 'background.default',
           height: 'auto',
         }}
       >
+        <Grid2 display='flex' size={2} borderRadius={1} sx={{ backgroundColor: 'background.paper' }}></Grid2>
         <Grid2
           display='flex'
-          size={1}
-          borderRadius={1}
-          // sx={{ backgroundColor: 'background.paper' }}
-        ></Grid2>
-
-        <Grid2
-          display='flex'
-          size={'grow'}
+          size={8}
           spacing={0.5}
           padding={0.5}
           direction='column'
@@ -79,15 +75,42 @@ const SkillsetCardHome = () => {
           sx={{
             alignItems: 'center',
             justifyContent: 'center',
-            backgroundColor: 'background.default',
+            backgroundColor: 'background.paper',
           }}
         ></Grid2>
+        <Grid2 display='flex' size={2} borderRadius={1} sx={{ backgroundColor: 'background.paper' }}></Grid2>
+        {/* -------------------------------- */}
+        {/* -------------------------------- */}
+        <Grid2 display='flex' size={2} borderRadius={1} sx={{ backgroundColor: 'background.paper' }}></Grid2>
         <Grid2
           display='flex'
-          size={1}
+          size={8}
+          spacing={0.5}
+          padding={0.5}
+          direction='column'
           borderRadius={1}
-          // sx={{ backgroundColor: 'background.paper' }}
+          sx={{
+            alignItems: 'center',
+            justifyContent: 'center',
+            backgroundColor: 'background.paper',
+          }}
         ></Grid2>
+        <Grid2 display='flex' size={2} borderRadius={1} sx={{ backgroundColor: 'background.paper' }}></Grid2>
+        <Grid2 display='flex' size={2} borderRadius={1} sx={{ backgroundColor: 'background.paper' }}></Grid2>
+        <Grid2
+          display='flex'
+          size={8}
+          spacing={0.5}
+          padding={0.5}
+          direction='column'
+          borderRadius={1}
+          sx={{
+            alignItems: 'center',
+            justifyContent: 'center',
+            backgroundColor: 'background.paper',
+          }}
+        ></Grid2>
+        <Grid2 display='flex' size={2} borderRadius={1} sx={{ backgroundColor: 'background.paper' }}></Grid2>
       </Grid2>
     </Grid2>
   );

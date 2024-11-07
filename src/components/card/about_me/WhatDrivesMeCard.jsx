@@ -6,7 +6,6 @@ const WhatDrivesMeCardHome = () => {
       <Grid2
         container
         paddingTop='3.5rem'
-        paddingBottom='2.5rem'
         size={12}
         sx={{
           backgroundColor: 'background.default',
@@ -56,7 +55,7 @@ const WhatDrivesMeCardHome = () => {
       <Grid2
         container
         paddingTop='2.5rem'
-        paddingBottom='5rem'
+        paddingBottom='2.5rem'
         size={12}
         sx={{
           backgroundColor: 'background.default',
@@ -65,14 +64,14 @@ const WhatDrivesMeCardHome = () => {
       >
         <Grid2
           display='flex'
-          size={1}
+          size={3}
           borderRadius={1}
           // sx={{ backgroundColor: 'background.paper' }}
         ></Grid2>
 
         <Grid2
           display='flex'
-          size={'grow'}
+          size={6}
           spacing={'0.5rem'}
           padding={'0.5rem'}
           paddingTop='2.5rem'
@@ -81,25 +80,38 @@ const WhatDrivesMeCardHome = () => {
           borderRadius={1}
           sx={{
             alignItems: 'center',
-            justifyContent: 'flex-start',
+            justifyContent: 'center',
             // backgroundColor: 'background.paper',
           }}
         >
-          <Stack direction='column' spacing={'5rem'}>
+          <Stack direction='column' spacing={'2.5rem'}>
             <Typography
               variant='h4'
-              sx={{ fontWeight: '400', whiteSpace: 'pre-wrap', '& span:first-of-type': { color: 'primary.main' } }}
+              sx={{
+                textAlign: 'center',
+                fontWeight: '400',
+                fontSize: '2.5rem',
+                whiteSpace: 'pre-wrap',
+                '& span:first-of-type': { color: 'primary.main' },
+              }}
             >
-              &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-              et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-              ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat nulla pariatur.&quot;
+              &quot;I seek to contribute to impactful projects aligned with my values,
+              <br /> to solve real-world problems.&quot;
             </Typography>
+            <Typography
+              variant='h4'
+              sx={{
+                textAlign: 'right',
+                fontWeight: '400',
+                whiteSpace: 'pre-wrap',
+                '& span:first-of-type': { color: 'primary.main' },
+              }}
+            ></Typography>
           </Stack>
         </Grid2>
         <Grid2
           display='flex'
-          size={'auto'}
+          size={2}
           borderRadius={1}
           sx={{
             justifyContent: 'center',
@@ -119,7 +131,7 @@ const WhatDrivesMeCardHome = () => {
         </Grid2>
         <Grid2
           display='flex'
-          size={1}
+          size={2}
           borderRadius={1}
           // sx={{ backgroundColor: 'background.paper' }}
         ></Grid2>

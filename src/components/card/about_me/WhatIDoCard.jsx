@@ -1,8 +1,10 @@
+import { useTheme } from '@emotion/react';
 import { Box, Grid2, Stack, Typography } from '@mui/material';
 
 const WhatIDoCard = () => {
+  const theme = useTheme();
   return (
-    <Grid2 container size={12}>
+    <Grid2 container size={12} paddingLeft='2.75rem' paddingRight='2.75rem' spacing='0.75rem'>
       <Grid2
         container
         paddingTop='2.5rem'
@@ -25,7 +27,6 @@ const WhatIDoCard = () => {
           size={'grow'}
           direction='column'
           borderRadius={1}
-          paddingLeft={'1rem'}
           sx={{
             justifyContent: 'flex-start',
             alignItems: 'center',
@@ -59,6 +60,13 @@ const WhatIDoCard = () => {
         sx={{
           backgroundColor: 'primary.hover2',
           height: 'auto',
+          borderRadius: '0.5rem',
+          transition: 'all 0.5s ease-out',
+          '&:hover': {
+            boxShadow: `0rem 0rem 0.75rem ${theme.palette.primary.light}`,
+            transform: 'scale(1.025)',
+            transition: 'all 0.25s ease-out',
+          },
         }}
       >
         <Grid2
@@ -101,13 +109,14 @@ const WhatIDoCard = () => {
           sx={{
             alignItems: 'center',
             justifyContent: 'flex-start',
-            // backgroundColor: 'background.paper',
           }}
         >
-          <Stack direction='column' spacing={'2.5rem'}>
+          <Stack direction='column' spacing={'3.75rem'}>
             <Typography
               variant='h3'
               sx={{
+                paddingLeft: '5rem',
+                paddingBottom: '1.25rem',
                 fontWeight: '400',
                 '& span:first-of-type': { color: 'primary.main' },
               }}
@@ -124,25 +133,9 @@ const WhatIDoCard = () => {
                 whiteSpace: 'pre-wrap',
               }}
             >
-              - Designing and implementing robust data pipelines to extract, transform, and load data from various
-              sources.
-              <br />- Ensuring data quality and integrity through data cleaning, validation, and normalization
-              techniques.
-            </Typography>
-
-            <Typography
-              variant='h6'
-              sx={{
-                fontFamily: 'var(--mono-font)',
-                fontWeight: '400',
-                color: 'text.secondary',
-                whiteSpace: 'pre-wrap',
-              }}
-            >
-              - Applying statistical modeling techniques to analyze data and draw meaningful conclusions.
+              𑁋 Extract, transform, and load data from various sources.
               <br />
-              - Using hypothesis testing, regression analysis, and time series analysis to uncover patterns and trends.
-              <br />- notes on sql and database management
+              𑁋 Ensuring data quality and integrity through data cleaning, validation, and normalization techniques.
             </Typography>
 
             <Typography
@@ -154,12 +147,28 @@ const WhatIDoCard = () => {
                 whiteSpace: 'pre-wrap',
               }}
             >
-              - Creating data visualizations using tools like Tableau, Qgis, or Python libraries (Matplotlib, Seaborn,
+              𑁋 Applying statistical modeling techniques to analyze data.
+              <br />
+              𑁋 Using hypothesis testing, regression analysis, and time series analysis to uncover patterns and trends.
+              <br />
+              𑁋 Interacting with sql databases to send queries and retrieve, update and manipulate relevant data.
+            </Typography>
+
+            <Typography
+              variant='h6'
+              sx={{
+                fontFamily: 'var(--mono-font)',
+                fontWeight: '400',
+                color: 'text.secondary',
+                whiteSpace: 'pre-wrap',
+              }}
+            >
+              𑁋 Creating data visualizations using tools like Tableau, Qgis and Python libraries (Matplotlib, Seaborn,
               Plotly).
               <br />
-              - Developing interactive dashboards.
-              <br />- Communicating data insights effectively through clear and concise visualizations, while adapting
-              to technical and non-technical audiences.
+              𑁋 Developing interactive dashboards.
+              <br />
+              𑁋 Communicating data insights effectively, while adapting to audience.
             </Typography>
           </Stack>
         </Grid2>
@@ -177,11 +186,18 @@ const WhatIDoCard = () => {
         sx={{
           backgroundColor: 'background.default',
           height: 'auto',
+          borderRadius: '0.5rem',
+          transition: 'all 0.5s ease-out',
+          '&:hover': {
+            boxShadow: `0rem 0rem 0.75rem ${theme.palette.primary.light}`,
+            transform: 'scale(1.025)',
+            transition: 'all 0.25s ease-out',
+          },
         }}
       >
         <Grid2
           display='flex'
-          size={5}
+          size={4}
           borderRadius={1}
           // sx={{ backgroundColor: 'background.paper' }}
         ></Grid2>
@@ -201,10 +217,12 @@ const WhatIDoCard = () => {
             // backgroundColor: 'background.paper',
           }}
         >
-          <Stack direction='column' spacing={'2.5rem'}>
+          <Stack direction='column' spacing={'3.75rem'}>
             <Typography
               variant='h3'
               sx={{
+                paddingLeft: '5rem',
+                paddingBottom: '1.25rem',
                 fontWeight: '400',
                 '& span:first-of-type': { color: 'primary.main' },
               }}
@@ -221,12 +239,11 @@ const WhatIDoCard = () => {
                 whiteSpace: 'pre-wrap',
               }}
             >
-              - Developing and deploying machine learning models for various tasks, such as segmentation,
-              classification, regression, clustering.
-              <br />- Utilizing advanced machine learning techniques for computer vision tasks like CNNs and
-              Autoencoders.
-              <br />- Evaluating the performance of machine learning models and fine-tuning them to improve accuracy and
-              efficiency.
+              𑁋 Developing ML models for various tasks such as: segmentation, classification, regression, clustering.
+              <br />
+              𑁋 Utilizing advanced ML techniques for Computer Vision tasks like CNNs and Autoencoders.
+              <br />
+              𑁋 Evaluating the performance and fine-tuning ML models to improve accuracy and efficiency.
             </Typography>
           </Stack>
         </Grid2>
@@ -244,6 +261,13 @@ const WhatIDoCard = () => {
         sx={{
           backgroundColor: 'primary.hover2',
           height: 'auto',
+          borderRadius: '0.5rem',
+          transition: 'all 0.5s ease-out',
+          '&:hover': {
+            boxShadow: `0rem 0rem 0.75rem ${theme.palette.primary.light}`,
+            transform: 'scale(1.025)',
+            transition: 'all 0.25s ease-out',
+          },
         }}
       >
         <Grid2
@@ -259,7 +283,7 @@ const WhatIDoCard = () => {
           spacing={'0.5rem'}
           padding={'0.5rem'}
           paddingTop='2.5rem'
-          paddingBottom='5rem'
+          paddingBottom='2.5rem'
           direction='column'
           borderRadius={1}
           sx={{
@@ -268,15 +292,17 @@ const WhatIDoCard = () => {
             // backgroundColor: 'background.paper',
           }}
         >
-          <Stack direction='column' spacing={'2.5rem'}>
+          <Stack direction='column' spacing={'3.75rem'}>
             <Typography
               variant='h3'
               sx={{
+                paddingLeft: '5rem',
+                paddingBottom: '1.25rem',
                 fontWeight: '400',
                 '& span:first-of-type': { color: 'primary.main' },
               }}
             >
-              Diverse Development
+              Side Development skills
             </Typography>
 
             <Typography
@@ -288,9 +314,11 @@ const WhatIDoCard = () => {
                 whiteSpace: 'pre-wrap',
               }}
             >
-              - using git for version control
-              <br />- Confident with Linux distribution and bash scripting
-              <br />- Some Web development, Building responsive website front end using React with Material UI
+              𑁋 using git for version control and collaborating
+              <br />
+              𑁋 Proficient in Linux environments and bash scripting
+              <br />
+              𑁋 Building Frontend Web interface using React.
             </Typography>
           </Stack>
         </Grid2>

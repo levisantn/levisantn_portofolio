@@ -46,6 +46,7 @@ const Aboutme = () => {
             borderRadius: 1,
             marginLeft: '60rem',
             marginRight: '60rem',
+            marginTop: '2rem',
             border: `0.25rem solid ${theme.palette.primary.hover1}`,
             boxShadow: `0rem 0rem 0.75rem ${theme.palette.primary.hover1}`,
           }}
