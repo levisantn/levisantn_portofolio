@@ -4,6 +4,7 @@ import WhatDrivesMeCard from '../components/card/about_me/WhatDrivesMeCard';
 import SkillsetCard from '../components/card/about_me/SkillsetCard';
 import TimelineCard from '../components/card/about_me/TimelineCard';
 import { useTheme } from '@emotion/react';
+import SeeMyResume from '../components/card/about_me/SeeMyResumeCard';
 const Aboutme = () => {
   const theme = useTheme();
   return (
@@ -53,6 +54,9 @@ const Aboutme = () => {
         />
         {/* -------------------------------- */}
         <TimelineCard />
+        {/* -------------------------------- */}
+        <SeeMyResume />
+        {/* -------------------------------- */}
       </Grid2>
     </>
   );

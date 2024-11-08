@@ -43,7 +43,7 @@ export const ScrollToTopButton = (props) => {
           size='medium'
           aria-label='scroll back to top'
           sx={{
-            color: 'text.primary',
+            color: 'text.secondary',
             bgcolor: 'primary.dark',
             border: '0.2rem solid',
             borderColor: 'primary.main',

@@ -169,11 +169,12 @@ const ContactForm = () => {
           borderRadius: 2,
           border: '0.2rem solid',
           borderColor: 'primary.main',
-          color: 'text.primary',
+          color: 'text.secondary',
           bgcolor: 'primary.hover1',
           '&:hover': {
             bgcolor: 'primary.main',
             borderColor: 'primary.main',
+            color: 'text.primary',
           },
         }}
       >

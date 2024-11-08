@@ -81,7 +81,7 @@ const TimelineCardHome = () => {
             justifyContent: 'center',
           }}
         >
-          <Timeline position='alternate-reverse' sx={{ paddingTop: '2.5rem', paddingBottom: '5rem' }}>
+          <Timeline position='alternate-reverse' sx={{ paddingTop: '2.5rem' }}>
             <TimelineItem>
               <TimelineSeparator>
                 <Typography variant='code' sx={{ fontSize: '3rem', color: 'primary.light' }}>

@@ -8,9 +8,9 @@ const FillTheFormCard = () => {
   return (
     <Grid2
       container
-      spacing={1}
-      padding={2}
-      borderRadius={1}
+      spacing='1rem'
+      padding='2rem'
+      borderRadius='1rem'
       direction={'column'}
       sx={{
         width: '100%',
@@ -19,7 +19,7 @@ const FillTheFormCard = () => {
         transition: 'all 0.1s ease-in-out',
         '&:hover': {
           border: `0.25rem solid ${theme.palette.background.default}`,
-          boxShadow: `0rem 0rem 0.75rem ${theme.palette.primary.main}`,
+          boxShadow: `0rem 0rem 0.75rem ${theme.palette.primary.light}`,
           transform: 'translateY(-0.25rem)',
           transition: 'all 0.1s ease-in-out',
         },

@@ -27,10 +27,6 @@ const myRouter = createBrowserRouter([
         Component: Aboutme,
       },
       {
-        path: '/playground',
-        Component: Playground,
-      },
-      {
         path: '/projects',
         Component: Projects,
       },
@@ -38,10 +34,10 @@ const myRouter = createBrowserRouter([
         path: '/cheatsheets',
         Component: Cheatsheets,
       },
-      // {
-      //   path: '/references',
-      //   Component: References,
-      // },
+      {
+        path: '/resume',
+        Component: Playground,
+      },
       {
         path: '/contact_me',
         Component: Contactme,

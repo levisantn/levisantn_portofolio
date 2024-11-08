@@ -21,11 +21,11 @@ const Error404 = () => {
       >
         404
       </Typography>
-      <Typography variant='code' sx={{ fontSize: '3rem' }}>
+      <Typography variant='code' sx={{ fontSize: '3.5rem' }}>
         It looks like you&apos;re lost...
       </Typography>
-      <Typography variant='code' sx={{ fontSize: '1.25rem', whiteSpace: 'pre-wrap' }}>
-        page not found, click
+      <Typography variant='code' sx={{ fontSize: '1.375rem', whiteSpace: 'pre-wrap' }}>
+        page not found, click&nbsp;
         <Link component={RouterLink} to='/home' underline='none'>
           here
         </Link>

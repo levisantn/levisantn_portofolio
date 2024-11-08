@@ -7,7 +7,7 @@ import LeaveAFeedbackCard from '../components/card/contact_me/LeaveAFeedbackCard
 
 const Contactme = () => {
   return (
-    <Grid2 container padding={1} spacing={1}>
+    <Grid2 container padding='1rem' spacing='1rem' paddingBottom='6.125rem'>
       <Grid2
         container
         spacing={1}
