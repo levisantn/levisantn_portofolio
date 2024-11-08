@@ -67,6 +67,11 @@ const LeaveAFeedbackCard = () => {
             minWidth: 'fit-content',
             color: 'background.default',
             fontWeight: '700',
+            transition: 'all 0.15s ease-out',
+            '&:hover': {
+              boxShadow: `0rem 0rem 2rem ${theme.palette.primary.light}`,
+              transition: 'all 0.075s ease-out',
+            },
           }}
           onClick={() => window.open('https://github.com/levisantn/react_website', '_blank')}
         >

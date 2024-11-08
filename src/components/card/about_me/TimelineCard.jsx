@@ -121,8 +121,7 @@ const TimelineCardHome = () => {
                     variant='h6'
                     sx={{ fontFamily: 'var(--mono-font)', fontWeight: '400', color: 'text.secondary' }}
                   >
-                    logiciel Tableau ・analyse & gestion de données・visualisation de données・présentation de données
-                    ・ dashboards
+                    Tableau software ・data analysis & management ・data visualization ・data presentation ・dashboards
                   </Typography>
                 </Stack>
               </TimelineContent>
@@ -164,8 +163,8 @@ const TimelineCardHome = () => {
                     variant='h6'
                     sx={{ fontFamily: 'var(--mono-font)', fontWeight: '400', color: 'text.secondary' }}
                   >
-                    analyse et traitement de données・EDA・analyses statistiques ・modèles de régression・A/B
-                    test・apprentissage automatique ・modélisation prédictive・data visualisation ・logiciel Tableau
+                    data analysis and processing ・EDA ・statistical analysis ・regression models ・A/B testing
+                    ・machine learning ・predictive modeling ・data visualization ・Tableau software
                   </Typography>
                 </Stack>
               </TimelineContent>
@@ -197,21 +196,20 @@ const TimelineCardHome = () => {
                   }}
                 >
                   <Typography variant='h4' sx={{ fontWeight: '500' }}>
-                    Master Data Science and Artiﬁcial Intelligence
+                    Master&apos;s Degree in Data Science and Artificial Intelligence
                   </Typography>
                   <Typography
                     variant='h5'
                     sx={{ fontFamily: 'var(--mono-font)', fontWeight: '500', color: 'primary.light' }}
                   >
-                    Université Paul Sabatier - Toulouse
+                    Paul Sabatier University - Toulouse
                   </Typography>
                   <Typography
                     variant='h6'
                     sx={{ fontFamily: 'var(--mono-font)', fontWeight: '400', color: 'text.secondary' }}
                   >
-                    apprentissage automatique • apprentissage profond • traitement de données • visualisation de données
-                    • traitement du signal • système de gestion de base de données • gestion de projet • apprentissage
-                    par renforcement • prise de décision et planiﬁcation
+                    machine learning • deep learning • data processing • data visualization computer vision • database
+                    management system • project management • reinforcement learning • decision making and planning
                   </Typography>
                 </Stack>
               </TimelineContent>
@@ -241,26 +239,25 @@ const TimelineCardHome = () => {
                   }}
                 >
                   <Typography variant='h4' sx={{ fontWeight: '500', color: 'primary.light' }}>
-                    Développeur - Analyste SIG
+                    GIS Developer - Analyst
                   </Typography>
                   <Typography variant='h5' sx={{ fontWeight: '500' }}>
-                    Développement d’une méthodologie opérationnelle de segmentation morphologique du tissu urbain
+                    Operational methodology development for urban fabric morphological segmentation
                   </Typography>
                   <Typography
                     variant='h5'
                     sx={{ fontFamily: 'var(--mono-font)', fontWeight: '500', color: 'primary.light' }}
                   >
-                    Cerema Occitanie - stage M2 - Toulouse
+                    Cerema Occitanie - Year 5 intership - Toulouse
                   </Typography>
 
                   <Typography
                     variant='h6'
                     sx={{ fontFamily: 'var(--mono-font)', fontWeight: '400', color: 'text.secondary' }}
                   >
-                    réalisation d’un État de l’Art • élaboration d’un pipeline de traitement de données sur des images
-                    rasters et vecteurs • Implémentation d&apos;algorithmes de vision par ordinateur • communication des
-                    résultats • SIG • traitement de données • traitement d’image satellite • superpixels • Geopandas •
-                    Qgis • Gdal
+                    state-of-the-art • development of a data processing pipeline for raster and vector images •
+                    implementation of computer vision algorithms • results communication • GIS • data processing •
+                    satellite image processing • superpixels • Geopandas • QGIS • GDAL
                   </Typography>
                 </Stack>
               </TimelineContent>
@@ -290,26 +287,26 @@ const TimelineCardHome = () => {
                   }}
                 >
                   <Typography variant='h4' sx={{ fontWeight: '500', color: 'primary.light' }}>
-                    Développement, maintien de pipeline et analyse de données
+                    pipeline development and maintenance, data analysis
                   </Typography>
                   <Typography variant='h5' sx={{ fontWeight: '500' }}>
-                    Maintien et amélioration d’un pipeline d’extraction d’information, dans le contexte de la gestion de
-                    crises via les réseaux sociaux.
+                    Maintenance and improvement of an information extraction pipeline in the context of social media
+                    crisis management.
                   </Typography>
                   <Typography
                     variant='h5'
                     sx={{ fontFamily: 'var(--mono-font)', fontWeight: '500', color: 'primary.light' }}
                   >
-                    Institut de Recherche En Informatique (IRIT) - stage M1 - Toulouse
+                    Computer Science Research Institute (IRIT) - Year 4 internship - Toulouse
                   </Typography>
 
                   <Typography
                     variant='h6'
                     sx={{ fontFamily: 'var(--mono-font)', fontWeight: '400', color: 'text.secondary' }}
                   >
-                    traitement de données • fouille de données • API scraping • maintien et ajout de fonctionnalités sur
-                    l&apos;interface web (dashboard) • déploiement et gestion de l&apos;interface web • communication
-                    des résultats • javascript • react
+                    data processing • data mining • API scraping • maintenance and addition of functionalities to the
+                    web interface (dashboard) • deployment and management of the web interface • communication of
+                    results • JavaScript • React
                   </Typography>
                 </Stack>
               </TimelineContent>
@@ -339,26 +336,26 @@ const TimelineCardHome = () => {
                   }}
                 >
                   <Typography variant='h4' sx={{ fontWeight: '500', color: 'primary.light' }}>
-                    Traitement et analyse de données, interprétation de modèles de ML
+                    Data processing and analysis, interpretation of ML models
                   </Typography>
                   <Typography variant='h5' sx={{ fontWeight: '500' }}>
-                    Étude sur la robustesse de modèles de Machine Learning de régression, en fonction de la pertinence
-                    et de la présence des données d&apos;entrées (dans le cadre d&apos;une thèse)
+                    Study of the robustness of regression Machine Learning models, according to the relevance and
+                    presence of input data (In the context of a PhD)
                   </Typography>
                   <Typography
                     variant='h5'
                     sx={{ fontFamily: 'var(--mono-font)', fontWeight: '500', color: 'primary.light' }}
                   >
-                    Institut de Recherche En Informatique (IRIT) - projet d&apos;étude - Toulouse
+                    Computer Science Research Institute (IRIT) - study project - Toulouse
                   </Typography>
 
                   <Typography
                     variant='h6'
                     sx={{ fontFamily: 'var(--mono-font)', fontWeight: '400', color: 'text.secondary' }}
                   >
-                    traitement de données • imputation de données • analyse de données • implémentation et comparaison
-                    de modèles de Machine Learning • communication des résultats • linear regression • Random Forest •
-                    KNN • SVM • réseau de neurones • XGB
+                    data processing • data imputation • data analysis • implementation and comparison of Machine
+                    Learning models • communication of results • linear regression • Random Forest • KNN • SVM • neural
+                    networks • XGB
                   </Typography>
                 </Stack>
               </TimelineContent>
@@ -390,30 +387,30 @@ const TimelineCardHome = () => {
                   }}
                 >
                   <Typography variant='h4' sx={{ fontWeight: '500' }}>
-                    Licence informatique (L3)
+                    Bachelor&apos;s degree in Computer Science, Year 3
                   </Typography>
                   <Typography
                     variant='h5'
                     sx={{ fontFamily: 'var(--mono-font)', fontWeight: '500', color: 'primary.light' }}
                   >
-                    Université Paul Sabatier - Toulouse
+                    Paul Sabatier University - Toulouse
                   </Typography>
                   <Typography variant='h4' sx={{ fontWeight: '500' }}>
-                    Double Licence mathématiques-informatique (L1-L2)
+                    Dual Degree in Mathematics and Computer Science (Years 1 and 2)
                   </Typography>
                   <Typography
                     variant='h5'
                     sx={{ fontFamily: 'var(--mono-font)', fontWeight: '500', color: 'primary.light' }}
                   >
-                    Institut National Universitaire Champollion - Albi
+                    National University Institute Champollion - Albi
                   </Typography>
                   <Typography
                     variant='h6'
                     sx={{ fontFamily: 'var(--mono-font)', fontWeight: '400', color: 'text.secondary' }}
                   >
-                    algèbre • analyse • statistiques • prog. orientée objet • structure et modélisation de données •
-                    algorithmique • prog. fonctionnelle • gestion de projet • base de données • génie logiciel •
-                    sécurité informatique
+                    algebra • analysis • statistics • object-oriented programming • data structure and modeling •
+                    algorithms • functional programming • project management • databases • software engineering •
+                    computer security
                   </Typography>
                 </Stack>
               </TimelineContent>
@@ -443,24 +440,24 @@ const TimelineCardHome = () => {
                   }}
                 >
                   <Typography variant='h4' sx={{ fontWeight: '500', color: 'primary.light' }}>
-                    Développement, visualisation de données
+                    development, data visualization
                   </Typography>
                   <Typography variant='h5' sx={{ fontWeight: '500' }}>
-                    Réalisation d’un dashboard Home Assistant aﬁn d’exploiter et d’analyser les données récupérées par
-                    les divers capteurs situés sur les sites de l’Université Paul Sabatier.
+                    Creation of a Home Assistant dashboard for the purpose of utilizing and analyzing data gathered from
+                    multiple sensors installed across the University Paul Sabatier sites.
                   </Typography>
                   <Typography
                     variant='h5'
                     sx={{ fontFamily: 'var(--mono-font)', fontWeight: '500', color: 'primary.light' }}
                   >
-                    projet d&apos;étude &apos;neOCampus data visualisation & automaton&apos; - Toulouse
+                    &quot;neoCampus data visualization and automation&quot; study project - Toulouse
                   </Typography>
 
                   <Typography
                     variant='h6'
                     sx={{ fontFamily: 'var(--mono-font)', fontWeight: '400', color: 'text.secondary' }}
                   >
-                    analyse de données • visualisation de données • réalisation d’un dashboard interactif • Grafana
+                    data analysis • data visualization • creation of an interactive dashboard • Grafana
                   </Typography>
                 </Stack>
               </TimelineContent>
@@ -492,19 +489,19 @@ const TimelineCardHome = () => {
                   }}
                 >
                   <Typography variant='h4' sx={{ fontWeight: '500' }}>
-                    Baccalauréat - série S, spéc. mathématiques
+                    French Baccalaureate in Science with Mathematics spec.
                   </Typography>
                   <Typography
                     variant='h5'
                     sx={{ fontFamily: 'var(--mono-font)', fontWeight: '500', color: 'primary.light' }}
                   >
-                    Lycée Lapérouse - Albi
+                    High School of Lapérouse - Albi
                   </Typography>
                   <Typography
                     variant='h6'
                     sx={{ fontFamily: 'var(--mono-font)', fontWeight: '400', color: 'text.secondary' }}
                   >
-                    mention bien
+                    with honors
                   </Typography>
                 </Stack>
               </TimelineContent>
