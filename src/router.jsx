@@ -2,10 +2,9 @@ import { createBrowserRouter, Navigate } from 'react-router-dom';
 import App from './App';
 import Home from './routes/Home';
 import Aboutme from './routes/Aboutme';
-import Playground from './routes/Playground';
+import Resume from './routes/Resume';
 import Projects from './routes/Projects';
 import Cheatsheets from './routes/Cheatsheets';
-// import References from './routes/References';
 import Contactme from './routes/Contactme';
 import Error404 from './routes/Error404';
 
@@ -36,7 +35,7 @@ const myRouter = createBrowserRouter([
       },
       {
         path: '/resume',
-        Component: Playground,
+        Component: Resume,
       },
       {
         path: '/contact_me',

@@ -1,7 +1,13 @@
+import ScrollToTop from './components/scrollToTop/ScrollToTop';
 import RootLayout from './layouts/RootLayout';
 
 function App() {
-  return <RootLayout />;
+  return (
+    <>
+      <ScrollToTop />
+      <RootLayout />
+    </>
+  );
 }
 
 export default App;

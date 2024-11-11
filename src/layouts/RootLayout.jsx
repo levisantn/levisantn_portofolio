@@ -29,11 +29,13 @@ function RootLayout() {
     window.addEventListener('click', handleFooter);
     window.addEventListener('scroll', handleFooter);
     window.addEventListener('resize', handleFooter);
+    window.scrollTo(0, 0);
 
     return () => {
       window.addEventListener('click', handleFooter);
       window.addEventListener('scroll', handleFooter);
       window.addEventListener('resize', handleFooter);
+      window.scrollTo(0, 0);
     };
   }, [hasScrollbar]);
   return (
