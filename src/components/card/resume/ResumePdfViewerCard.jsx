@@ -2,13 +2,15 @@ import { Grid2 } from '@mui/material';
 import { Document, Page, pdfjs } from 'react-pdf';
 import 'react-pdf/dist/esm/Page/TextLayer.css'; // Import TextLayer styles
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css'; // Import AnnotationLayer styles (optional)
-import myResume from '../../../assets/docs/cv_Antonetti_Levis_2024_dark_fr.pdf';
+import myResumeDark from '../../../assets/docs/cv_Antonetti_Levis_2024_dark_fr.pdf';
+import myResumeLight from '../../../assets/docs/cv_Antonetti_Levis_2024_light_fr.pdf';
 import { useTheme } from '@emotion/react';
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL('pdfjs-dist/build/pdf.worker.min.mjs', import.meta.url).toString();
 
 const ResumePdfViewerCard = () => {
   const theme = useTheme();
+  const isDarkMode = theme.palette.mode === 'dark';
   return (
     <Grid2 container size={12}>
       <Grid2
@@ -32,10 +34,10 @@ const ResumePdfViewerCard = () => {
             justifyContent: 'center',
             alignItems: 'center',
             height: '141.25rem',
-            boxShadow: `0px 0px 50px -15px  ${theme.palette.primary.main}`,
+            boxShadow: `0px 0px 50px -25px  ${theme.palette.primary.main}`,
           }}
         >
-          <Document file={myResume}>
+          <Document file={isDarkMode ? myResumeDark : myResumeLight}>
             <Page pageNumber={1} width={1000} height={1200} />
           </Document>
         </Grid2>
