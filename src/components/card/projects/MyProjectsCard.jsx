@@ -1,4 +1,6 @@
 import { Grid2, Stack, Typography } from '@mui/material';
+import ProjectCard from './ProjectCard';
+import imgPortofolio from '../../../assets/imgs/front_img_portofolio.png';
 
 const MyProjectsCard = () => {
   return (
@@ -25,7 +27,6 @@ const MyProjectsCard = () => {
           size={'grow'}
           direction='column'
           borderRadius={1}
-          paddingLeft={'1rem'}
           sx={{
             justifyContent: 'center',
             alignItems: 'center',
@@ -63,6 +64,101 @@ const MyProjectsCard = () => {
         <Grid2
           display='flex'
           size={3}
+          borderRadius={1}
+          // sx={{ backgroundColor: 'background.paper' }}
+        ></Grid2>
+      </Grid2>
+      {/* -------------------------------- */}
+      <Grid2
+        container
+        paddingTop='2.5rem'
+        paddingBottom='2.5rem'
+        size={12}
+        sx={{
+          height: 'auto',
+        }}
+      >
+        <Grid2
+          display='flex'
+          size={2}
+          borderRadius={1}
+          // sx={{ backgroundColor: 'background.paper' }}
+        ></Grid2>
+
+        <Grid2
+          container
+          size={'grow'}
+          paddingTop='2.5rem'
+          paddingBottom='2.5rem'
+          spacing='2.5rem'
+          borderRadius={1}
+          sx={
+            {
+              // backgroundColor: 'background.paper',
+            }
+          }
+        >
+          <Grid2
+            display='flex'
+            size={'grow'}
+            borderRadius={1}
+            sx={{
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
+          >
+            <ProjectCard
+              img={imgPortofolio}
+              link='https://github.com/levisantn/react_website'
+              title='Portofolio website with React + MUI'
+              description={
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate '
+              }
+            />
+          </Grid2>
+          {/* -------------------------------- */}
+          <Grid2
+            display='flex'
+            size={'grow'}
+            borderRadius={1}
+            sx={{
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
+          >
+            <ProjectCard
+              img={imgPortofolio}
+              link='https://github.com/levisantn/react_website'
+              title='Portofolio website with React + MUI'
+              description={
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate '
+              }
+            />
+          </Grid2>
+          {/* -------------------------------- */}
+          <Grid2
+            display='flex'
+            size={'grow'}
+            borderRadius={1}
+            sx={{
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
+          >
+            <ProjectCard
+              img={imgPortofolio}
+              link='https://github.com/levisantn/react_website'
+              title='Portofolio website with React + MUI'
+              description={
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate '
+              }
+            />
+          </Grid2>
+        </Grid2>
+
+        <Grid2
+          display='flex'
+          size={2}
           borderRadius={1}
           // sx={{ backgroundColor: 'background.paper' }}
         ></Grid2>
