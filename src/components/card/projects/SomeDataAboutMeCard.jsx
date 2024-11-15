@@ -1,7 +1,8 @@
-import { Divider, Grid2, Stack, Typography } from '@mui/material';
+import { Divider, Grid2, Stack, Typography, Link } from '@mui/material';
 import GitHubCalendar from 'react-github-calendar';
 import { useTheme } from '@emotion/react';
 import { Tooltip as MuiTooltip } from '@mui/material';
+import { MuiMarkdown } from 'mui-markdown';
 
 const SomeDataAboutMeCard = () => {
   const theme = useTheme();
@@ -24,13 +25,14 @@ const SomeDataAboutMeCard = () => {
     dark: ['#17202a10', '#9be9a8', '#40c463', '#30a14e', '#216e39'],
   };
   return (
-    <Grid2 container size={12}>
+    <Grid2 container size={12} paddingBottom='1.25rem'>
       <Grid2
         container
-        paddingTop='5rem'
+        paddingTop='2.5rem'
+        paddingBottom='1.25rem'
         size={12}
         sx={{
-          backgroundColor: 'background.default',
+          backgroundColor: 'primary.hover2',
           height: 'auto',
         }}
       >
@@ -75,32 +77,37 @@ const SomeDataAboutMeCard = () => {
       </Grid2>
       {/* -------------------------------- */}
       <Grid2
-        paddingTop='5rem'
+        paddingTop='1.25rem'
         paddingBottom='2.5rem'
         container
         size={12}
         sx={{
-          backgroundColor: 'background.default',
+          backgroundColor: 'primary.hover2',
           height: 'auto',
         }}
       >
-        <Grid2 display='flex' size={1} borderRadius={1} sx={{ backgroundColor: 'background.paper' }}></Grid2>
+        <Grid2
+          display='flex'
+          size={1}
+          borderRadius={1}
+          // sx={{ backgroundColor: 'background.paper' }}
+        ></Grid2>
 
         <Grid2
           display='flex'
           size={'grow'}
           direction='column'
+          padding='1rem'
           borderRadius={1}
-          paddingLeft={'1rem'}
           sx={{
             justifyContent: 'center',
-            alignItems: 'center',
+            alignItems: 'flex-start',
             // backgroundColor: 'background.paper',
           }}
         >
           <Stack
             direction='column'
-            spacing='2.5rem'
+            spacing='3.5rem'
             sx={{
               justifyContent: 'center',
               alignItems: 'center',
@@ -109,13 +116,25 @@ const SomeDataAboutMeCard = () => {
             <Typography
               variant='h4'
               sx={{
-                paddingLeft: '5rem',
-                paddingBottom: '1.25rem',
                 fontWeight: '400',
                 '& span:first-of-type': { color: 'primary.main' },
               }}
             >
-              My <span>Github</span> activity
+              My{' '}
+              <Link
+                href='https://github.com/levisantn'
+                target='_blank'
+                underline='none'
+                sx={{
+                  color: 'primary.main',
+                  '&:hover': {
+                    color: 'primary.light',
+                  },
+                }}
+              >
+                GitHub
+              </Link>{' '}
+              activity
             </Typography>
             <GitHubCalendar
               username='levisantn'
@@ -138,7 +157,6 @@ const SomeDataAboutMeCard = () => {
         <Divider
           sx={{
             borderRadius: 1,
-            marginTop: '2rem',
             border: `0.25rem solid ${theme.palette.primary.hover1}`,
             boxShadow: `0rem 0rem 0.75rem ${theme.palette.primary.hover1}`,
           }}
@@ -148,11 +166,11 @@ const SomeDataAboutMeCard = () => {
           display='flex'
           size={'grow'}
           direction='column'
+          padding='1rem'
           borderRadius={1}
-          paddingLeft={'1rem'}
           sx={{
             justifyContent: 'center',
-            alignItems: 'center',
+            alignItems: 'flex-start',
             // backgroundColor: 'background.paper',
           }}
         >
@@ -167,17 +185,35 @@ const SomeDataAboutMeCard = () => {
             <Typography
               variant='h4'
               sx={{
-                paddingLeft: '5rem',
-                paddingBottom: '1.25rem',
                 fontWeight: '400',
                 '& span:first-of-type': { color: 'primary.main' },
               }}
             >
-              My <span>Leetcode</span> activity
+              My{' '}
+              <Link
+                href='https://github.com/levisantn'
+                target='_blank'
+                underline='none'
+                sx={{
+                  color: 'primary.main',
+                  '&:hover': {
+                    color: 'primary.light',
+                  },
+                }}
+              >
+                Leetcode
+              </Link>{' '}
+              activity
             </Typography>
+            <MuiMarkdown>{`![LeetCode Stats](https://leetcard.jacoblin.cool/levisantn?font=JetBrains%20Mono)`}</MuiMarkdown>
           </Stack>
         </Grid2>
-        <Grid2 display='flex' size={1} borderRadius={1} sx={{ backgroundColor: 'background.paper' }}></Grid2>
+        <Grid2
+          display='flex'
+          size={1}
+          borderRadius={1}
+          // sx={{ backgroundColor: 'background.paper' }}
+        ></Grid2>
       </Grid2>
     </Grid2>
   );

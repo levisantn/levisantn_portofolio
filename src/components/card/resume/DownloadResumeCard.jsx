@@ -5,7 +5,7 @@ const DownloadResumeCard = () => {
   return (
     <Grid2 container size={12}>
       <Grid2
-        paddingTop='5rem'
+        paddingTop='3.75rem'
         paddingBottom='2.5rem'
         container
         size={12}

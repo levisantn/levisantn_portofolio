@@ -26,7 +26,17 @@ const Error404 = () => {
       </Typography>
       <Typography variant='code' sx={{ fontSize: '1.375rem', whiteSpace: 'pre-wrap' }}>
         page not found, click&nbsp;
-        <Link component={RouterLink} to='/home' underline='none'>
+        <Link
+          component={RouterLink}
+          to='/home'
+          underline='none'
+          sx={{
+            color: 'primary.main',
+            '&:hover': {
+              color: 'primary.light',
+            },
+          }}
+        >
           here
         </Link>
         &nbsp;to find your way out

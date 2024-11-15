@@ -7,7 +7,7 @@ const WhatIDoCard = () => {
     <Grid2 container size={12} paddingLeft='2.75rem' paddingRight='2.75rem' spacing='0.75rem'>
       <Grid2
         container
-        paddingTop='2.5rem'
+        paddingTop='3.75rem'
         paddingBottom='2.5rem'
         size={12}
         sx={{

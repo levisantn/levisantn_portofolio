@@ -5,7 +5,7 @@ const WhatDrivesMeCardHome = () => {
     <Grid2 container size={12}>
       <Grid2
         container
-        paddingTop='3.5rem'
+        paddingTop='5rem'
         size={12}
         sx={{
           backgroundColor: 'background.default',

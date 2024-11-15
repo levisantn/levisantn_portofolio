@@ -14,7 +14,7 @@ const ResumePdfViewerCard = () => {
       <Grid2
         container
         paddingTop='2.5rem'
-        paddingBottom='5rem'
+        paddingBottom='3.75rem'
         size={12}
         sx={{
           backgroundColor: 'background.default',

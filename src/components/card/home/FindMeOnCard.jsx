@@ -6,7 +6,7 @@ const FindMeOnCard = () => {
     <Grid2
       container
       paddingTop='5rem'
-      paddingBottom='5rem'
+      paddingBottom='3.75rem'
       borderRadius={1}
       sx={{
         height: 'auto',

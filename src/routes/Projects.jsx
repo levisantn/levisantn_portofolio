@@ -7,7 +7,6 @@ const Projects = () => {
     <Grid2
       container
       sx={{
-        backgroundColor: 'background.default',
         flexDirection: 'column',
       }}
     >

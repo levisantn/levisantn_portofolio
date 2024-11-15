@@ -5,7 +5,7 @@ const MyProjectsCard = () => {
     <Grid2 container size={12}>
       <Grid2
         container
-        paddingTop='5rem'
+        paddingTop='3.75rem'
         paddingBottom='2.5rem'
         size={12}
         sx={{
@@ -56,7 +56,7 @@ const MyProjectsCard = () => {
               variant='h5'
               sx={{ textAlign: 'center', whiteSpace: 'pre-wrap', '& span:first-of-type': { color: 'primary.main' } }}
             >
-              Here are a few project I&apos;ve worked on.
+              Here are a few project I&apos;ve <span>worked</span> on.
             </Typography>
           </Stack>
         </Grid2>
