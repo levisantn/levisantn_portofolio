@@ -248,7 +248,7 @@ const TimelineCardHome = () => {
                     variant='h5'
                     sx={{ fontFamily: 'var(--mono-font)', fontWeight: '500', color: 'primary.light' }}
                   >
-                    Cerema Occitanie - Year 5 intership - Toulouse
+                    Cerema Occitanie - Year 5, intenrship - Toulouse
                   </Typography>
 
                   <Typography
@@ -297,7 +297,7 @@ const TimelineCardHome = () => {
                     variant='h5'
                     sx={{ fontFamily: 'var(--mono-font)', fontWeight: '500', color: 'primary.light' }}
                   >
-                    Computer Science Research Institute (IRIT) - Year 4 internship - Toulouse
+                    Computer Science Research Institute (IRIT) - Year 4, internship - Toulouse
                   </Typography>
 
                   <Typography
