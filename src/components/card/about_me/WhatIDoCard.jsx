@@ -151,7 +151,7 @@ const WhatIDoCard = () => {
               <br />
               𑁋 Using hypothesis testing, regression analysis, and time series analysis to uncover patterns and trends.
               <br />
-              𑁋 Interacting with sql databases to send queries and retrieve, update and manipulate relevant data.
+              𑁋 Interacting with SQL databases to send queries and retrieve, update and manipulate relevant data.
             </Typography>
 
             <Typography
@@ -314,9 +314,9 @@ const WhatIDoCard = () => {
                 whiteSpace: 'pre-wrap',
               }}
             >
-              𑁋 using git for version control and collaborating
+              𑁋 Leveraging Git for version control and collaboration.
               <br />
-              𑁋 Proficient in Linux environments and bash scripting
+              𑁋 Proficient in Linux environments and bash scripting.
               <br />
               𑁋 Building Frontend Web interface using React.
             </Typography>

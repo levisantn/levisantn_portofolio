@@ -3,7 +3,7 @@ import Typewriter from 'typewriter-effect';
 import 'animate.css';
 
 const HiThereCard = () => {
-  const skills = ['Data Analyst', 'ML Developper', 'Open Source enthousiast'];
+  const skills = ['Data Analyst', 'ML Developper', 'Open Source enthousiast', 'Lifelong learner'];
   return (
     <Grid2
       container

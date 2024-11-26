@@ -1,7 +1,7 @@
 import { Stack, IconButton, SvgIcon } from '@mui/material';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faKaggle, faGithub, faInstagram, faXTwitter, faMedium } from '@fortawesome/free-brands-svg-icons';
-import { leetCode, TableauSoftwareRounded } from '../../assets/imgs/icons/CustomMuiSvgIcons';
+import { faGithub, faInstagram, faXTwitter, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { TableauSoftwareRounded } from '../../assets/imgs/icons/CustomMuiSvgIcons';
 import { useTheme } from '@emotion/react';
 
 const RowStackContact = () => {
@@ -36,7 +36,7 @@ const RowStackContact = () => {
         <FontAwesomeIcon icon={faGithub} />
       </IconButton>
 
-      <IconButton
+      {/* <IconButton
         // disabled
         href='https://www.kaggle.com/zhurax'
         sx={{
@@ -64,7 +64,7 @@ const RowStackContact = () => {
         }}
       >
         <FontAwesomeIcon icon={faKaggle} />
-      </IconButton>
+      </IconButton> */}
 
       <IconButton
         // disabled
@@ -94,7 +94,7 @@ const RowStackContact = () => {
         <SvgIcon component={TableauSoftwareRounded} sx={{ fontSize: '1.1em' }} />
       </IconButton>
 
-      <IconButton
+      {/* <IconButton
         // disabled
         href='https://leetcode.com/u/levisantn/'
         sx={{
@@ -120,10 +120,11 @@ const RowStackContact = () => {
         }}
       >
         <SvgIcon component={leetCode} sx={{ fontSize: '1em' }} />
-      </IconButton>
+      </IconButton> */}
 
       <IconButton
-        href='https://www.instagram.com/levis.antn/'
+        // disabled
+        href='https://www.linkedin.com/in/levisantn/'
         sx={{
           width: '30px',
           height: '30px',
@@ -146,7 +147,7 @@ const RowStackContact = () => {
           },
         }}
       >
-        <FontAwesomeIcon icon={faInstagram} />
+        <FontAwesomeIcon icon={faLinkedinIn} />
       </IconButton>
 
       <IconButton
@@ -178,6 +179,33 @@ const RowStackContact = () => {
       </IconButton>
 
       <IconButton
+        href='https://www.instagram.com/levis.antn/'
+        sx={{
+          width: '30px',
+          height: '30px',
+          fontSize: '3em',
+          padding: '0.75em',
+          borderRadius: 5,
+          border: '0.2rem solid',
+          borderColor: 'primary.main',
+          color: 'text.primary',
+          bgcolor: 'primary.hover1',
+          transition: 'all 0.1s ease-in-out',
+          '&:hover': {
+            boxShadow: `0rem 0rem 0.75rem ${theme.palette.primary.main}`,
+            bgcolor: 'primary.main',
+            borderColor: 'primary.main',
+            transition: 'all 0.1s ease-in-out',
+          },
+          '&.Mui-disabled': {
+            color: 'text.disabled',
+          },
+        }}
+      >
+        <FontAwesomeIcon icon={faInstagram} />
+      </IconButton>
+
+      {/* <IconButton
         // disabled
         href='https://medium.com/@levisantn'
         sx={{
@@ -203,7 +231,7 @@ const RowStackContact = () => {
         }}
       >
         <FontAwesomeIcon icon={faMedium} />
-      </IconButton>
+      </IconButton> */}
     </Stack>
   );
 };
