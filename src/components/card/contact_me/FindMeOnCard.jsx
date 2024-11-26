@@ -7,7 +7,7 @@ const FindMeOnCard = () => {
   return (
     <Grid2
       container
-      size={'auto'}
+      size={'grow'}
       borderRadius='1rem'
       sx={{
         border: `0.25rem solid ${theme.palette.primary.hover2}`,
@@ -20,14 +20,8 @@ const FindMeOnCard = () => {
         },
       }}
     >
-      <Grid2
-        size={'auto'}
-        borderRadius={1}
-        sx={{
-          textAlign: 'center',
-        }}
-      >
-        <Box sx={{ display: 'flex', height: '100%', justifyContent: 'center' }}>
+      <Grid2 size={'grow'} borderRadius={1}>
+        <Box sx={{ display: 'flex', height: '100%', justifyContent: 'flex-end' }}>
           <Stack
             direction='column'
             spacing={1}
@@ -62,8 +56,8 @@ const FindMeOnCard = () => {
           alt='Laptop with hello hand bitmoji '
           src='src/assets/imgs/bitmoji/hello_door_cropped.png'
           sx={{
-            width: '253px',
-            height: '397px',
+            width: '257px',
+            height: '400px',
             borderRadius: 1,
             transform: 'scaleX(-1)',
             display: 'flex',

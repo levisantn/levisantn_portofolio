@@ -10,11 +10,10 @@ const Contactme = () => {
     <Grid2 container padding='1rem' spacing='1rem' paddingBottom='1.25rem' paddingTop='1.25rem'>
       <Grid2
         container
-        spacing={1}
-        size={'grow'}
+        spacing='1rem'
+        size={5}
         borderRadius={1}
         sx={{
-          // backgroundColor: 'background.paper',
           flexDirection: 'column',
         }}
       >
@@ -29,12 +28,13 @@ const Contactme = () => {
 
       <Grid2
         container
-        size={'auto'}
+        size={7}
         borderRadius={1}
-        sx={{
-          // backgroundColor: 'background.paper',
-          textAlign: 'flex-end',
-        }}
+        sx={
+          {
+            // backgroundColor: 'background.paper',
+          }
+        }
       >
         <FindMeOnCard />
       </Grid2>
