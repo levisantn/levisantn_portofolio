@@ -95,7 +95,7 @@ const RowStackFooter = () => {
 
       <IconButton
         // disabled
-        href='https://medium.com/@levisantn'
+        href='https://www.linkedin.com/in/levisantn/'
         sx={{
           color: 'text.primary',
           width: '30px',
