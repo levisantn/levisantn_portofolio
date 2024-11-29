@@ -1,6 +1,10 @@
 import { Grid2, Stack, Typography } from '@mui/material';
 import ProjectCard from './ProjectCard';
-import imgPortofolio from '../../../assets/imgs/front_img_portofolio.png';
+import imgPortofolio from '../../../assets/imgs/projects/portofolio_website_cover.png';
+import imgUserChurnPrediction from '../../../assets/imgs/projects/user_churn_prediction_waze.png';
+import imgEmployeeRetentionPrediction from '../../../assets/imgs/projects/employee_retention_prediction.png';
+import imgTokyo2020 from '../../../assets/imgs/projects/tokyo_2020.png';
+import imgRapportStageCerema from '../../../assets/imgs/projects/rapport_de_stage_Cerema_cover.png';
 
 const MyProjectsCard = () => {
   return (
@@ -35,7 +39,7 @@ const MyProjectsCard = () => {
         >
           <Stack
             direction='column'
-            spacing={1}
+            spacing='1rem'
             sx={{
               justifyContent: 'center',
               alignItems: 'center',
@@ -68,11 +72,9 @@ const MyProjectsCard = () => {
           // sx={{ backgroundColor: 'background.paper' }}
         ></Grid2>
       </Grid2>
-      {/* -------------------------------- */}
+      {/* ---------------------------------------------------------------- */}
       <Grid2
         container
-        paddingTop='2.5rem'
-        paddingBottom='2.5rem'
         size={12}
         sx={{
           height: 'auto',
@@ -90,7 +92,7 @@ const MyProjectsCard = () => {
           size={'grow'}
           paddingTop='2.5rem'
           paddingBottom='2.5rem'
-          spacing='2.5rem'
+          spacing='3.75rem'
           borderRadius={1}
           sx={
             {
@@ -127,9 +129,84 @@ const MyProjectsCard = () => {
             }}
           >
             <ProjectCard
-              img={imgPortofolio}
-              link='https://github.com/levisantn/react_website'
-              title='Portofolio website with React + MUI'
+              img={imgUserChurnPrediction}
+              link='https://github.com/levisantn/user_churn_prediction'
+              title='Predicting user churn behavior analytic project'
+              description={
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim  irure dolor in reprehenderit in voluptate '
+              }
+            />
+          </Grid2>
+          {/* -------------------------------- */}
+          <Grid2
+            display='flex'
+            size={'grow'}
+            borderRadius={1}
+            sx={{
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
+          >
+            <ProjectCard
+              img={imgEmployeeRetentionPrediction}
+              link='https://github.com/levisantn/employee_retention_prediction'
+              title='Predictive Modeling for Employee Retention analytic project'
+              description={
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate '
+              }
+            />
+          </Grid2>
+        </Grid2>
+
+        <Grid2
+          display='flex'
+          size={2}
+          borderRadius={1}
+          // sx={{ backgroundColor: 'background.paper' }}
+        ></Grid2>
+      </Grid2>
+
+      {/* ---------------------------------------------------------------- */}
+      <Grid2
+        container
+        size={12}
+        sx={{
+          height: 'auto',
+        }}
+      >
+        <Grid2
+          display='flex'
+          size={3}
+          borderRadius={1}
+          // sx={{ backgroundColor: 'background.paper' }}
+        ></Grid2>
+
+        <Grid2
+          container
+          size={'grow'}
+          paddingTop='2.5rem'
+          paddingBottom='2.5rem'
+          spacing='3.75rem'
+          borderRadius={1}
+          sx={
+            {
+              // backgroundColor: 'background.paper',
+            }
+          }
+        >
+          <Grid2
+            display='flex'
+            size={'grow'}
+            borderRadius={1}
+            sx={{
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
+          >
+            <ProjectCard
+              img={imgTokyo2020}
+              link='https://github.com/levisantn/olympics_tokyo'
+              title='A Data-Driven Overview at the Tokyo 2020 Olympics'
               description={
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate '
               }
@@ -146,19 +223,38 @@ const MyProjectsCard = () => {
             }}
           >
             <ProjectCard
-              img={imgPortofolio}
-              link='https://github.com/levisantn/react_website'
-              title='Portofolio website with React + MUI'
+              img={imgRapportStageCerema}
+              link='https://drive.google.com/file/d/1NPkMmMNxHBtXQY4zXDncXEzHXyDMHoo_/view?usp=sharing'
+              title='Internship Report (FR version), Developer - Analyst SIG at Cerema'
+              description={
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim  irure dolor in reprehenderit in voluptate '
+              }
+            />
+          </Grid2>
+          {/* -------------------------------- */}
+          {/* <Grid2
+            display='flex'
+            size={'grow'}
+            borderRadius={1}
+            sx={{
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
+          >
+            <ProjectCard
+              img={imgEmployeeRetentionPrediction}
+              link='https://github.com/levisantn/employee_retention_prediction'
+              title='Predictive Modeling for Employee Retention analytic project'
               description={
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate '
               }
             />
-          </Grid2>
+          </Grid2> */}
         </Grid2>
 
         <Grid2
           display='flex'
-          size={2}
+          size={3}
           borderRadius={1}
           // sx={{ backgroundColor: 'background.paper' }}
         ></Grid2>

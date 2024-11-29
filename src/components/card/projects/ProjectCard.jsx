@@ -17,6 +17,8 @@ const ProjectCard = ({ img, title, description, link }) => {
           transform: 'scale(1.05)',
           transition: 'all 0.25s ease-out',
         },
+        width: '400px', // Set the desired width
+        height: '450px', // Set the desired height
       }}
     >
       <CardActionArea
@@ -29,7 +31,18 @@ const ProjectCard = ({ img, title, description, link }) => {
           },
         }}
       >
-        <CardMedia component='img' width='100%' image={img} alt={title} />
+        <CardMedia
+          component='img'
+          image={img}
+          alt={title}
+          sx={{
+            objectFit: 'cover',
+            width: '100%',
+            height: '100%',
+            maxHeight: '210px',
+            minHeight: '210px',
+          }}
+        />
         <CardContent>
           <Typography gutterBottom variant='h4' component='div' sx={{ fontSize: '2rem' }}>
             {title}

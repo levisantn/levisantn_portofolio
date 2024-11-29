@@ -1,5 +1,5 @@
 import { Grid2 } from '@mui/material';
-import SomeDataAboutMeCard from '../components/card/projects/SomeDataAboutMeCard';
+// import SomeDataAboutMeCard from '../components/card/projects/SomeDataAboutMeCard';
 import MyProjectsCard from '../components/card/projects/MyProjectsCard';
 
 const Projects = () => {
@@ -8,11 +8,12 @@ const Projects = () => {
       container
       sx={{
         flexDirection: 'column',
+        paddingBottom: '2.5rem',
       }}
     >
       <MyProjectsCard />
       {/* -------------------------------- */}
-      <SomeDataAboutMeCard />
+      {/* <SomeDataAboutMeCard /> */}
     </Grid2>
   );
 };
