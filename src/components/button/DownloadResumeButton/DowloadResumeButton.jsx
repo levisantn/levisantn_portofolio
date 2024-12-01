@@ -1,7 +1,8 @@
 import { Button, Icon } from '@mui/material';
 import DownloadIcon from '@mui/icons-material/Download';
 
-import myResume from '../../../assets/docs/cv_Antonetti_Levis_2024_dark_fr.pdf';
+// import myResumeFR from '../../../assets/docs/cv_Antonetti_Levis_2024_dark_fr.pdf';
+import myResume from '../../../assets/docs/cv_Antonetti_Levis_2024_dark_en.pdf';
 
 const DownloadResumeButton = () => {
   return (

@@ -26,8 +26,9 @@ const ProjectCard = ({ img, title, description, link }) => {
         href={link}
         target='_blank'
         sx={{
-          '&:hover': {
-            backgroundColor: 'transparent', // Remove default hover background
+          backgroundColor: 'transparent',
+          '& .MuiCardActionArea-focusHighlight': {
+            backgroundColor: 'transparent', // Remove the default focus highlight
           },
         }}
       >

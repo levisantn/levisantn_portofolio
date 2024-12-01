@@ -2,8 +2,10 @@ import { Grid2 } from '@mui/material';
 import { Document, Page, pdfjs } from 'react-pdf';
 import 'react-pdf/dist/esm/Page/TextLayer.css'; // Import TextLayer styles
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css'; // Import AnnotationLayer styles (optional)
-import myResumeDark from '../../../assets/docs/cv_Antonetti_Levis_2024_dark_fr.pdf';
-import myResumeLight from '../../../assets/docs/cv_Antonetti_Levis_2024_light_fr.pdf';
+// import myResumeDark from '../../../assets/docs/cv_Antonetti_Levis_2024_dark_fr.pdf';
+// import myResumeLight from '../../../assets/docs/cv_Antonetti_Levis_2024_light_fr.pdf';
+import myResumeDark from '../../../assets/docs/cv_Antonetti_Levis_2024_dark_en.pdf';
+import myResumeLight from '../../../assets/docs/cv_Antonetti_Levis_2024_light_en.pdf';
 import { useTheme } from '@emotion/react';
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL('pdfjs-dist/build/pdf.worker.min.mjs', import.meta.url).toString();

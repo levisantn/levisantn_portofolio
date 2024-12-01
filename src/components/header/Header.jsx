@@ -7,7 +7,7 @@ const pages = [
   { page: 'Home', route: '/home' },
   { page: 'About me', route: '/about_me' },
   { page: 'Projects', route: '/projects' },
-  { page: 'Cheatsheets', route: '/cheatsheets' },
+  // { page: 'Cheatsheets', route: '/cheatsheets' },
   { page: 'Resume', route: '/resume' },
   { page: 'Contact me', route: '/contact_me' },
 ];

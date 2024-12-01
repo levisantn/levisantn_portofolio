@@ -4,7 +4,7 @@ import Home from './routes/Home';
 import Aboutme from './routes/Aboutme';
 import Resume from './routes/Resume';
 import Projects from './routes/Projects';
-import Cheatsheets from './routes/Cheatsheets';
+// import Cheatsheets from './routes/Cheatsheets';
 import Contactme from './routes/Contactme';
 import Error404 from './routes/Error404';
 
@@ -29,10 +29,10 @@ const myRouter = createBrowserRouter([
         path: '/projects',
         Component: Projects,
       },
-      {
-        path: '/cheatsheets',
-        Component: Cheatsheets,
-      },
+      // {
+      //   path: '/cheatsheets',
+      //   Component: Cheatsheets,
+      // },
       {
         path: '/resume',
         Component: Resume,
