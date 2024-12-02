@@ -322,8 +322,8 @@
 @font-face {
   font-family: 'JetBrains Mono';
   src:
-    url('./JetBrainsMono-MediumItalic.woff2') format('woff2'),
-    url('./JetBrainsMono-MediumItalic.ttf') format('truetype');
+    url('../assets/fonts/JetBrains_Mono/JetBrainsMono-MediumItalic.woff2') format('woff2'),
+    url('../assets/fonts/JetBrains_Mono/JetBrainsMono-MediumItalic.ttf') format('truetype');
   font-weight: 500;
   font-style: italic;
   font-display: swap;
