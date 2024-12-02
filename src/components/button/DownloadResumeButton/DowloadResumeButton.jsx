@@ -28,6 +28,9 @@ const DownloadResumeButton = () => {
           transition: 'all 0.1s ease-in-out',
           color: 'text.primary',
         },
+        '& .MuiTouchRipple-root': {
+          color: 'primary.light',
+        },
       }}
     >
       <Icon component={DownloadIcon} sx={{ mr: '1.5rem' }} />

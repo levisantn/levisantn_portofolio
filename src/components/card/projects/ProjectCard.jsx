@@ -12,13 +12,16 @@ const ProjectCard = ({ img, title, description, link }) => {
         justifyContent: 'center',
         backgroundColor: 'primary.hover2',
         transition: 'all 0.5s ease-out',
+        width: '400px', // Set the desired width
+        height: '450px', // Set the desired height
         '&:hover': {
           boxShadow: `0rem 0rem 0.75rem ${theme.palette.primary.light}`,
           transform: 'scale(1.05)',
           transition: 'all 0.25s ease-out',
         },
-        width: '400px', // Set the desired width
-        height: '450px', // Set the desired height
+        '& .MuiTouchRipple-root': {
+          color: 'primary.light',
+        },
       }}
     >
       <CardActionArea
@@ -26,6 +29,8 @@ const ProjectCard = ({ img, title, description, link }) => {
         href={link}
         target='_blank'
         sx={{
+          width: '100%',
+          height: '100%',
           backgroundColor: 'transparent',
           '& .MuiCardActionArea-focusHighlight': {
             backgroundColor: 'transparent', // Remove the default focus highlight

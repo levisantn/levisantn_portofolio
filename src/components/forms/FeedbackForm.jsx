@@ -164,6 +164,9 @@ const FeedbackForm = () => {
             borderColor: 'primary.main',
             color: 'text.primary',
           },
+          '& .MuiTouchRipple-root': {
+            color: 'primary.light',
+          },
         }}
       >
         Submit

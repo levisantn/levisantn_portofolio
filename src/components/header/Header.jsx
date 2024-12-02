@@ -25,6 +25,9 @@ const Header = () => {
             '&:hover': {
               bgcolor: 'primary.hover2',
             },
+            '& .MuiTouchRipple-root': {
+              color: 'primary.light',
+            },
           }}
         >
           <Typography
@@ -56,6 +59,9 @@ const Header = () => {
                 wordSpacing: '-4px',
                 '&:hover': {
                   bgcolor: 'primary.hover1',
+                },
+                '& .MuiTouchRipple-root': {
+                  color: 'primary.light',
                 },
               }}
             >

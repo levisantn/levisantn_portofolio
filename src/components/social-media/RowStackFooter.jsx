@@ -23,6 +23,9 @@ const RowStackFooter = () => {
           '&.Mui-disabled': {
             color: 'text.disabled',
           },
+          '& .MuiTouchRipple-root': {
+            color: 'primary.light',
+          },
         }}
       >
         <FontAwesomeIcon icon={faGithub} />
@@ -67,6 +70,9 @@ const RowStackFooter = () => {
           '&.Mui-disabled': {
             color: 'text.disabled',
           },
+          '& .MuiTouchRipple-root': {
+            color: 'primary.light',
+          },
         }}
       >
         <SvgIcon component={TableauSoftwareRounded} sx={{ fontSize: '1.1em' }} />
@@ -109,6 +115,9 @@ const RowStackFooter = () => {
           '&.Mui-disabled': {
             color: 'text.disabled',
           },
+          '& .MuiTouchRipple-root': {
+            color: 'primary.light',
+          },
         }}
       >
         <FontAwesomeIcon icon={faLinkedinIn} />
@@ -130,6 +139,9 @@ const RowStackFooter = () => {
           '&.Mui-disabled': {
             color: 'text.disabled',
           },
+          '& .MuiTouchRipple-root': {
+            color: 'primary.light',
+          },
         }}
       >
         <FontAwesomeIcon icon={faXTwitter} />
@@ -149,6 +161,9 @@ const RowStackFooter = () => {
           },
           '&.Mui-disabled': {
             color: 'text.disabled',
+          },
+          '& .MuiTouchRipple-root': {
+            color: 'primary.light',
           },
         }}
       >
@@ -191,6 +206,9 @@ const RowStackFooter = () => {
           },
           '&.Mui-disabled': {
             color: 'text.disabled',
+          },
+          '& .MuiTouchRipple-root': {
+            color: 'primary.light',
           },
         }}
       >

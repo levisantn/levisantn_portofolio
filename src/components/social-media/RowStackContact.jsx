@@ -31,6 +31,9 @@ const RowStackContact = () => {
           '&.Mui-disabled': {
             color: 'text.disabled',
           },
+          '& .MuiTouchRipple-root': {
+            color: 'primary.light',
+          },
         }}
       >
         <FontAwesomeIcon icon={faGithub} />
@@ -89,6 +92,9 @@ const RowStackContact = () => {
           '&.Mui-disabled': {
             color: 'text.disabled',
           },
+          '& .MuiTouchRipple-root': {
+            color: 'primary.light',
+          },
         }}
       >
         <SvgIcon component={TableauSoftwareRounded} sx={{ fontSize: '1.1em' }} />
@@ -145,6 +151,9 @@ const RowStackContact = () => {
           '&.Mui-disabled': {
             color: 'text.disabled',
           },
+          '& .MuiTouchRipple-root': {
+            color: 'primary.light',
+          },
         }}
       >
         <FontAwesomeIcon icon={faLinkedinIn} />
@@ -173,6 +182,9 @@ const RowStackContact = () => {
           '&.Mui-disabled': {
             color: 'text.disabled',
           },
+          '& .MuiTouchRipple-root': {
+            color: 'primary.light',
+          },
         }}
       >
         <FontAwesomeIcon icon={faXTwitter} />
@@ -199,6 +211,9 @@ const RowStackContact = () => {
           },
           '&.Mui-disabled': {
             color: 'text.disabled',
+          },
+          '& .MuiTouchRipple-root': {
+            color: 'primary.light',
           },
         }}
       >

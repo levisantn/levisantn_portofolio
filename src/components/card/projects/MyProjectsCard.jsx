@@ -5,6 +5,8 @@ import imgUserChurnPrediction from '../../../assets/imgs/projects/user_churn_pre
 import imgEmployeeRetentionPrediction from '../../../assets/imgs/projects/employee_retention_prediction.png';
 import imgTokyo2020 from '../../../assets/imgs/projects/tokyo_2020.png';
 import imgRapportStageCerema from '../../../assets/imgs/projects/rapport_de_stage_Cerema_cover.png';
+import imgSortingAlgorithms from '../../../assets/imgs/projects/app-sorting-algos.png';
+import imgDAEsignal from '../../../assets/imgs/projects/DAE-PCG-signal .png';
 
 const MyProjectsCard = () => {
   return (
@@ -82,7 +84,7 @@ const MyProjectsCard = () => {
       >
         <Grid2
           display='flex'
-          size={2}
+          size={1.5}
           borderRadius={1}
           // sx={{ backgroundColor: 'background.paper' }}
         ></Grid2>
@@ -160,7 +162,7 @@ const MyProjectsCard = () => {
 
         <Grid2
           display='flex'
-          size={2}
+          size={1.5}
           borderRadius={1}
           // sx={{ backgroundColor: 'background.paper' }}
         ></Grid2>
@@ -176,7 +178,7 @@ const MyProjectsCard = () => {
       >
         <Grid2
           display='flex'
-          size={3}
+          size={1.5}
           borderRadius={1}
           // sx={{ backgroundColor: 'background.paper' }}
         ></Grid2>
@@ -232,7 +234,7 @@ const MyProjectsCard = () => {
             />
           </Grid2>
           {/* -------------------------------- */}
-          {/* <Grid2
+          <Grid2
             display='flex'
             size={'grow'}
             borderRadius={1}
@@ -242,14 +244,70 @@ const MyProjectsCard = () => {
             }}
           >
             <ProjectCard
-              img={imgEmployeeRetentionPrediction}
-              link='https://github.com/levisantn/employee_retention_prediction'
-              title='Predictive Modeling for Employee Retention analytic project'
+              img={imgDAEsignal}
+              link='https://github.com/levisantn/fully_convolutional_autoencoder_for_PCG_noise_reduction'
+              title='fully convolutional autoencoder for PCG noise reduction'
               description={
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate '
+                'Implementation of a fully convolutional autoencoder (DAE) architecture to denoise PCG (phonocardiogram) signals. The PCG signals were corrupted with different levels of noise.'
               }
             />
-          </Grid2> */}
+          </Grid2>
+        </Grid2>
+
+        <Grid2
+          display='flex'
+          size={1.5}
+          borderRadius={1}
+          // sx={{ backgroundColor: 'background.paper' }}
+        ></Grid2>
+      </Grid2>
+
+      {/* ---------------------------------------------------------------- */}
+      <Grid2
+        container
+        size={12}
+        sx={{
+          height: 'auto',
+        }}
+      >
+        <Grid2
+          display='flex'
+          size={3}
+          borderRadius={1}
+          // sx={{ backgroundColor: 'background.paper' }}
+        ></Grid2>
+
+        <Grid2
+          container
+          size={'grow'}
+          paddingTop='2.5rem'
+          paddingBottom='2.5rem'
+          spacing='3.75rem'
+          borderRadius={1}
+          sx={
+            {
+              // backgroundColor: 'background.paper',
+            }
+          }
+        >
+          <Grid2
+            display='flex'
+            size={'grow'}
+            borderRadius={1}
+            sx={{
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
+          >
+            <ProjectCard
+              img={imgSortingAlgorithms}
+              link='https://github.com/levisantn/animated_sorting_algorithms/tree/main'
+              title='application: Animated Sorting Algorithms'
+              description={
+                'This application visualizes various sorting algorithms by sorting a list of polygons. The animated sorting process helps to understand how each algorithm works and the number of comparisons being made, which give a indication about the complexity of the algorithms.'
+              }
+            />
+          </Grid2>
         </Grid2>
 
         <Grid2

@@ -51,6 +51,9 @@ export const ScrollToTopButton = (props) => {
               bgcolor: 'primary.main',
               color: 'text.primary',
             },
+            '& .MuiTouchRipple-root': {
+              color: 'primary.light',
+            },
           }}
         >
           <KeyboardArrowUpIcon />
