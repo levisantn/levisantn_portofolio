@@ -16,9 +16,8 @@ function RootLayout() {
   useEffect(() => {
     const handleFooter = () => {
       const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
-      setShowFooter(scrollTop + clientHeight >= scrollHeight);
+      setShowFooter(scrollTop + clientHeight >= scrollHeight - 1);
       setHasScrollbar(window.getComputedStyle(document.documentElement).overflowY === 'visible');
-      window.scrollTo(0, 0);
       console.log('hasScrollbar:', hasScrollbar);
     };
 
