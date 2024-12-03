@@ -1,5 +1,17 @@
 import { useTheme } from '@emotion/react';
 import { Box, Grid2, Stack, Typography } from '@mui/material';
+import svgPython from '../../../assets/imgs/icons/color/python.svg';
+import svgPandas from '../../../assets/imgs/icons/color/pandas.svg';
+import svgMatplotLib from '../../../assets/imgs/icons/color/matplotlib.svg';
+import svgScikitLearn from '../../../assets/imgs/icons/color/scikit-learn.svg';
+import svgPytorch from '../../../assets/imgs/icons/color/pytorch.svg';
+import svgMySql from '../../../assets/imgs/icons/color/mysql.svg';
+import svgTableau from '../../../assets/imgs/icons/color/tableau.svg';
+import svgLinux from '../../../assets/imgs/icons/color/linux.svg';
+import svgGit from '../../../assets/imgs/icons/color/git.svg';
+import svgQgis from '../../../assets/imgs/icons/color/qgis.svg';
+import svgJavascript from '../../../assets/imgs/icons/color/javascript.svg';
+import svgReact from '../../../assets/imgs/icons/color/react.svg';
 
 const SkillsetCardHome = () => {
   const theme = useTheme();
@@ -124,12 +136,7 @@ const SkillsetCardHome = () => {
               >
                 python
               </Typography>
-              <Box
-                component='img'
-                alt='drinking soda bitmoji '
-                src='/src/assets/imgs/icons/color/python.svg'
-                sx={{ width: '75px', height: 'auto' }}
-              />
+              <Box component='img' alt='svgPython' src={svgPython} sx={{ width: '75px', height: 'auto' }} />
             </Stack>
           </Grid2>
           {/* -------------------------------- */}
@@ -174,12 +181,7 @@ const SkillsetCardHome = () => {
               >
                 pandas
               </Typography>
-              <Box
-                component='img'
-                alt='drinking soda bitmoji '
-                src='/src/assets/imgs/icons/color/pandas.svg'
-                sx={{ width: '75px', height: 'auto' }}
-              />
+              <Box component='img' alt='svgPandas' src={svgPandas} sx={{ width: '75px', height: 'auto' }} />
             </Stack>
           </Grid2>
           {/* -------------------------------- */}
@@ -224,12 +226,7 @@ const SkillsetCardHome = () => {
               >
                 Matplotlib
               </Typography>
-              <Box
-                component='img'
-                alt='drinking soda bitmoji '
-                src='/src/assets/imgs/icons/color/matplotlib.svg'
-                sx={{ width: '75px', height: 'auto' }}
-              />
+              <Box component='img' alt='svg MatplotLib' src={svgMatplotLib} sx={{ width: '75px', height: 'auto' }} />
             </Stack>
           </Grid2>
           {/* -------------------------------- */}
@@ -274,12 +271,7 @@ const SkillsetCardHome = () => {
               >
                 scikit-learn
               </Typography>
-              <Box
-                component='img'
-                alt='drinking soda bitmoji '
-                src='/src/assets/imgs/icons/color/scikit-learn.svg'
-                sx={{ width: '75px', height: 'auto' }}
-              />
+              <Box component='img' alt='svg cikitLearn' src={svgScikitLearn} sx={{ width: '75px', height: 'auto' }} />
             </Stack>
           </Grid2>
           {/* -------------------------------- */}
@@ -324,12 +316,7 @@ const SkillsetCardHome = () => {
               >
                 pytorch
               </Typography>
-              <Box
-                component='img'
-                alt='drinking soda bitmoji '
-                src='/src/assets/imgs/icons/color/pytorch.svg'
-                sx={{ width: '75px', height: 'auto' }}
-              />
+              <Box component='img' alt='svg pytorch' src={svgPytorch} sx={{ width: '75px', height: 'auto' }} />
             </Stack>
           </Grid2>
         </Grid2>
@@ -398,12 +385,7 @@ const SkillsetCardHome = () => {
               >
                 mySql
               </Typography>
-              <Box
-                component='img'
-                alt='drinking soda bitmoji '
-                src='/src/assets/imgs/icons/color/mysql.svg'
-                sx={{ width: '75px', height: 'auto' }}
-              />
+              <Box component='img' alt='svg mysql' src={svgMySql} sx={{ width: '75px', height: 'auto' }} />
             </Stack>
           </Grid2>
           {/* -------------------------------- */}
@@ -448,12 +430,7 @@ const SkillsetCardHome = () => {
               >
                 tableau
               </Typography>
-              <Box
-                component='img'
-                alt='drinking soda bitmoji '
-                src='/src/assets/imgs/icons/color/tableau.svg'
-                sx={{ width: '75px', height: 'auto' }}
-              />
+              <Box component='img' alt='svg Tableau' src={svgTableau} sx={{ width: '75px', height: 'auto' }} />
             </Stack>
           </Grid2>
           {/* -------------------------------- */}
@@ -498,12 +475,7 @@ const SkillsetCardHome = () => {
               >
                 linux
               </Typography>
-              <Box
-                component='img'
-                alt='drinking soda bitmoji '
-                src='/src/assets/imgs/icons/color/linux.svg'
-                sx={{ width: '75px', height: 'auto' }}
-              />
+              <Box component='img' alt='svg Linux' src={svgLinux} sx={{ width: '75px', height: 'auto' }} />
             </Stack>
           </Grid2>
           {/* -------------------------------- */}
@@ -548,12 +520,7 @@ const SkillsetCardHome = () => {
               >
                 git
               </Typography>
-              <Box
-                component='img'
-                alt='drinking soda bitmoji '
-                src='/src/assets/imgs/icons/color/git.svg'
-                sx={{ width: '75px', height: 'auto' }}
-              />
+              <Box component='img' alt='svg Git' src={svgGit} sx={{ width: '75px', height: 'auto' }} />
             </Stack>
           </Grid2>
         </Grid2>
@@ -623,12 +590,7 @@ const SkillsetCardHome = () => {
               >
                 qgis
               </Typography>
-              <Box
-                component='img'
-                alt='drinking soda bitmoji '
-                src='/src/assets/imgs/icons/color/qgis.svg'
-                sx={{ width: '75px', height: 'auto' }}
-              />
+              <Box component='img' alt='svg Qgis' src={svgQgis} sx={{ width: '75px', height: 'auto' }} />
             </Stack>
           </Grid2>
           <Grid2
@@ -672,12 +634,7 @@ const SkillsetCardHome = () => {
               >
                 javascript
               </Typography>
-              <Box
-                component='img'
-                alt='drinking soda bitmoji '
-                src='/src/assets/imgs/icons/color/javascript.svg'
-                sx={{ width: '75px', height: 'auto' }}
-              />
+              <Box component='img' alt='svg Javascript' src={svgJavascript} sx={{ width: '75px', height: 'auto' }} />
             </Stack>
           </Grid2>
           {/* -------------------------------- */}
@@ -722,12 +679,7 @@ const SkillsetCardHome = () => {
               >
                 react
               </Typography>
-              <Box
-                component='img'
-                alt='drinking soda bitmoji '
-                src='/src/assets/imgs/icons/color/react.svg'
-                sx={{ width: '75px', height: 'auto' }}
-              />
+              <Box component='img' alt='svg React' src={svgReact} sx={{ width: '75px', height: 'auto' }} />
             </Stack>
           </Grid2>
         </Grid2>

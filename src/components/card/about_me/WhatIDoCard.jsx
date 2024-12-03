@@ -1,5 +1,6 @@
 import { useTheme } from '@emotion/react';
 import { Box, Grid2, Stack, Typography } from '@mui/material';
+import bitmojiTakeCoffee from '../../../assets/imgs/bitmoji/take_coffee.png';
 
 const WhatIDoCard = () => {
   const theme = useTheme();
@@ -88,7 +89,7 @@ const WhatIDoCard = () => {
           <Box
             component='img'
             alt='drinking soda bitmoji '
-            src='/src/assets/imgs/bitmoji/take_coffee.png'
+            src={bitmojiTakeCoffee}
             sx={{
               width: '380px',
               height: '380px',

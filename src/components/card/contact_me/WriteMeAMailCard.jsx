@@ -1,5 +1,6 @@
 import { useTheme } from '@emotion/react';
 import { Grid2, Typography, Stack, Box, Link } from '@mui/material';
+import bitmojiSendMailHappy from '../../../assets/imgs/bitmoji/send_mail_happy.png';
 
 const WriteMeAMailCard = () => {
   const theme = useTheme();
@@ -66,7 +67,7 @@ const WriteMeAMailCard = () => {
           <Box
             component='img'
             alt='send mail happy bitmoji'
-            src='src/assets/imgs/bitmoji/send_mail_happy.png'
+            src={bitmojiSendMailHappy}
             sx={{
               width: '190px',
               height: '190px',

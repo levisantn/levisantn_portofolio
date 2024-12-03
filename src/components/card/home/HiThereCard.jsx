@@ -1,6 +1,7 @@
 import { Typography, Grid2, Stack, Box } from '@mui/material';
 import Typewriter from 'typewriter-effect';
 import 'animate.css';
+import bitmojiLaptopWithHelloHands from '../../../assets/imgs/bitmoji/laptop_with_hello_hand.png';
 
 const HiThereCard = () => {
   const skills = ['Data Analyst', 'ML Developper', 'Open Source enthousiast', 'Lifelong learner'];
@@ -81,8 +82,8 @@ const HiThereCard = () => {
       >
         <Box
           component='img'
-          alt='laptop with hello hand bitmoji '
-          src='/src/assets/imgs/bitmoji/laptop_with_hello_hand.png'
+          alt='laptop with hello hand bitmoji'
+          src={bitmojiLaptopWithHelloHands}
           sx={{
             width: '400px',
             height: '400px',

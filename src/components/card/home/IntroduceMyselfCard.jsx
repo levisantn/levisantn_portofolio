@@ -1,4 +1,5 @@
 import { Typography, Grid2, Stack, Avatar } from '@mui/material';
+import bitmojiFrontFace from '../../../assets/imgs/bitmoji/front_face_rogner.png';
 
 const IntroduceMyselfCard = () => {
   return (
@@ -25,7 +26,7 @@ const IntroduceMyselfCard = () => {
       >
         <Avatar
           alt='front face bitmoji '
-          src='/src/assets/imgs/bitmoji/front_face_rogner.png'
+          src={bitmojiFrontFace}
           sx={{
             width: '20rem',
             height: 'auto',

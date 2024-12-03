@@ -1,4 +1,5 @@
 import { Box, Grid2, Stack, Typography } from '@mui/material';
+import bitmojiWorkingBubble from '../../../assets/imgs/bitmoji/working_bubble.png';
 
 const WhatDrivesMeCardHome = () => {
   return (
@@ -122,7 +123,7 @@ const WhatDrivesMeCardHome = () => {
           <Box
             component='img'
             alt='drinking soda bitmoji '
-            src='/src/assets/imgs/bitmoji/working_bubble.png'
+            src={bitmojiWorkingBubble}
             sx={{
               width: '300px',
               height: '300px',

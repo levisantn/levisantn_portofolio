@@ -2,6 +2,7 @@ import { Grid2, Typography, Stack, IconButton, Box } from '@mui/material';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { useTheme } from '@mui/material/styles';
+import bitmojiDrinkingSoda from '../../../assets/imgs/bitmoji/drinking_soda.png';
 
 const FindMeAroundCard = () => {
   const theme = useTheme();
@@ -35,7 +36,7 @@ const FindMeAroundCard = () => {
         <Box
           component='img'
           alt='drinking soda bitmoji '
-          src='src/assets/imgs/bitmoji/drinking_soda.png'
+          src={bitmojiDrinkingSoda}
           sx={{
             width: '190px',
             height: '190px',

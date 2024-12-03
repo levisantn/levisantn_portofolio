@@ -1,6 +1,7 @@
 import { Box, Stack, Typography, Grid2 } from '@mui/material';
 import RowStackContact from '../../social-media/RowStackContact';
 import { useTheme } from '@emotion/react';
+import bitmojiHelloDoor from '../../../assets/imgs/bitmoji/hello_door_cropped.png';
 
 const FindMeOnCard = () => {
   const theme = useTheme();
@@ -54,7 +55,7 @@ const FindMeOnCard = () => {
         <Box
           component='img'
           alt='Laptop with hello hand bitmoji '
-          src='src/assets/imgs/bitmoji/hello_door_cropped.png'
+          src={bitmojiHelloDoor}
           sx={{
             width: '257px',
             height: '400px',
