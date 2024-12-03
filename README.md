@@ -38,7 +38,8 @@ npm run build
 
 ```sh
 # 4. deploy the project
-# configure github pages on the project setting page, following this documentation: https://vite.dev/guide/static-deploy.html
+# configure github pages on the project setting page, following this documentation: https://vite.dev/guide/static-deploy.html to create a github action Workflow
+
 
 # git commit and push your changes and it should work
 ```
