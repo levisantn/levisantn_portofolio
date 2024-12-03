@@ -19,7 +19,9 @@ The project is built using [React](https://react.dev/) for the frontend framewor
 
 ## Installation & setup
 
-Clone down this repository. You will need node.js and git installed globally on your machine.
+```sh
+# 0. Clone down this repository. You will need node.js and git installed globally on your machine.
+```
 
 ```sh
 # 1. Install the dependencies
@@ -32,9 +34,13 @@ npm run dev
 
 # 3. build the project
 npm run build
+```
 
+```sh
 # 4. deploy the project
-TODO
+# configure github pages on the project setting page, following this documentation: https://vite.dev/guide/static-deploy.html
+
+# git commit and push your changes and it should work
 ```
 
 ## Tools used
