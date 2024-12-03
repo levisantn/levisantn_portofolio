@@ -18,6 +18,7 @@ function RootLayout() {
       const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
       setShowFooter(scrollTop + clientHeight >= scrollHeight);
       setHasScrollbar(window.getComputedStyle(document.documentElement).overflowY === 'visible');
+      window.scrollTo(0, 0);
       console.log('hasScrollbar:', hasScrollbar);
     };
 
