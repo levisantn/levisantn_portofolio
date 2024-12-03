@@ -1,5 +1,6 @@
 import { Box, Link, Stack, Typography } from '@mui/material';
 import { Link as RouterLink } from 'react-router-dom';
+import bitmojiHidingEyes from '../assets/imgs/bitmoji/hiding_eyes.png';
 
 const Error404 = () => {
   return (
@@ -7,7 +8,7 @@ const Error404 = () => {
       <Box
         component='img'
         alt='Hiding eyes bitmoji '
-        src='src/assets/imgs/bitmoji/hiding_eyes.png'
+        src={bitmojiHidingEyes}
         sx={{
           width: '20rem',
           height: '20rem',
