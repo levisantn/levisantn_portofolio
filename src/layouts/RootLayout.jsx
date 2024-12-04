@@ -18,26 +18,29 @@ function RootLayout() {
       const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
       setShowFooter(scrollTop + clientHeight >= scrollHeight - 1);
       setHasScrollbar(window.getComputedStyle(document.documentElement).overflowY === 'visible');
-      console.log('hasScrollbar:', hasScrollbar);
+      // console.log('hasScrollbar:', hasScrollbar);
     };
 
     if (firstRenderRef.current) {
-      handleFooter();
+      setShowFooter(false);
+      console.log('first render =', firstRenderRef);
       firstRenderRef.current = false;
+    } else {
+      handleFooter();
+      console.log('first render?? =', firstRenderRef);
     }
 
     window.addEventListener('click', handleFooter);
     window.addEventListener('scroll', handleFooter);
     window.addEventListener('resize', handleFooter);
-    window.scrollTo(0, 0);
 
     return () => {
-      window.addEventListener('click', handleFooter);
-      window.addEventListener('scroll', handleFooter);
-      window.addEventListener('resize', handleFooter);
-      window.scrollTo(0, 0);
+      window.removeEventListener('click', handleFooter);
+      window.removeEventListener('scroll', handleFooter);
+      window.removeEventListener('resize', handleFooter);
     };
-  }, [hasScrollbar]);
+  }, [firstRenderRef.current, hasScrollbar]);
+
   return (
     <Grid2 container spacing={0}>
       <Grid2 size={12}>
