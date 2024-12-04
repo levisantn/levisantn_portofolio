@@ -6,9 +6,10 @@ import emailjs from '@emailjs/browser';
 
 const FeedbackForm = () => {
   const theme = useTheme();
-  const SERVICE_ID = 'service_r9ib0n8';
-  const TEMPLATE_ID = 'template_pzztydc';
-  const PUBLIC_KEY = 'c6OoWuOvzpAPDRizG';
+  const SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
+  const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
+  const PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY;
+
   const [successMessage, setSuccessMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
 
