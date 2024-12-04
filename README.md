@@ -77,6 +77,16 @@ npm run build
 
 [bitmoji](https://www.bitmoji.com/)
 
+### forms
+
+- [emailJS](https://www.emailjs.com/)
+- [react-hook-form MUI](https://github.com/dohomi/react-hook-form-mui/blob/master/README.md)
+
+### others
+
+- [leetcode stats card](https://github.com/JacobLinCool/LeetCode-Stats-Card?tab=readme-ov-file#themes) with [mui markdown](https://github.com/HPouyanmehr/mui-markdown)
+- [react github calendar](https://grubersjoe.github.io/react-github-calendar/)
+
 ## License
 
 [MIT](LICENSE)
