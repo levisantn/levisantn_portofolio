@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useCallback } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { useColorScheme } from '@mui/material/styles';
 import { FormControlLabel, Checkbox, Tooltip, Zoom } from '@mui/material';
 import SettingsIcon from '@mui/icons-material/Settings';
@@ -10,13 +10,12 @@ const ModeSwitcherButton = () => {
   const [useSystemMode, setUseSystemMode] = useState(true);
   const [indeterminate, setIndeterminate] = useState(true);
   const { mode, setMode } = useColorScheme();
-  const isMountedRef = useRef(false);
 
   const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
   const lightColor = window.getComputedStyle(document.documentElement).getPropertyValue('--primary-color-light');
   const darkColor = window.getComputedStyle(document.documentElement).getPropertyValue('--primary-color-dark');
 
-  // update the scrollbar color
+  // function that update the scrollbar color
   const setScrollbarColor = useCallback(
     (mode) => {
       const getScrollbarColor = (mode, hover = false) => {
@@ -30,6 +29,7 @@ const ModeSwitcherButton = () => {
     [darkColor, lightColor],
   );
 
+  // function to toggle the system mode
   const handleToggleSystemMode = (event) => {
     setUseSystemMode(event.target.checked);
     setIndeterminate(event.target.checked);
@@ -48,19 +48,16 @@ const ModeSwitcherButton = () => {
     }
     setIndeterminate(false);
     setMode(event.target.checked ? 'light' : 'dark');
-    // set color for scrollbar
     setScrollbarColor(mode);
   };
 
   // Media query listener for detecting system color scheme changes
   useEffect(() => {
     const handleMediaQueryChange = () => {
-      // console.log('system color scheme changed:', mediaQuery.matches);
-      // console.log('system color scheme changed:', mode);
-
       if (useSystemMode) {
         // Update mode if system mode is active
         setScrollbarColor(mediaQuery.matches ? 'light' : 'dark');
+        setMode('system');
       }
     };
     mediaQuery.addEventListener('change', handleMediaQueryChange);
@@ -70,15 +67,7 @@ const ModeSwitcherButton = () => {
     return () => {
       mediaQuery.removeEventListener('change', handleMediaQueryChange);
     };
-  }, [useSystemMode, mediaQuery, setScrollbarColor]); // Only re-run the effect when `useSystemMode` changes
-
-  useEffect(() => {
-    if (isMountedRef.current) {
-      setMode('system'); // Set the initial mode to 'light' on page refresh
-    } else {
-      isMountedRef.current = true;
-    }
-  }, [setMode]); // Empty dependency array ensures it runs only once on initial render
+  }, [useSystemMode, mediaQuery, setScrollbarColor, setMode]);
 
   return (
     <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>

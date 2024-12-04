@@ -18,16 +18,13 @@ function RootLayout() {
       const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
       setShowFooter(scrollTop + clientHeight >= scrollHeight - 1);
       setHasScrollbar(window.getComputedStyle(document.documentElement).overflowY === 'visible');
-      // console.log('hasScrollbar:', hasScrollbar);
     };
 
     if (firstRenderRef.current) {
       setShowFooter(false);
-      console.log('first render =', firstRenderRef);
       firstRenderRef.current = false;
     } else {
       handleFooter();
-      console.log('first render?? =', firstRenderRef);
     }
 
     window.addEventListener('click', handleFooter);
@@ -39,7 +36,7 @@ function RootLayout() {
       window.removeEventListener('scroll', handleFooter);
       window.removeEventListener('resize', handleFooter);
     };
-  }, [firstRenderRef.current, hasScrollbar]);
+  }, [firstRenderRef, hasScrollbar]);
 
   return (
     <Grid2 container spacing={0}>
