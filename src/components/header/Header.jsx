@@ -3,7 +3,14 @@ import { AppBar, Toolbar, Typography, Button, Box } from '@mui/material';
 import ModeSwitcherButton from '../button/ToggleModeButton/ModeSwitcherButton';
 import { Link } from 'react-router-dom'; // Ensure you import Link
 
-const pages = ['About me', 'Projects', 'Resume', 'Contact me'];
+const pages = [
+  { page: 'Home', route: '/home' },
+  { page: 'About me', route: '/about_me' },
+  { page: 'Projects', route: '/projects' },
+  // { page: 'Cheatsheets', route: '/cheatsheets' },
+  { page: 'Resume', route: '/resume' },
+  { page: 'Contact me', route: '/contact_me' },
+];
 
 const Header = () => {
   return (
@@ -39,9 +46,9 @@ const Header = () => {
         <Box sx={{ display: 'flex', justifyContent: 'flex-end', flexGrow: 1 }}>
           {pages.map((item) => (
             <Button
-              key={item}
+              key={item.page}
               component={Link}
-              to={`/${item.replace(/\s/g, '_')}`}
+              to={item.route}
               size='large'
               color='inherit'
               sx={{
@@ -58,7 +65,7 @@ const Header = () => {
                 },
               }}
             >
-              {item}
+              {item.page}
             </Button>
           ))}
         </Box>
