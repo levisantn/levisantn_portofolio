@@ -42,12 +42,6 @@
 
   --font-size-base: 62.5%; /* 62.5% of 16px = 10px */
 
-  /* device breakpoints */
-  --breakpoint-mobile: 0px;
-  --breakpoint-tablet: 640px;
-  --breakpoint-laptop: 1024px;
-  --breakpoint-desktop: 1200px;
-
   --scrollbar-thumb-color: #c0392b40;
   --scrollbar-thumb-color-hover: #c0392b90;
 }
@@ -65,24 +59,7 @@ html {
   }
 }
 
-/* Media queries */
-@media (max-width: var(--breakpoint-mobile)) {
-  /* Mobile-specific styles */
-}
-
-@media (min-width: var(--breakpoint-tablet)) and (max-width: var(--breakpoint-laptop)) {
-  /* Tablet-specific styles */
-}
-
-@media (min-width: var(--breakpoint-laptop)) and (max-width: var(--breakpoint-desktop)) {
-  /* Laptop-specific styles */
-}
-
-@media (min-width: var(--breakpoint-desktop)) {
-  /* Desktop-specific styles */
-}
-
-/* scrollbar */
+/* Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }

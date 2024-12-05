@@ -1,14 +1,25 @@
 // import React from 'react';
-import { AppBar, Toolbar, Typography, Button, Box } from '@mui/material';
+import { useState } from 'react';
+import { AppBar, Toolbar, Typography, Button, Box, IconButton, Menu, MenuItem } from '@mui/material';
 import ModeSwitcherButton from '../button/ToggleModeButton/ModeSwitcherButton';
-import { Link } from 'react-router-dom'; // Ensure you import Link
+import { Link } from 'react-router-dom';
+import MenuIcon from '@mui/icons-material/Menu';
 
 const pages = ['About me', 'Projects', 'Resume', 'Contact me'];
 
 const Header = () => {
+  const [anchorElNav, setAnchorElNav] = useState(null);
+
+  const handleOpenNavMenu = (event) => {
+    setAnchorElNav(event.currentTarget);
+  };
+
+  const handleCloseNavMenu = () => {
+    setAnchorElNav(null);
+  };
   return (
     <AppBar position='sticky' sx={{ padding: 1, marginBottom: 1 }}>
-      <Toolbar id='back-to-top-anchor' sx={{ display: 'flex', justifyContent: 'space-between' }}>
+      <Toolbar id='back-to-top-anchor' sx={{ display: 'flex' }}>
         <Button
           component={Link}
           to={'/home'}
@@ -36,7 +47,14 @@ const Header = () => {
           </Typography>
         </Button>
 
-        <Box sx={{ display: 'flex', justifyContent: 'flex-end', flexGrow: 1 }}>
+        {/* --------- MD > here > XL --------- */}
+        <Box
+          sx={{
+            justifyContent: 'flex-end',
+            flexGrow: 1,
+            display: { xs: 'none', md: 'flex' },
+          }}
+        >
           {pages.map((item) => (
             <Button
               key={item}
@@ -62,6 +80,43 @@ const Header = () => {
             </Button>
           ))}
         </Box>
+
+        {/* --------- XS > here > md --------- */}
+        <Box sx={{ flexGrow: 1, justifyContent: 'flex-end', display: { xs: 'flex', md: 'none' } }}>
+          <IconButton
+            size='large'
+            aria-label='header sections menu'
+            aria-controls='menu-appbar'
+            aria-haspopup='true'
+            onClick={handleOpenNavMenu}
+            color='inherit'
+          >
+            <MenuIcon />
+          </IconButton>
+          <Menu
+            id='menu-appbar'
+            anchorEl={anchorElNav}
+            anchorOrigin={{
+              vertical: 'top',
+              horizontal: 'right',
+            }}
+            keepMounted
+            transformOrigin={{
+              vertical: 'top',
+              horizontal: 'right',
+            }}
+            open={Boolean(anchorElNav)}
+            onClose={handleCloseNavMenu}
+            sx={{ display: { xs: 'block', md: 'none' } }}
+          >
+            {pages.map((page) => (
+              <MenuItem key={page} component={Link} to={`/${page.replace(/\s/g, '_')}`} onClick={handleCloseNavMenu}>
+                <Typography sx={{ textAlign: 'center' }}>{page}</Typography>
+              </MenuItem>
+            ))}
+          </Menu>
+        </Box>
+        {/* ------------------ */}
         <Box sx={{ marginLeft: 4 }}>
           <ModeSwitcherButton color='inhirit' />
         </Box>
