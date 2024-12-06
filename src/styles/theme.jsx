@@ -75,21 +75,23 @@ const myTheme = createTheme({
     fontFamily: ['var(--sans-serif-font-stack)', 'var(--sans-serif-font)'],
     h1: {
       fontFamily: ['var(--sans-serif-font-stack)', 'var(--headers-font)'],
-      fontWeight: '400',
+      fontWeight: '500',
       fontSize: '4.25rem',
     },
     h2: {
       fontFamily: ['var(--mono-font-stack)', 'var(--mono-font)'],
-      // fontSize: '3.2rem'
+      fontSize: '3.2rem',
       fontWeight: '600',
     },
     h3: {
       fontFamily: ['var(--sans-serif-font-stack)', 'var(--headers-font)'],
-      fontWeight: '400',
+      fontWeight: '500',
       fontSize: '3.5rem',
     },
     h4: {
       fontFamily: ['var(--sans-serif-font-stack)', 'var(--headers-font)'],
+      fontWeight: '400',
+      fontSize: '1.75rem',
     },
     bodyHome: {
       fontFamily: ['var(--sans-serif-font-stack)', 'var(--headers-font)'],

@@ -45,7 +45,7 @@ function RootLayout() {
   };
   return (
     <Grid2 container>
-      <Grid2 size={12} paddingBottom={'5rem'}>
+      <Grid2 size={12}>
         <Header />
         <ScrollToTopButton />
         {showAlert && (

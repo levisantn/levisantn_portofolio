@@ -10,7 +10,13 @@ const HiThereCard = () => {
   const skills = ['Data Analyst', 'ML Developper', 'Open Source enthousiast', 'Lifelong learner'];
 
   return (
-    <Grid2 container paddingBottom='7.5rem' size={12} direction={{ xs: 'column', md: 'row' }}>
+    <Grid2
+      container
+      paddingTop={{ xs: '2.5rem', md: '5rem' }}
+      paddingBottom={{ xs: '2.5rem', md: '5rem' }}
+      size={12}
+      direction={{ xs: 'column', md: 'row' }}
+    >
       <Grid2 size={2} display={{ xs: 'none', md: 'block' }} />
       <Grid2
         display='flex'
@@ -33,7 +39,7 @@ const HiThereCard = () => {
             variant='h1'
             sx={{
               whiteSpace: 'pre-wrap',
-              '& span:nth-of-type(2)': { color: theme.palette.primary.main, fontWeight: '500' },
+              '& span:nth-of-type(2)': { color: theme.palette.primary.main, fontWeight: '600' },
               fontSize: { xs: '2.25rem', sm: '2.75rem', md: '3.25rem', lg: '3.73rem', xl: '4.25rem' },
             }}
           >
@@ -43,7 +49,7 @@ const HiThereCard = () => {
               👋🏼
             </span>
             <br />
-            I&apos;m <span>Levis ANTONETTI</span>
+            I&apos;m <span>Levis Antonetti</span>
           </Typography>
 
           <Typography

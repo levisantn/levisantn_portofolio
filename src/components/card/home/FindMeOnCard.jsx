@@ -1,52 +1,31 @@
-import { Box, Stack, Typography, Grid2 } from '@mui/material';
+import { Stack, Typography, Grid2 } from '@mui/material';
+import { useTheme } from '@emotion/react';
 import BodyMediaStack from '../../socialMediaStack/BodyMediaStack';
 
 const FindMeOnCard = () => {
+  const theme = useTheme();
   return (
-    <Grid2
-      container
-      paddingTop='5rem'
-      paddingBottom='3.75rem'
-      borderRadius={1}
-      sx={{
-        height: 'auto',
-        // backgroundColor: 'background.paper',
-        textAlign: 'center',
-      }}
-    >
-      <Grid2 display='flex' size={1} borderRadius={1}></Grid2>
-      <Grid2
-        spacing={1}
-        padding={1}
-        size={'grow'}
-        borderRadius={1}
-        sx={{
-          justifyContent: 'center',
-          alignItems: 'center',
-        }}
-      >
-        <Box sx={{ display: 'flex', height: '100%', justifyContent: 'center' }}>
-          <Stack
-            direction='column'
-            spacing={1}
-            sx={{
-              justifyContent: 'center',
-              alignItems: 'center',
-            }}
-          >
-            <Typography variant='h2' sx={{ fontWeight: '400' }}>
-              Find me on,
-            </Typography>
+    <Grid2 container paddingTop={{ xs: '5rem', md: '7.5rem' }} paddingBottom={{ xs: '5rem', md: '7.5rem' }}>
+      <Grid2 size={1} display={{ xs: 'none', md: 'block' }} />
+      <Grid2 size={'grow'} sx={{ display: 'flex', justifyContent: 'center' }}>
+        <Stack
+          direction='column'
+          spacing={{ xs: '0.33rem', sm: '0.40rem', md: '0.48rem', lg: '0.55rem', xl: '0.625rem' }}
+          sx={{
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
+        >
+          <Typography variant='h3'>Find me on,</Typography>
 
-            <Typography variant='h5' sx={{ '& span:first-of-type': { color: 'primary.main' } }}>
-              Feel free to <span>connect</span> with me
-            </Typography>
+          <Typography variant='h4' sx={{ '& span:first-of-type': { color: theme.palette.primary.main } }}>
+            Feel free to <span>connect</span> with me
+          </Typography>
 
-            <BodyMediaStack />
-          </Stack>
-        </Box>
+          <BodyMediaStack />
+        </Stack>
       </Grid2>
-      <Grid2 display='flex' size={1} borderRadius={1}></Grid2>
+      <Grid2 size={1} display={{ xs: 'none', md: 'block' }} />
     </Grid2>
   );
 };

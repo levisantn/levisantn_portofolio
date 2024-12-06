@@ -1,6 +1,6 @@
 import { Typography, Grid2, Stack, Avatar } from '@mui/material';
-import bitmojiFrontFace from '../../../assets/imgs/bitmoji/front_face_rogner.png';
 import { useTheme } from '@emotion/react';
+import bitmojiFrontFace from '../../../assets/imgs/bitmoji/front_face_rogner.png';
 
 const IntroduceMyselfCard = () => {
   const theme = useTheme();
@@ -8,10 +8,9 @@ const IntroduceMyselfCard = () => {
     <Grid2
       container
       direction={{ xs: 'column', md: 'row' }}
-      paddingTop='7.5rem'
-      paddingBottom='7.5rem'
+      paddingTop={{ xs: '5rem', md: '7.5rem' }}
+      paddingBottom={{ xs: '5rem', md: '7.5rem' }}
       spacing={{ xs: '1.25rem', sm: '2.5rem', md: '3.75rem', lg: '5rem', xl: '6.25rem' }}
-      size={12}
       backgroundColor={theme.palette.primary.hover2}
       sx={{
         paddingLeft: { xs: '2.5rem', sm: '3.75rem', md: '0rem' },
