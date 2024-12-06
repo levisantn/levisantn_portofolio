@@ -39,7 +39,7 @@ function RootLayout() {
   }, [firstRenderRef, hasScrollbar]);
 
   return (
-    <Grid2 container spacing={0}>
+    <Grid2 container>
       <Grid2 size={12}>
         <Header />
         <ScrollToTopButton />
@@ -47,7 +47,7 @@ function RootLayout() {
       <Grid2 size={12}>
         <Outlet />
       </Grid2>
-      <Grid2 size={12} paddingBottom={'6rem'}></Grid2>
+      <Grid2 size={12} paddingBottom={'7.5rem'}></Grid2>
       <Grid2 size={12} sx={{ position: 'fixed', bottom: 0, display: showFooter || hasScrollbar ? 'block' : 'none' }}>
         <Footer />
       </Grid2>

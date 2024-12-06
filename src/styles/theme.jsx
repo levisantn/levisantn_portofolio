@@ -110,6 +110,11 @@ const myTheme = createTheme({
     overline: {
       fontFamily: ['var(--mono-font-stack)', 'var(--mono-font)'],
     },
+    footer: {
+      fontFamily: ['var(--mono-font-stack)', 'var(--mono-font)'],
+      fontWeight: 500,
+      fontSize: '1.5rem',
+    },
   },
   shape: {
     borderRadius: 8,

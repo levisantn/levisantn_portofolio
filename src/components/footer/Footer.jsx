@@ -1,26 +1,26 @@
-import { Container, Grid2, Typography } from '@mui/material';
+import { Container, Stack, Typography } from '@mui/material';
+import RowStackFooter from './RowStackFooter';
+
 import FavoriteIcon from '@mui/icons-material/Favorite';
-import RowStackFooter from '../social-media/RowStackFooter';
 
 const Footer = () => {
   return (
-    <Container sx={{ padding: 2 }}>
-      <Grid2 container spacing={2}>
-        <Grid2 display='flex' justifyContent='left' alignItems='center' size='grow'>
-          <Typography variant='code' fontWeight={500} fontSize='1.5rem'>
-            Copyright&copy; 2024 levisantn
-          </Typography>
-        </Grid2>
-        <Grid2 display='flex' justifyContent='center' alignItems='center'>
-          <Typography variant='code' fontWeight={500} fontSize='1.5rem'>
-            designed with <FavoriteIcon sx={{ color: 'primary.main', verticalAlign: 'bottom', fontSize: '2.5rem' }} />{' '}
-            by Levis Antonetti
-          </Typography>
-        </Grid2>
-        <Grid2 display='flex' justifyContent='right' size='grow' flexDirection='row'>
-          <RowStackFooter />
-        </Grid2>
-      </Grid2>
+    <Container container maxWidth='false' sx={{ padding: '1.25rem' }}>
+      <Stack direction={{ xs: 'column', md: 'row' }} justifyContent='space-between' alignItems='center'>
+        <Typography variant='footer' sx={{ fontSize: { xs: '1.25rem', lg: '1.5rem' } }}>
+          Copyright&copy; 2024 levisantn
+        </Typography>
+        {/* ----- */}
+        <Typography variant='footer' sx={{ fontSize: { xs: '1.25rem', lg: '1.5rem' } }}>
+          designed with{' '}
+          <FavoriteIcon
+            sx={{ color: 'primary.main', verticalAlign: 'bottom', fontSize: { xs: '2rem', lg: '2.25rem' } }}
+          />{' '}
+          by Levis Antonetti
+        </Typography>
+        {/* ---------- */}
+        <RowStackFooter />
+      </Stack>
     </Container>
   );
 };
