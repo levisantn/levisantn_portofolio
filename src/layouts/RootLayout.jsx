@@ -1,5 +1,5 @@
 // import * as React from 'react';
-import { Grid2 } from '@mui/material';
+import { Alert, Grid2 } from '@mui/material';
 import Header from '../components/header/Header';
 import Footer from '../components/footer/Footer';
 import { Outlet } from 'react-router-dom';
@@ -38,16 +38,27 @@ function RootLayout() {
     };
   }, [firstRenderRef, hasScrollbar]);
 
+  const [showAlert, setShowAlert] = useState(true);
+
+  const handleClose = () => {
+    setShowAlert(false);
+  };
   return (
     <Grid2 container>
-      <Grid2 size={12}>
+      <Grid2 size={12} paddingBottom={'5rem'}>
         <Header />
         <ScrollToTopButton />
+        {showAlert && (
+          <Alert severity='warning' onClose={handleClose} sx={{ margin: '1rem' }}>
+            <strong>Under Development 🚧</strong>
+            <br />
+            This website isn&apos;t optimized for mobile display. I&apos;m working on it.
+          </Alert>
+        )}
       </Grid2>
-      <Grid2 size={12}>
+      <Grid2 size={12} paddingBottom={'5rem'}>
         <Outlet />
       </Grid2>
-      <Grid2 size={12} paddingBottom={'7.5rem'}></Grid2>
       <Grid2 size={12} sx={{ position: 'fixed', bottom: 0, display: showFooter || hasScrollbar ? 'block' : 'none' }}>
         <Footer />
       </Grid2>

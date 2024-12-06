@@ -1,31 +1,20 @@
 import { Typography, Grid2, Stack, Box } from '@mui/material';
+import { useTheme } from '@emotion/react';
 import Typewriter from 'typewriter-effect';
 import 'animate.css';
+
 import bitmojiLaptopWithHelloHands from '../../../assets/imgs/bitmoji/laptop_with_hello_hand.png';
 
 const HiThereCard = () => {
+  const theme = useTheme();
   const skills = ['Data Analyst', 'ML Developper', 'Open Source enthousiast', 'Lifelong learner'];
-  return (
-    <Grid2
-      container
-      paddingTop='5rem'
-      paddingBottom='7.5rem'
-      size={12}
-      borderRadius={1}
-      sx={{
-        // backgroundColor: 'background.paper',
-        height: 'auto',
-      }}
-    >
-      <Grid2 display='flex' size={2} borderRadius={1}></Grid2>
 
+  return (
+    <Grid2 container paddingBottom='7.5rem' size={12} direction={{ xs: 'column', md: 'row' }}>
+      <Grid2 size={2} />
       <Grid2
         display='flex'
         size={'grow'}
-        direction='column'
-        spacing={0.5}
-        padding={0.5}
-        borderRadius={1}
         sx={{
           justifyContent: 'center',
           alignItems: 'center',
@@ -33,8 +22,8 @@ const HiThereCard = () => {
       >
         <Stack
           direction='column'
-          spacing={'5rem'}
-          padding={2}
+          spacing='5rem'
+          padding='1.5rem'
           sx={{
             justifyContent: 'center',
             alignItems: 'center',
@@ -43,23 +32,25 @@ const HiThereCard = () => {
           <Typography
             variant='h1'
             sx={{
-              fontWeight: '400',
-              fontSize: '4.2rem',
               whiteSpace: 'pre-wrap',
-              '& span:nth-of-type(2)': { color: 'primary.main' },
+              '& span:nth-of-type(2)': { color: theme.palette.primary.main, fontWeight: '500' },
+              fontSize: { xs: '2.25rem', sm: '2.75rem', md: '3.25rem', lg: '3.73rem', xl: '4.25rem' },
             }}
           >
-            <br />
             <br />
             Hi There!{' '}
             <span className='wave' role='img' aria-labelledby='wave'>
               👋🏼
             </span>
             <br />
-            I&apos;m <span style={{ fontWeight: '500' }}>Levis ANTONETTI</span>
+            I&apos;m <span>Levis ANTONETTI</span>
           </Typography>
 
-          <Typography variant='code' sx={{ fontSize: '3rem', fontWeight: '600', color: 'primary.light' }}>
+          <Typography
+            variant='h2'
+            color={theme.palette.primary.light}
+            sx={{ fontSize: { xs: '1.48rem', sm: '1.8rem', md: '2.14rem', lg: '2.47rem', xl: '2.8rem' } }}
+          >
             <Typewriter
               options={{
                 strings: skills,
@@ -74,7 +65,6 @@ const HiThereCard = () => {
       <Grid2
         display='flex'
         size={'grow'}
-        borderRadius={1}
         sx={{
           justifyContent: 'center',
           alignItems: 'center',
@@ -85,13 +75,12 @@ const HiThereCard = () => {
           alt='laptop with hello hand bitmoji'
           src={bitmojiLaptopWithHelloHands}
           sx={{
-            width: '400px',
-            height: '400px',
-            borderRadius: 1,
+            width: { xs: '211px', sm: '259px', md: '306px', lg: '353px', xl: '400px' },
+            height: 'auto',
           }}
         />
       </Grid2>
-      <Grid2 display='flex' size={2} borderRadius={1}></Grid2>
+      <Grid2 size={2} />
     </Grid2>
   );
 };

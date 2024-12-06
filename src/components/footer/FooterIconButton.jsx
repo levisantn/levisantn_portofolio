@@ -13,10 +13,10 @@ const FooterIconButton = ({ href, disabled, fontSize, padding, icon }) => {
         height: '30px',
         fontSize: { fontSize },
         padding: { padding },
-        borderRadius: 5,
+        borderRadius: '50%',
         '&:hover': {
           bgcolor: 'primary.hover1',
-          borderRadius: 5,
+          borderRadius: '50%',
         },
         '&.Mui-disabled': {
           color: 'text.disabled',
