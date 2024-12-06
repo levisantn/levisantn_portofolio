@@ -1,28 +1,31 @@
 import { IconButton } from '@mui/material';
 import PropTypes from 'prop-types';
+import { useTheme } from '@emotion/react';
 
-const FooterIconButton = ({ href, disabled, fontSize, padding, icon }) => {
+const FooterMediaIconButton = ({ href, disabled, fontSize = '2.5rem', paddingTop, paddingLeft, icon }) => {
+  const theme = useTheme();
   return (
     <IconButton
       href={href}
       target='_blank'
       disabled={disabled}
       sx={{
-        color: 'text.primary',
+        color: theme.palette.text.primary,
         width: '30px',
         height: '30px',
         fontSize: { fontSize },
-        padding: { padding },
+        paddingTop: { paddingTop },
+        paddingLeft: { paddingLeft },
         borderRadius: '50%',
         '&:hover': {
-          bgcolor: 'primary.hover1',
+          bgcolor: theme.palette.primary.hover1,
           borderRadius: '50%',
         },
         '&.Mui-disabled': {
-          color: 'text.disabled',
+          color: theme.palette.text.disabled,
         },
         '& .MuiTouchRipple-root': {
-          color: 'primary.light',
+          color: theme.palette.primary.light,
         },
       }}
     >
@@ -31,12 +34,13 @@ const FooterIconButton = ({ href, disabled, fontSize, padding, icon }) => {
   );
 };
 
-FooterIconButton.propTypes = {
+FooterMediaIconButton.propTypes = {
   href: PropTypes.string.isRequired,
   disabled: PropTypes.bool,
   fontSize: PropTypes.string,
-  padding: PropTypes.string,
+  paddingTop: PropTypes.string,
+  paddingLeft: PropTypes.string,
   icon: PropTypes.node.isRequired,
 };
 
-export default FooterIconButton;
+export default FooterMediaIconButton;
