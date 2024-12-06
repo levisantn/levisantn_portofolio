@@ -65,23 +65,6 @@ html {
   }
 }
 
-/* Media queries */
-@media (max-width: var(--breakpoint-mobile)) {
-  /* Mobile-specific styles */
-}
-
-@media (min-width: var(--breakpoint-tablet)) and (max-width: var(--breakpoint-laptop)) {
-  /* Tablet-specific styles */
-}
-
-@media (min-width: var(--breakpoint-laptop)) and (max-width: var(--breakpoint-desktop)) {
-  /* Laptop-specific styles */
-}
-
-@media (min-width: var(--breakpoint-desktop)) {
-  /* Desktop-specific styles */
-}
-
 /* scrollbar */
 ::-webkit-scrollbar {
   width: 8px;

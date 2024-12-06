@@ -111,14 +111,6 @@ const myTheme = createTheme({
       fontFamily: ['var(--mono-font-stack)', 'var(--mono-font)'],
     },
   },
-  breakpoints: {
-    values: {
-      mobile: 'var(--breakpoint-mobile)',
-      tablet: 'var(--breakpoint-tablet)',
-      laptop: 'var(--breakpoint-laptop)',
-      desktop: 'var(--breakpoint-desktop)',
-    },
-  },
   shape: {
     borderRadius: 8,
   },
