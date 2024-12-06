@@ -1,9 +1,7 @@
+import { Box, Fab, Fade, useScrollTrigger } from '@mui/material';
+import { useTheme } from '@emotion/react';
 import PropTypes from 'prop-types';
-import useScrollTrigger from '@mui/material/useScrollTrigger';
-import Box from '@mui/material/Box';
-import Fab from '@mui/material/Fab';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
-import Fade from '@mui/material/Fade';
 
 const ScrollToTop = (props) => {
   const { children } = props;
@@ -24,7 +22,16 @@ const ScrollToTop = (props) => {
 
   return (
     <Fade in={trigger}>
-      <Box onClick={handleClick} role='presentation' sx={{ position: 'fixed', bottom: 60, right: 20 }}>
+      <Box
+        onClick={handleClick}
+        role='presentation'
+        sx={{
+          position: 'fixed',
+          bottom: { xs: '30px', md: '60px' },
+          right: 30,
+          zIndex: 1100,
+        }}
+      >
         {children}
       </Box>
     </Fade>
@@ -36,23 +43,25 @@ ScrollToTop.propTypes = {
 };
 
 export const ScrollToTopButton = (props) => {
+  const theme = useTheme();
   return (
     <>
       <ScrollToTop {...props}>
         <Fab
-          size='medium'
           aria-label='scroll back to top'
           sx={{
-            color: 'text.secondary',
-            bgcolor: 'primary.dark',
+            width: { xs: '35px', sm: '39px', md: '46px', lg: '53px', xl: '60px' },
+            height: { xs: '35px', sm: '39px', md: '46px', lg: '53px', xl: '60px' },
+            color: theme.palette.text.secondary,
+            bgcolor: theme.palette.primary.dark,
             border: '0.2rem solid',
-            borderColor: 'primary.main',
+            borderColor: theme.palette.primary.main,
             '&:hover': {
-              bgcolor: 'primary.main',
-              color: 'text.primary',
+              bgcolor: theme.palette.primary.main,
+              color: theme.palette.text.primary,
             },
             '& .MuiTouchRipple-root': {
-              color: 'primary.light',
+              color: theme.palette.primary.light,
             },
           }}
         >

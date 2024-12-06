@@ -1,12 +1,10 @@
 import { Grid2 } from '@mui/material';
 import { Document, Page, pdfjs } from 'react-pdf';
-import 'react-pdf/dist/esm/Page/TextLayer.css'; // Import TextLayer styles
-import 'react-pdf/dist/esm/Page/AnnotationLayer.css'; // Import AnnotationLayer styles (optional)
-// import myResumeDark from '../../../assets/docs/cv_Antonetti_Levis_2024_dark_fr.pdf';
-// import myResumeLight from '../../../assets/docs/cv_Antonetti_Levis_2024_light_fr.pdf';
+import { useTheme } from '@emotion/react';
+import 'react-pdf/dist/esm/Page/TextLayer.css';
+import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 import myResumeDark from '../../../assets/docs/cv_Antonetti_Levis_2024_dark_en.pdf';
 import myResumeLight from '../../../assets/docs/cv_Antonetti_Levis_2024_light_en.pdf';
-import { useTheme } from '@emotion/react';
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL('pdfjs-dist/build/pdf.worker.min.mjs', import.meta.url).toString();
 
@@ -14,37 +12,75 @@ const ResumePdfViewerCard = () => {
   const theme = useTheme();
   const isDarkMode = theme.palette.mode === 'dark';
   return (
-    <Grid2 container size={12}>
+    <Grid2
+      container
+      size={12}
+      paddingBottom={{ xs: '5rem', sm: '5.625rem', md: '6.25rem', lg: '6.875rem', xl: '7.5rem' }}
+    >
+      <Grid2 size={'grow'} />
       <Grid2
-        container
-        paddingTop='2.5rem'
-        paddingBottom='3.75rem'
-        size={12}
+        display={{ xs: 'none', lg: 'flex' }}
+        size={'auto'}
+        direction='column'
         sx={{
-          backgroundColor: 'background.default',
-          height: 'auto',
+          justifyContent: 'center',
+          alignItems: 'center',
+          height: '141.25rem',
+          boxShadow: `0px 0px 50px -25px  ${theme.palette.primary.main}`,
         }}
       >
-        <Grid2 display='flex' size={'grow'} borderRadius={1}></Grid2>
-
-        <Grid2
-          display='flex'
-          size={'auto'}
-          direction='column'
-          borderRadius={1}
-          sx={{
-            justifyContent: 'center',
-            alignItems: 'center',
-            height: '141.25rem',
-            boxShadow: `0px 0px 50px -25px  ${theme.palette.primary.main}`,
-          }}
-        >
-          <Document file={isDarkMode ? myResumeDark : myResumeLight}>
-            <Page pageNumber={1} width={1000} height={1200} />
-          </Document>
-        </Grid2>
-        <Grid2 display='flex' size={'grow'} borderRadius={1}></Grid2>
+        <Document file={isDarkMode ? myResumeDark : myResumeLight}>
+          <Page pageNumber={1} width={1000} height={1200} />
+        </Document>
       </Grid2>
+      {/* -------------------- */}
+      <Grid2
+        display={{ xs: 'none', sm: 'none', md: 'flex', lg: 'none' }}
+        size={'auto'}
+        direction='column'
+        sx={{
+          justifyContent: 'center',
+          alignItems: 'center',
+          height: '113.2rem',
+          boxShadow: `0px 0px 50px -25px  ${theme.palette.primary.main}`,
+        }}
+      >
+        <Document file={isDarkMode ? myResumeDark : myResumeLight}>
+          <Page pageNumber={1} width={800} height={1000} />
+        </Document>
+      </Grid2>
+      {/* -------------------- */}
+      <Grid2
+        display={{ xs: 'none', sm: 'flex', md: 'none', lg: 'none' }}
+        size={'auto'}
+        direction='column'
+        sx={{
+          justifyContent: 'center',
+          alignItems: 'center',
+          height: '77.5rem',
+          boxShadow: `0px 0px 50px -25px  ${theme.palette.primary.main}`,
+        }}
+      >
+        <Document file={isDarkMode ? myResumeDark : myResumeLight}>
+          <Page pageNumber={1} width={550} height={750} />
+        </Document>
+      </Grid2>
+      {/* -------------------- */}
+      <Grid2
+        display={{ xs: 'flex', sm: 'none', md: 'none', lg: 'none' }}
+        size={'auto'}
+        sx={{
+          justifyContent: 'center',
+          alignItems: 'center',
+          height: '67.3rem',
+          boxShadow: `0px 0px 50px -25px  ${theme.palette.primary.main}`,
+        }}
+      >
+        <Document file={isDarkMode ? myResumeDark : myResumeLight}>
+          <Page pageNumber={1} width={495} height={695} />
+        </Document>
+      </Grid2>
+      <Grid2 size={'grow'} />
     </Grid2>
   );
 };

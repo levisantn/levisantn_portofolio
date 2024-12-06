@@ -6,12 +6,7 @@ import 'animate.css';
 
 const Home = () => {
   return (
-    <Grid2
-      container
-      sx={{
-        flexDirection: 'column',
-      }}
-    >
+    <Grid2 container direction='column'>
       {/* -------------------------------- */}
       <HiThereCard />
       {/* -------------------------------- */}

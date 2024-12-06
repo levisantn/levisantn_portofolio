@@ -4,13 +4,7 @@ import ResumePdfViewerCard from '../components/card/resume/ResumePdfViewerCard';
 
 const Resume = () => {
   return (
-    <Grid2
-      container
-      sx={{
-        backgroundColor: 'background.default',
-        flexDirection: 'column',
-      }}
-    >
+    <Grid2 container direction='column'>
       <DownloadResumeCard />
       {/* -------------------------------- */}
       <ResumePdfViewerCard />

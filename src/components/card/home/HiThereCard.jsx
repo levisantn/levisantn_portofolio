@@ -12,9 +12,9 @@ const HiThereCard = () => {
   return (
     <Grid2
       container
-      paddingTop={{ xs: '2.5rem', md: '5rem' }}
-      paddingBottom={{ xs: '2.5rem', md: '5rem' }}
+      paddingTop={{ xs: '1.25rem', md: '3.75rem' }}
       size={12}
+      paddingBottom={{ xs: '3.75rem', md: '5rem' }}
       direction={{ xs: 'column', md: 'row' }}
     >
       <Grid2 size={2} display={{ xs: 'none', md: 'block' }} />
