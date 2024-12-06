@@ -1,7 +1,7 @@
 import { Box, Stack, Typography, Grid2 } from '@mui/material';
 import { useTheme } from '@emotion/react';
 import bitmojiHelloDoor from '../../../assets/imgs/bitmoji/hello_door_cropped.png';
-import RowStackContact from '../../social-media/RowStackContact';
+import BodyMediaStack from '../../socialMediaStack/BodyMediaStack';
 
 const FindMeOnCard = () => {
   const theme = useTheme();
@@ -40,7 +40,7 @@ const FindMeOnCard = () => {
               Feel free to <span>connect</span> with me
             </Typography>
 
-            <RowStackContact />
+            <BodyMediaStack />
           </Stack>
         </Box>
       </Grid2>

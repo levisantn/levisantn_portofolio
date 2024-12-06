@@ -11,7 +11,7 @@ const HiThereCard = () => {
 
   return (
     <Grid2 container paddingBottom='7.5rem' size={12} direction={{ xs: 'column', md: 'row' }}>
-      <Grid2 size={2} />
+      <Grid2 size={2} display={{ xs: 'none', md: 'block' }} />
       <Grid2
         display='flex'
         size={'grow'}
@@ -80,7 +80,7 @@ const HiThereCard = () => {
           }}
         />
       </Grid2>
-      <Grid2 size={2} />
+      <Grid2 size={2} display={{ xs: 'none', md: 'block' }} />
     </Grid2>
   );
 };

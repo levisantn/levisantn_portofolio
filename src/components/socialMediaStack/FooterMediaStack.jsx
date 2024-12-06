@@ -1,12 +1,12 @@
 import { Stack, SvgIcon } from '@mui/material';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import FooterIconButton from './FooterIconButton';
 
 import { faGithub, faInstagram, faXTwitter, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { TableauSoftwareRounded } from '../../assets/imgs/icons/CustomMuiSvgIcons';
+import FooterIconButton from './FooterIconButton';
 
-const RowStackFooter = () => {
+const FooterMediaStack = () => {
   return (
     <Stack direction='row' spacing={1} marginBottom={'0.25rem'} sx={{ display: { xs: 'none', md: 'block' } }}>
       {/* -------------------- */}
@@ -76,4 +76,4 @@ const RowStackFooter = () => {
   );
 };
 
-export default RowStackFooter;
+export default FooterMediaStack;

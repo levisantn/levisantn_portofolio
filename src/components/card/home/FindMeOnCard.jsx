@@ -1,5 +1,5 @@
 import { Box, Stack, Typography, Grid2 } from '@mui/material';
-import RowStackContact from '../../social-media/RowStackContact';
+import BodyMediaStack from '../../socialMediaStack/BodyMediaStack';
 
 const FindMeOnCard = () => {
   return (
@@ -42,7 +42,7 @@ const FindMeOnCard = () => {
               Feel free to <span>connect</span> with me
             </Typography>
 
-            <RowStackContact />
+            <BodyMediaStack />
           </Stack>
         </Box>
       </Grid2>

@@ -4,7 +4,7 @@ import { faGithub, faInstagram, faXTwitter, faLinkedinIn } from '@fortawesome/fr
 import { TableauSoftwareRounded } from '../../assets/imgs/icons/CustomMuiSvgIcons';
 import { useTheme } from '@emotion/react';
 
-const RowStackContact = () => {
+const BodyMediaStack = () => {
   const theme = useTheme();
   return (
     <Stack direction='row' paddingTop={4} spacing={2.5}>
@@ -251,4 +251,4 @@ const RowStackContact = () => {
   );
 };
 
-export default RowStackContact;
+export default BodyMediaStack;
