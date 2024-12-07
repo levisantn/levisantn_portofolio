@@ -6,7 +6,11 @@ import BodyMediaIconButton from './BodyMediaIconButton';
 
 const BodyMediaStack = () => {
   return (
-    <Stack direction='row' paddingTop='2.5rem' spacing='2.5rem'>
+    <Stack
+      direction='row'
+      paddingTop={{ xs: '1.98rem', sm: '2.43rem', md: '2.87rem', lg: '3.31rem', xl: '3.75rem' }}
+      spacing={{ xs: '1.98rem', sm: '2.43rem', md: '2.87rem', lg: '3.31rem', xl: '3.75rem' }}
+    >
       {/* -------------------- */}
       <BodyMediaIconButton href='https://github.com/levisantn' icon={<FontAwesomeIcon icon={faGithub} />} />
       {/* -------------------- */}

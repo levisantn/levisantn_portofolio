@@ -73,33 +73,48 @@ const myTheme = createTheme({
   typography: {
     htmlFontSize: 10,
     fontFamily: ['var(--sans-serif-font-stack)', 'var(--sans-serif-font)'],
-    h1: {
+    mainHeader: {
       fontFamily: ['var(--sans-serif-font-stack)', 'var(--headers-font)'],
       fontWeight: '500',
       fontSize: '4.25rem',
     },
-    h2: {
-      fontFamily: ['var(--mono-font-stack)', 'var(--mono-font)'],
-      fontSize: '3.2rem',
-      fontWeight: '600',
-    },
-    h3: {
+    headerSection: {
       fontFamily: ['var(--sans-serif-font-stack)', 'var(--headers-font)'],
       fontWeight: '500',
       fontSize: '3.5rem',
+      // fontSize: { xs: '1.85rem', sm: '2.26rem', md: '2.68rem', lg: '3.09rem', xl: '3.5rem' },
     },
-    h4: {
+    headerSectionMono: {
+      fontFamily: ['var(--mono-font-stack)', 'var(--mono-font)'],
+      fontWeight: '600',
+      fontSize: '3.2rem',
+      // fontSize={{ xs: '1.48rem', sm: '1.8rem', md: '2.14rem', lg: '2.47rem', xl: '2.8rem' }}
+    },
+
+    subHeaderSection: {
+      fontFamily: ['var(--sans-serif-font-stack)', 'var(--headers-font)'],
+      fontWeight: '400',
+      fontSize: '1.875rem',
+      // fontSize: { xs: '0.99rem', sm: '1.21rem', md: '1.43rem', lg: '1.65rem', xl: '1.875rem' }
+    },
+    bodySection: {
       fontFamily: ['var(--sans-serif-font-stack)', 'var(--headers-font)'],
       fontWeight: '400',
       fontSize: '1.75rem',
-    },
-    bodyHome: {
-      fontFamily: ['var(--sans-serif-font-stack)', 'var(--headers-font)'],
-      fontWeight: '400',
-      fontSize: '1.8rem',
+      // fontSize: { xs: '0.93rem', sm: '1.13rem', md: '1.34rem', lg: '1.54rem', xl: '1.75rem' },
     },
     h6: {
       fontFamily: ['var(--sans-serif-font-stack)', 'var(--headers-font)'],
+    },
+    headerCardProject: {
+      fontFamily: ['var(--sans-serif-font-stack)', 'var(--headers-font)'],
+      fontWeight: '500',
+      fontSize: '2.125rem',
+    },
+    bodyCardProject: {
+      fontFamily: ['var(--sans-serif-font-stack)', 'var(--headers-font)'],
+      fontWeight: '400',
+      fontSize: '1.6rem',
     },
     code: {
       fontFamily: ['var(--mono-font-stack)', 'var(--mono-font)'],
@@ -123,7 +138,8 @@ const myTheme = createTheme({
     footer: {
       fontFamily: ['var(--mono-font-stack)', 'var(--mono-font)'],
       fontWeight: 500,
-      fontSize: '1.5rem',
+      fontSize: '1.75rem',
+      // fontSize: { xs: '0.93rem', sm: '1.13rem', md: '1.34rem', lg: '1.54rem', xl: '1.75rem' }
     },
   },
   shape: {

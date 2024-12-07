@@ -8,8 +8,8 @@ const IntroduceMyselfCard = () => {
     <Grid2
       container
       direction={{ xs: 'column', md: 'row' }}
-      paddingTop={{ xs: '5rem', md: '7.5rem' }}
-      paddingBottom={{ xs: '5rem', md: '7.5rem' }}
+      paddingTop={{ xs: '2.5rem', sm: '3.75rem', md: '5rem', lg: '6.25rem', xl: '7.5rem' }}
+      paddingBottom={{ xs: '2.5rem', sm: '3.75rem', md: '5rem', lg: '6.25rem', xl: '7.5rem' }}
       spacing={{ xs: '1.25rem', sm: '2.5rem', md: '3.75rem', lg: '5rem', xl: '6.25rem' }}
       backgroundColor={theme.palette.primary.hover2}
       sx={{
@@ -56,7 +56,7 @@ const IntroduceMyselfCard = () => {
           }}
         >
           <Typography
-            variant='h3'
+            variant='headerSection'
             sx={{
               '& span:first-of-type': { color: theme.palette.primary.main, fontWeight: '500' },
               textAlign: { xs: 'center', md: 'left' },
@@ -70,11 +70,11 @@ const IntroduceMyselfCard = () => {
           </Typography>
 
           <Typography
-            variant='bodyHome'
+            variant='bodySection'
             sx={{
               whiteSpace: 'pre-wrap',
               '& span:first-of-type': { color: theme.palette.primary.main },
-              fontSize: { xs: '0.95rem', sm: '1.16rem', md: '1.38rem', lg: '1.59rem', xl: '1.8rem' },
+              fontSize: { xs: '0.93rem', sm: '1.13rem', md: '1.34rem', lg: '1.54rem', xl: '1.75rem' },
             }}
           >
             Hi, I&apos;m from <span>Toulouse</span>, France.

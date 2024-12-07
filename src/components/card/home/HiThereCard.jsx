@@ -12,9 +12,9 @@ const HiThereCard = () => {
   return (
     <Grid2
       container
-      paddingTop={{ xs: '1.25rem', md: '3.75rem' }}
+      paddingTop={{ xs: '1.25rem', sm: '2.5rem', md: '3.75rem', lg: '5rem', xl: '6.25rem' }}
+      paddingBottom={{ xs: '1.25rem', sm: '2.5rem', md: '3.75rem', lg: '5rem', xl: '6.25rem' }}
       size={12}
-      paddingBottom={{ xs: '3.75rem', md: '5rem' }}
       direction={{ xs: 'column', md: 'row' }}
     >
       <Grid2 size={2} display={{ xs: 'none', md: 'block' }} />
@@ -36,7 +36,7 @@ const HiThereCard = () => {
           }}
         >
           <Typography
-            variant='h1'
+            variant='mainHeader'
             sx={{
               whiteSpace: 'pre-wrap',
               '& span:nth-of-type(2)': { color: theme.palette.primary.main, fontWeight: '600' },
@@ -53,9 +53,9 @@ const HiThereCard = () => {
           </Typography>
 
           <Typography
-            variant='h2'
+            variant='headerSectionMono'
             color={theme.palette.primary.light}
-            sx={{ fontSize: { xs: '1.48rem', sm: '1.8rem', md: '2.14rem', lg: '2.47rem', xl: '2.8rem' } }}
+            fontSize={{ xs: '1.48rem', sm: '1.8rem', md: '2.14rem', lg: '2.47rem', xl: '2.8rem' }}
           >
             <Typewriter
               options={{

@@ -14,7 +14,7 @@ const pages = [
 
 const Header = () => {
   return (
-    <AppBar position='sticky' sx={{ padding: 1, marginBottom: 1 }}>
+    <AppBar position='sticky' sx={{ padding: 1 }}>
       <Toolbar id='back-to-top-anchor' sx={{ display: 'flex', justifyContent: 'space-between' }}>
         <Button
           component={Link}

@@ -12,11 +12,7 @@ const ResumePdfViewerCard = () => {
   const theme = useTheme();
   const isDarkMode = theme.palette.mode === 'dark';
   return (
-    <Grid2
-      container
-      size={12}
-      paddingBottom={{ xs: '5rem', sm: '5.625rem', md: '6.25rem', lg: '6.875rem', xl: '7.5rem' }}
-    >
+    <Grid2 container size={12}>
       <Grid2 size={'grow'} />
       <Grid2
         display={{ xs: 'none', lg: 'flex' }}
@@ -77,7 +73,7 @@ const ResumePdfViewerCard = () => {
         }}
       >
         <Document file={isDarkMode ? myResumeDark : myResumeLight}>
-          <Page pageNumber={1} width={495} height={695} />
+          <Page pageNumber={1} width={475} height={675} />
         </Document>
       </Grid2>
       <Grid2 size={'grow'} />

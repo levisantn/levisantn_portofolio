@@ -5,20 +5,34 @@ import BodyMediaStack from '../../socialMediaStack/BodyMediaStack';
 const FindMeOnCard = () => {
   const theme = useTheme();
   return (
-    <Grid2 container paddingTop={{ xs: '5rem', md: '7.5rem' }} paddingBottom={{ xs: '5rem', md: '7.5rem' }}>
+    <Grid2
+      container
+      paddingTop={{ xs: '2.5rem', sm: '3.75rem', md: '5rem', lg: '6.25rem', xl: '7.5rem' }}
+      paddingBottom={{ xs: '1.25rem', sm: '2.5rem', md: '3.75rem', lg: '5rem', xl: '6.25rem' }}
+    >
       <Grid2 size={1} display={{ xs: 'none', md: 'block' }} />
       <Grid2 size={'grow'} sx={{ display: 'flex', justifyContent: 'center' }}>
         <Stack
-          direction='column'
-          spacing={{ xs: '0.33rem', sm: '0.40rem', md: '0.48rem', lg: '0.55rem', xl: '0.625rem' }}
           sx={{
+            direction: 'column',
             justifyContent: 'center',
             alignItems: 'center',
           }}
         >
-          <Typography variant='h3'>Find me on,</Typography>
+          <Typography
+            variant='headerSection'
+            fontSize={{ xs: '1.85rem', sm: '2.26rem', md: '2.68rem', lg: '3.09rem', xl: '3.5rem' }}
+          >
+            Find me on,
+          </Typography>
 
-          <Typography variant='h4' sx={{ '& span:first-of-type': { color: theme.palette.primary.main } }}>
+          <Typography
+            variant='subHeaderSection'
+            sx={{
+              '& span:first-of-type': { color: theme.palette.primary.main },
+              fontSize: { xs: '0.99rem', sm: '1.21rem', md: '1.43rem', lg: '1.65rem', xl: '1.875rem' },
+            }}
+          >
             Feel free to <span>connect</span> with me
           </Typography>
 

@@ -1,13 +1,16 @@
 import { Grid2 } from '@mui/material';
-import DownloadResumeCard from '../components/card/resume/DownloadResumeCard';
+import MyResumeCard from '../components/card/resume/MyResumeCard';
 import ResumePdfViewerCard from '../components/card/resume/ResumePdfViewerCard';
+import DownloadResumeCard from '../components/card/resume/DownloadResumeCard';
 
 const Resume = () => {
   return (
     <Grid2 container direction='column'>
-      <DownloadResumeCard />
+      <MyResumeCard />
       {/* -------------------------------- */}
       <ResumePdfViewerCard />
+      {/* -------------------------------- */}
+      <DownloadResumeCard />
     </Grid2>
   );
 };

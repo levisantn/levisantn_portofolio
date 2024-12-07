@@ -2,7 +2,7 @@ import { IconButton } from '@mui/material';
 import PropTypes from 'prop-types';
 import { useTheme } from '@emotion/react';
 
-const FooterMediaIconButton = ({ href, disabled, fontSize = '2.5rem', paddingTop, paddingLeft, icon }) => {
+const FooterMediaIconButton = ({ href, disabled, fontSize, paddingTop, paddingLeft, icon }) => {
   const theme = useTheme();
   return (
     <IconButton
@@ -11,8 +11,8 @@ const FooterMediaIconButton = ({ href, disabled, fontSize = '2.5rem', paddingTop
       disabled={disabled}
       sx={{
         color: theme.palette.text.primary,
-        width: '30px',
-        height: '30px',
+        width: '35px',
+        height: '35px',
         fontSize: { fontSize },
         paddingTop: { paddingTop },
         paddingLeft: { paddingLeft },

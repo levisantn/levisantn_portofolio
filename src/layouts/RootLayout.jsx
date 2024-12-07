@@ -56,7 +56,7 @@ function RootLayout() {
           </Alert>
         )}
       </Grid2>
-      <Grid2 size={12} paddingBottom={'5rem'}>
+      <Grid2 size={12} paddingBottom='6.25rem'>
         <Outlet />
       </Grid2>
       <Grid2 size={12} sx={{ position: 'fixed', bottom: 0, display: showFooter || hasScrollbar ? 'block' : 'none' }}>
