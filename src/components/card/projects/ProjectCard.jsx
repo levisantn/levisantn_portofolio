@@ -6,21 +6,20 @@ const ProjectCard = ({ img, title, description, link }) => {
   const theme = useTheme();
   return (
     <Card
-      borderRadius={1}
       sx={{
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: 'primary.hover2',
+        backgroundColor: theme.palette.primary.hover2,
         transition: 'all 0.5s ease-out',
-        width: '400px', // Set the desired width
-        height: '450px', // Set the desired height
+        width: '400px',
+        height: '450px',
         '&:hover': {
           boxShadow: `0rem 0rem 0.75rem ${theme.palette.primary.light}`,
           transform: 'scale(1.05)',
           transition: 'all 0.25s ease-out',
         },
         '& .MuiTouchRipple-root': {
-          color: 'primary.light',
+          color: theme.palette.primary.light,
         },
       }}
     >
@@ -33,7 +32,7 @@ const ProjectCard = ({ img, title, description, link }) => {
           height: '100%',
           backgroundColor: 'transparent',
           '& .MuiCardActionArea-focusHighlight': {
-            backgroundColor: 'transparent', // Remove the default focus highlight
+            backgroundColor: 'transparent',
           },
         }}
       >

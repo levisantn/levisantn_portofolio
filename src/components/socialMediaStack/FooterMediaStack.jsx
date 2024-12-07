@@ -7,6 +7,7 @@ import { TableauSoftwareRounded } from '../../assets/imgs/icons/CustomMuiSvgIcon
 import FooterMediaIconButton from './FooterMediaIconButton';
 
 const FooterMediaStack = () => {
+  const MAIL = import.meta.env.VITE_MAIL;
   return (
     <Stack direction='row' spacing={1} marginBottom={'0.25rem'} sx={{ display: { xs: 'none', md: 'block' } }}>
       {/* -------------------- */}
@@ -61,11 +62,7 @@ const FooterMediaStack = () => {
         fontSize='2.25rem'
       /> */}
       {/* -------------------- */}
-      <FooterMediaIconButton
-        href='mailto:antonetti.levis@gmail.com'
-        icon={<FontAwesomeIcon icon={faEnvelope} />}
-        fontSize='2.25rem'
-      />
+      <FooterMediaIconButton href={`mailto:${MAIL}`} icon={<FontAwesomeIcon icon={faEnvelope} />} fontSize='2.25rem' />
     </Stack>
   );
 };

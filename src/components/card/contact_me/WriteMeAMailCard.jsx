@@ -4,6 +4,7 @@ import bitmojiSendMailHappy from '../../../assets/imgs/bitmoji/send_mail_happy.p
 
 const WriteMeAMailCard = () => {
   const theme = useTheme();
+  const MAIL = import.meta.env.VITE_MAIL;
   return (
     <Grid2
       container
@@ -63,7 +64,7 @@ const WriteMeAMailCard = () => {
           alignItems: 'center',
         }}
       >
-        <Link href='mailto:antonetti.levis@gmail.com'>
+        <Link href={`mailto:${MAIL}`}>
           <Box
             component='img'
             alt='send mail happy bitmoji'
