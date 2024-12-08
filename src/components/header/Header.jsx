@@ -4,7 +4,6 @@ import ModeSwitcherButton from '../button/ToggleModeButton/ModeSwitcherButton';
 import { Link } from 'react-router-dom'; // Ensure you import Link
 
 const pages = [
-  { page: 'Home', route: '/home' },
   { page: 'About me', route: '/about_me' },
   { page: 'Projects', route: '/projects' },
   // { page: 'Cheatsheets', route: '/cheatsheets' },
