@@ -1,5 +1,5 @@
-import { useTheme } from '@emotion/react';
 import { Card, CardActionArea, CardContent, CardMedia, Link, Typography } from '@mui/material';
+import { useTheme } from '@emotion/react';
 import PropTypes from 'prop-types';
 
 const ProjectCard = ({ img, title, description, link }) => {
