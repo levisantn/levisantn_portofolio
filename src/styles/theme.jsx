@@ -106,15 +106,17 @@ const myTheme = createTheme({
     h6: {
       fontFamily: ['var(--sans-serif-font-stack)', 'var(--headers-font)'],
     },
-    headerCardProject: {
+    headerProjectCard: {
       fontFamily: ['var(--sans-serif-font-stack)', 'var(--headers-font)'],
       fontWeight: '500',
-      fontSize: '2.125rem',
+      fontSize: '2rem',
+      // fontSize={{ xs: '1.53rem', md: '1.7rem', lg: '2rem' }}
     },
-    bodyCardProject: {
+    bodyProjectCard: {
       fontFamily: ['var(--sans-serif-font-stack)', 'var(--headers-font)'],
       fontWeight: '400',
       fontSize: '1.6rem',
+      // fontSize={{ xs: '1.22rem', md: '1.35rem', lg: '1.6rem' }}
     },
     code: {
       fontFamily: ['var(--mono-font-stack)', 'var(--mono-font)'],

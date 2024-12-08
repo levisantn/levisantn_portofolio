@@ -11,8 +11,8 @@ const ProjectCard = ({ img, title, description, link }) => {
         justifyContent: 'center',
         backgroundColor: theme.palette.primary.hover2,
         transition: 'all 0.5s ease-out',
-        width: '425px',
-        height: '515px',
+        width: { xs: '336px', md: '366px', lg: '425px' },
+        height: { xs: '415px', md: '445px', lg: '515px' },
         '&:hover': {
           boxShadow: `0rem 0rem 0.75rem ${theme.palette.primary.light}`,
           transform: 'scale(1.05)',
@@ -44,15 +44,24 @@ const ProjectCard = ({ img, title, description, link }) => {
             objectFit: 'cover',
             width: '100%',
             height: '100%',
-            maxHeight: '250px',
-            minHeight: '250px',
+            maxHeight: { xs: '191px', md: '221px', lg: '250px' },
+            minHeight: { xs: '191px', md: '221px', lg: '250px' },
           }}
         />
         <CardContent>
-          <Typography gutterBottom variant='headerCardProject' component='div'>
+          <Typography
+            gutterBottom
+            component='div'
+            variant='headerProjectCard'
+            fontSize={{ xs: '1.53rem', md: '1.7rem', lg: '2rem' }}
+          >
             {title}
           </Typography>
-          <Typography variant='bodyCardProject' sx={{ color: theme.palette.text.secondary }}>
+          <Typography
+            variant='bodyProjectCard'
+            sx={{ color: theme.palette.text.secondary }}
+            fontSize={{ xs: '1.22rem', md: '1.35rem', lg: '1.6rem' }}
+          >
             {description}
           </Typography>
         </CardContent>

@@ -7,7 +7,7 @@ const MyProjectsCard = () => {
     <Grid2
       container
       paddingTop={{ xs: '2.5rem', sm: '3.75rem', md: '5rem', lg: '6.25rem', xl: '7.5rem' }}
-      paddingBottom={{ xs: '1.25rem', sm: '2.5rem', md: '3.75rem', lg: '5rem', xl: '6.25rem' }}
+      paddingBottom={{ xs: '2.5rem', sm: '3.75rem', md: '5rem', lg: '6.25rem', xl: '7.5rem' }}
     >
       <Grid2 size={'grow'} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <Stack

@@ -5,7 +5,7 @@ import ProjectsCard from '../components/card/projects/ProjectsCard';
 
 const Projects = () => {
   return (
-    <Grid2 container flexDirection='column'>
+    <Grid2 container direction='column'>
       <MyProjectsCard />
       {/* -------------------------------- */}
       <ProjectsCard />
