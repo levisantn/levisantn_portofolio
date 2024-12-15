@@ -5,6 +5,7 @@ import Footer from '../components/footer/Footer';
 import { Outlet } from 'react-router-dom';
 import { ScrollToTopButton } from '../components/button/ScrollToTopButton/ScrollToTopButton';
 import { useEffect, useRef, useState } from 'react';
+import HeaderTest from '../components/header/HeaderTest';
 
 function RootLayout() {
   const [hasScrollbar, setHasScrollbar] = useState(
@@ -42,6 +43,7 @@ function RootLayout() {
     <Grid2 container spacing={0}>
       <Grid2 size={12}>
         <Header />
+        <HeaderTest />
         <ScrollToTopButton />
       </Grid2>
       <Grid2 size={12}>
