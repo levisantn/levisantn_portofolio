@@ -42,12 +42,6 @@
 
   --font-size-base: 62.5%; /* 62.5% of 16px = 10px */
 
-  /* device breakpoints */
-  --breakpoint-mobile: 0px;
-  --breakpoint-tablet: 640px;
-  --breakpoint-laptop: 1024px;
-  --breakpoint-desktop: 1200px;
-
   --scrollbar-thumb-color: #c0392b40;
   --scrollbar-thumb-color-hover: #c0392b90;
 }
@@ -65,7 +59,7 @@ html {
   }
 }
 
-/* scrollbar */
+/* Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
