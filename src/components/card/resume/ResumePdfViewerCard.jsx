@@ -68,12 +68,12 @@ const ResumePdfViewerCard = () => {
         sx={{
           justifyContent: 'center',
           alignItems: 'center',
-          height: '67.3rem',
+          height: '46rem',
           boxShadow: `0px 0px 50px -25px  ${theme.palette.primary.main}`,
         }}
       >
         <Document file={isDarkMode ? myResumeDark : myResumeLight}>
-          <Page pageNumber={1} width={475} height={675} />
+          <Page pageNumber={1} width={325} height={425} />
         </Document>
       </Grid2>
       <Grid2 size={'grow'} />

@@ -96,10 +96,10 @@ const Header = () => {
             sx={{
               borderRadius: 3,
               '&:hover': {
-                bgcolor: 'primary.hover2',
+                bgcolor: theme.palette.primary.hover2,
               },
               '& .MuiTouchRipple-root': {
-                color: 'primary.light',
+                color: theme.palette.primary.light,
               },
             }}
           >
@@ -143,10 +143,10 @@ const Header = () => {
                 fontSize: { xs: '1.125rem', sm: '1.375rem', md: '1.625rem', lg: '1.875rem', xl: '2.125rem' },
                 wordSpacing: '-4px',
                 '&:hover': {
-                  bgcolor: 'primary.hover1',
+                  bgcolor: theme.palette.primary.hover1,
                 },
                 '& .MuiTouchRipple-root': {
-                  color: 'primary.light',
+                  color: theme.palette.primary.light,
                 },
               }}
             >
