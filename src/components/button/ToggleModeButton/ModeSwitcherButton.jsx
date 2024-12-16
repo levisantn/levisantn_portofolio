@@ -81,11 +81,14 @@ const ModeSwitcherButton = () => {
         indeterminateIcon={<RemoveCircleIcon />}
         sx={{
           border: 2,
-          borderRadius: 3,
-          padding: '5px',
+          borderRadius: '50%',
+          padding: '0.875rem',
           color: 'secondary.main',
           backgroundColor: 'secondary.hover1',
-          '& .MuiSvgIcon-root': { fontSize: '3rem', color: 'text.primary' },
+          '& .MuiSvgIcon-root': {
+            fontSize: { xs: '1.94rem', sm: '1.94rem', md: '2.29rem', lg: '2.65rem', xl: '3rem' },
+            color: 'text.primary',
+          },
           '&:hover': {
             bgcolor: 'secondary.main',
           },
@@ -125,13 +128,15 @@ const ModeSwitcherButton = () => {
               checkedIcon={<SettingsIcon />}
               size='medium'
               sx={{
-                padding: '5px',
+                padding: '0.875rem',
+                borderRadius: '50%',
                 marginLeft: 3,
 
-                '& .MuiSvgIcon-root': { fontSize: '3rem' },
+                '& .MuiSvgIcon-root': {
+                  fontSize: { xs: '1.94rem', sm: '1.94rem', md: '2.29rem', lg: '2.65rem', xl: '3rem' },
+                },
                 '&:hover': {
                   bgcolor: 'primary.hover1',
-                  borderRadius: 3,
                 },
                 '&.Mui-disabled': {
                   color: 'text.disabled',

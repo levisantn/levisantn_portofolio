@@ -73,6 +73,16 @@ const myTheme = createTheme({
   typography: {
     htmlFontSize: 10,
     fontFamily: ['var(--sans-serif-font-stack)', 'var(--sans-serif-font)'],
+    signLogoHeader: {
+      fontFamily: ['var(--sans-serif-font-stack)', 'var(--signature-font)'],
+      fontWeight: '500',
+      fontSize: '5rem',
+    },
+    headerHeader: {
+      fontFamily: ['var(--sans-serif-font-stack)', 'var(--headers-font)'],
+      fontWeight: '500',
+      fontSize: '4.25rem',
+    },
     mainHeader: {
       fontFamily: ['var(--sans-serif-font-stack)', 'var(--headers-font)'],
       fontWeight: '500',
