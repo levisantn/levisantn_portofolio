@@ -7,56 +7,25 @@ import LeaveAFeedbackCard from '../components/card/contact_me/LeaveAFeedbackCard
 
 const Contactme = () => {
   return (
-    <Grid2 container padding='1rem' spacing='1rem' paddingBottom='5rem' paddingTop='1.25rem'>
-      <Grid2
-        container
-        spacing='1rem'
-        size={5}
-        borderRadius={1}
-        sx={{
-          flexDirection: 'column',
-        }}
-      >
-        <Grid2 size={'grow'}>
-          <FindMeAroundCard />
-        </Grid2>
+    <Grid2 container padding='1.25rem' spacing='1.25rem'>
+      <Grid2 container height='100%' size={{ xs: 12, sm: 12, md: 12, lg: 6, xl: 6 }}>
+        <FindMeAroundCard />
 
-        <Grid2 size={'grow'}>
-          <WriteMeAMail />
-        </Grid2>
+        <WriteMeAMail />
       </Grid2>
 
-      <Grid2
-        container
-        size={7}
-        borderRadius={1}
-        sx={
-          {
-            // backgroundColor: 'background.paper',
-          }
-        }
-      >
+      <Grid2 container size={{ xs: 12, sm: 12, md: 12, lg: 6, xl: 6 }}>
         <FindMeOnCard />
       </Grid2>
 
-      <Grid2
-        container
-        size={7}
-        borderRadius={1}
-        sx={{
-          // backgroundColor: 'background.paper',
-          textAlign: 'center',
-        }}
-      >
+      <Grid2 container size={{ xs: 12, sm: 12, md: 12, lg: 7, xl: 7 }} textAlign='center'>
         <FillTheFormCard />
       </Grid2>
 
       <Grid2
         container
-        size={'grow'}
-        borderRadius={1}
+        size={{ xs: 12, sm: 12, md: 12, lg: 5, xl: 5 }}
         sx={{
-          // backgroundColor: 'background.paper',
           textAlign: 'center',
         }}
       >

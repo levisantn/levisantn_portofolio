@@ -2,7 +2,7 @@ import { IconButton } from '@mui/material';
 import { useTheme } from '@emotion/react';
 import PropTypes from 'prop-types';
 
-const BodyMediaIconButton = ({ href, disabled, icon }) => {
+const HomeMediaIconButton = ({ href, disabled, icon }) => {
   const theme = useTheme();
   return (
     <IconButton
@@ -38,10 +38,10 @@ const BodyMediaIconButton = ({ href, disabled, icon }) => {
   );
 };
 
-BodyMediaIconButton.propTypes = {
+HomeMediaIconButton.propTypes = {
   href: PropTypes.string.isRequired,
   disabled: PropTypes.bool,
   icon: PropTypes.node.isRequired,
 };
 
-export default BodyMediaIconButton;
+export default HomeMediaIconButton;

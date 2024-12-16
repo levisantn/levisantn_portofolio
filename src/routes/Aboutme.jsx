@@ -11,7 +11,6 @@ const Aboutme = () => {
     <Grid2
       container
       sx={{
-        backgroundColor: 'background.default',
         flexDirection: 'column',
       }}
     >

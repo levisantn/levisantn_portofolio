@@ -7,12 +7,14 @@ const WriteMeAMailCard = () => {
   const MAIL = import.meta.env.VITE_MAIL;
   return (
     <Grid2
+      size={12}
       container
-      spacing='1rem'
-      borderRadius='1rem'
+      spacing='1.25rem'
+      borderRadius='1.25rem'
+      paddingLeft='0.625rem'
+      paddingRight='0.625rem'
       sx={{
-        width: '100%',
-        height: '100%',
+        height: '50%',
         border: `0.25rem solid ${theme.palette.primary.hover2}`,
         transition: 'all 0.1s ease-in-out',
         '&:hover': {
@@ -23,56 +25,40 @@ const WriteMeAMailCard = () => {
         },
       }}
     >
-      <Grid2
-        display='flex'
-        size={'grow'}
-        direction='column'
-        borderRadius={1}
-        sx={{
-          justifyContent: 'flex-end',
-          alignItems: 'center',
-        }}
-      >
-        <Stack
-          direction='column'
-          spacing={1}
-          sx={{
-            justifyContent: 'center',
-            alignItems: 'center',
-          }}
-        >
-          <Typography variant='h2' sx={{ fontWeight: 'regular' }}>
+      <Grid2 display='flex' size={'grow'} direction='column' justifyContent='flex-end' alignItems='center'>
+        <Stack direction='column' justifyContent='center' alignItems='center'>
+          <Typography
+            variant='headerSection'
+            fontSize={{ xs: '1.85rem', sm: '2.26rem', md: '2.68rem', lg: '3.09rem', xl: '3.5rem' }}
+          >
             Write Me A Mail
           </Typography>
           <Typography
-            variant='code'
-            sx={{ textAlign: 'center', whiteSpace: 'pre-wrap', '& span:first-of-type': { color: 'primary.main' } }}
+            variant='subHeaderSection'
+            fontSize={{ xs: '0.99rem', sm: '1.21rem', md: '1.43rem', lg: '1.65rem', xl: '1.875rem' }}
+            sx={{
+              textAlign: 'center',
+              whiteSpace: 'pre-wrap',
+              '& span:first-of-type': { color: theme.palette.primary.main },
+              '& span:nth-of-type(2)': { color: theme.palette.primary.main },
+            }}
           >
-            <span>Click</span> on the image to open your
+            <span>Click</span> on the image to <span>open</span>
             <br />
             OS email client
           </Typography>
         </Stack>
       </Grid2>
 
-      <Grid2
-        display='flex'
-        size={5}
-        borderRadius={1}
-        sx={{
-          justifyContent: 'flex-start',
-          alignItems: 'center',
-        }}
-      >
+      <Grid2 size={5} justifyContent='flex-start' alignItems='center'>
         <Link href={`mailto:${MAIL}`}>
           <Box
             component='img'
             alt='send mail happy bitmoji'
             src={bitmojiSendMailHappy}
             sx={{
-              width: '190px',
-              height: '190px',
-              borderRadius: 1,
+              width: { xs: '10.6rem', sm: '12.9rem', md: '15.3rem', lg: '17.6rem', xl: '20rem' },
+              height: { xs: '10.6rem', sm: '12.9rem', md: '15.3rem', lg: '17.6rem', xl: '20rem' },
             }}
           />
         </Link>

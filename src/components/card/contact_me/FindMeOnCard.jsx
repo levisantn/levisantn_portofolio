@@ -1,7 +1,7 @@
 import { Box, Stack, Typography, Grid2 } from '@mui/material';
 import { useTheme } from '@emotion/react';
 import bitmojiHelloDoor from '../../../assets/imgs/bitmoji/hello_door_cropped.png';
-import BodyMediaStack from '../../socialMediaStack/BodyMediaStack';
+import ContactMediaStack from '../../socialMediaStack/ContactMediaStack';
 
 const FindMeOnCard = () => {
   const theme = useTheme();
@@ -9,7 +9,7 @@ const FindMeOnCard = () => {
     <Grid2
       container
       size={'grow'}
-      borderRadius='1rem'
+      borderRadius='1.25rem'
       sx={{
         border: `0.25rem solid ${theme.palette.primary.hover2}`,
         transition: 'all 0.1s ease-in-out',
@@ -21,47 +21,68 @@ const FindMeOnCard = () => {
         },
       }}
     >
-      <Grid2 size={'grow'} borderRadius={1}>
-        <Box sx={{ display: 'flex', height: '100%', justifyContent: 'flex-end' }}>
-          <Stack
-            direction='column'
-            spacing={1}
-            padding={1}
-            sx={{
-              justifyContent: 'center',
-              alignItems: 'flex-end',
-            }}
+      <Grid2
+        size='auto'
+        display={{ xs: 'none', sm: 'block', lg: 'none' }}
+        borderRadius='1.25rem'
+        sx={{
+          textAlign: 'center',
+        }}
+      >
+        <Box
+          sx={{
+            display: 'flex',
+            width: { xs: '14.6rem', sm: '17.8rem', md: '21rem', lg: '24.3rem', xl: '27.5rem' },
+            height: { xs: '22.5rem', sm: '27.5rem', md: '32.5rem', lg: '37.5rem', xl: '42.5rem' },
+          }}
+        />
+      </Grid2>
+      <Grid2
+        size={'grow'}
+        sx={{ display: 'flex', height: '100%', justifyContent: { xs: 'center', lg: 'flex-end' }, alignItems: 'center' }}
+      >
+        <Stack
+          direction='column'
+          sx={{
+            justifyContent: 'center',
+            alignItems: { xs: 'center', lg: 'flex-end' },
+          }}
+        >
+          <Typography
+            variant='headerSection'
+            fontSize={{ xs: '1.85rem', sm: '2.26rem', md: '2.68rem', lg: '3.09rem', xl: '3.5rem' }}
           >
-            <Typography variant='h2' sx={{ fontWeight: 'regular' }}>
-              Find Me On
-            </Typography>
+            Find Me On
+          </Typography>
 
-            <Typography variant='subtitle1' sx={{ '& span:first-of-type': { color: 'primary.main' } }}>
-              Feel free to <span>connect</span> with me
-            </Typography>
+          <Typography
+            variant='subHeaderSection'
+            fontSize={{ xs: '0.99rem', sm: '1.21rem', md: '1.43rem', lg: '1.65rem', xl: '1.875rem' }}
+            sx={{ '& span:first-of-type': { color: theme.palette.primary.main } }}
+          >
+            Feel free to <span>connect</span> with me
+          </Typography>
 
-            <BodyMediaStack />
-          </Stack>
-        </Box>
+          <ContactMediaStack />
+        </Stack>
       </Grid2>
 
       <Grid2
         size='auto'
-        borderRadius={1}
+        borderRadius='1.25rem'
         sx={{
           textAlign: 'center',
         }}
       >
         <Box
           component='img'
-          alt='Laptop with hello hand bitmoji '
+          alt='Side Hello Door'
           src={bitmojiHelloDoor}
           sx={{
-            width: '257px',
-            height: '400px',
-            borderRadius: 1,
-            transform: 'scaleX(-1)',
             display: 'flex',
+            width: { xs: '14.6rem', sm: '17.8rem', md: '21rem', lg: '24.3rem', xl: '27.5rem' },
+            height: { xs: '22.5rem', sm: '27.5rem', md: '32.5rem', lg: '37.5rem', xl: '42.5rem' },
+            transform: 'scaleX(-1)',
           }}
         />
       </Grid2>

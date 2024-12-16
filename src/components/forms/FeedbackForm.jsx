@@ -65,7 +65,7 @@ const FeedbackForm = () => {
           sx={{
             whiteSpace: 'pre-line',
             marginBottom: '1rem',
-            color: 'text.primary',
+            color: theme.palette.text.primary,
           }}
         >
           {successMessage}
@@ -78,7 +78,7 @@ const FeedbackForm = () => {
           sx={{
             whiteSpace: 'pre-line',
             marginBottom: '1rem',
-            color: 'text.primary',
+            color: theme.palette.text.primary,
           }}
         >
           {errorMessage}
@@ -155,18 +155,18 @@ const FeedbackForm = () => {
         type='submit'
         sx={{
           fontWeight: '700',
-          borderRadius: 2,
+          borderRadius: '1rem',
           border: '0.2rem solid',
-          borderColor: 'primary.main',
-          color: 'text.secondary',
-          bgcolor: 'primary.hover1',
+          borderColor: theme.palette.primary.main,
+          color: theme.palette.text.secondary,
+          bgcolor: theme.palette.primary.hover1,
           '&:hover': {
-            bgcolor: 'primary.main',
-            borderColor: 'primary.main',
-            color: 'text.primary',
+            bgcolor: theme.palette.primary.main,
+            borderColor: theme.palette.primary.main,
+            color: theme.palette.text.primary,
           },
           '& .MuiTouchRipple-root': {
-            color: 'primary.light',
+            color: theme.palette.primary.light,
           },
         }}
       >

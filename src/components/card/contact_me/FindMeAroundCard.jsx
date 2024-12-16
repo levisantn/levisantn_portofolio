@@ -2,18 +2,20 @@ import { Grid2, Typography, Stack, IconButton, Box } from '@mui/material';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { useTheme } from '@mui/material/styles';
-import bitmojiDrinkingSoda from '../../../assets/imgs/bitmoji/drinking_soda.png';
+import bitmojiDrinkingTea from '../../../assets/imgs/bitmoji/drinking_tea.png';
 
 const FindMeAroundCard = () => {
   const theme = useTheme();
   return (
     <Grid2
+      size={12}
       container
-      spacing='1rem'
-      borderRadius='1rem'
+      spacing='1.25rem'
+      borderRadius='1.25rem'
+      paddingLeft='0.625rem'
+      paddingRight='0.625rem'
       sx={{
-        width: '100%',
-        height: '100%',
+        height: '50%',
         border: `0.25rem solid ${theme.palette.primary.hover2}`,
         transition: 'all 0.1s ease-in-out',
         '&:hover': {
@@ -25,65 +27,54 @@ const FindMeAroundCard = () => {
       }}
     >
       <Grid2
-        display='flex'
         size={5}
-        borderRadius={1}
+        display='flex'
         sx={{
           justifyContent: 'flex-end',
-          alignItems: 'center',
+          alignItems: 'flex-end',
         }}
       >
         <Box
           component='img'
-          alt='drinking soda bitmoji '
-          src={bitmojiDrinkingSoda}
+          alt='drinking soda bitmoji'
+          src={bitmojiDrinkingTea}
           sx={{
-            width: '190px',
-            height: '190px',
-            borderRadius: 1,
+            width: { xs: '10.6rem', sm: '12.9rem', md: '15.3rem', lg: '17.6rem', xl: '20rem' },
+            height: { xs: '10.6rem', sm: '12.9rem', md: '15.3rem', lg: '17.6rem', xl: '20rem' },
+            transform: 'scaleX(-1)',
           }}
         />
       </Grid2>
       <Grid2
-        display='flex'
         size={'grow'}
+        display='flex'
         direction='column'
-        borderRadius={1}
-        sx={{
-          // backgroundColor: 'background.default',
-          justifyContent: 'flex-start',
-          alignItems: 'center',
-        }}
+        sx={{ justifyContent: 'flex-start', alignItems: 'center' }}
       >
-        <Stack
-          direction='column'
-          spacing={1}
-          sx={{
-            justifyContent: 'center',
-            alignItems: 'center',
-          }}
-        >
-          <Typography variant='h2' sx={{ fontWeight: 'regular' }}>
+        <Stack direction='column' justifyContent='center' alignItems='center'>
+          <Typography
+            variant='headerSection'
+            fontSize={{ xs: '1.85rem', sm: '2.26rem', md: '2.68rem', lg: '3.09rem', xl: '3.5rem' }}
+          >
             Find Me Around
           </Typography>
-          <Typography variant='code' sx={{ '& span:first-of-type': { color: 'primary.main' } }}>
+          <Typography
+            variant='subHeaderSection'
+            fontSize={{ xs: '0.99rem', sm: '1.21rem', md: '1.43rem', lg: '1.65rem', xl: '1.875rem' }}
+            sx={{ '& span:first-of-type': { color: 'primary.main' } }}
+          >
             <IconButton
-              // disabled
               href='https://www.google.com/maps/place/Toulouse/@47.2000805,-1.8051238,5z/data=!4m6!3m5!1s0x12aebb6fec7552ff:0x406f69c2f411030!8m2!3d43.6048462!4d1.442848!16zL20vMGNiaGg?authuser=0&entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D'
               target='_blank'
               sx={{
-                color: 'primary.main',
-                width: '30px',
-                height: '30px',
-                marginRight: '0.5rem',
+                color: theme.palette.primary.main,
+                width: '3.75rem',
+                height: '3.75rem',
                 marginBottom: '0.75rem',
-                borderRadius: 2,
+                marginRight: '0.25rem',
                 padding: '2rem',
                 '&:hover': {
                   bgcolor: 'transparent',
-                },
-                '&.Mui-disabled': {
-                  color: 'primary.main',
                 },
               }}
             >

@@ -1,6 +1,6 @@
 import { Stack, Typography, Grid2 } from '@mui/material';
 import { useTheme } from '@emotion/react';
-import BodyMediaStack from '../../socialMediaStack/BodyMediaStack';
+import HomeMediaStack from '../../socialMediaStack/HomeMediaStack';
 
 const FindMeOnCard = () => {
   const theme = useTheme();
@@ -36,7 +36,7 @@ const FindMeOnCard = () => {
             Feel free to <span>connect</span> with me
           </Typography>
 
-          <BodyMediaStack />
+          <HomeMediaStack />
         </Stack>
       </Grid2>
       <Grid2 size={1} display={{ xs: 'none', md: 'block' }} />
