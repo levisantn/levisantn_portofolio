@@ -1,21 +1,16 @@
 import { Divider, Grid2 } from '@mui/material';
 import WhatIDoCard from '../components/card/about_me/WhatIDoCard';
 import WhatDrivesMeCard from '../components/card/about_me/WhatDrivesMeCard';
-import SkillsetCard from '../components/card/about_me/SkillsetCard';
 import TimelineCard from '../components/card/about_me/TimelineCard';
 import { useTheme } from '@emotion/react';
 import SeeMyResume from '../components/card/about_me/SeeMyResumeCard';
+import SkillsetCard from '../components/card/about_me/SkillsetCard';
 const Aboutme = () => {
   const theme = useTheme();
   return (
-    <Grid2
-      container
-      sx={{
-        flexDirection: 'column',
-      }}
-    >
-      <WhatIDoCard />
+    <Grid2 container direction='column'>
       {/* -------------------------------- */}
+      <WhatIDoCard />
       <Divider
         sx={{
           borderRadius: 1,
@@ -26,8 +21,8 @@ const Aboutme = () => {
           boxShadow: `0rem 0rem 0.75rem ${theme.palette.primary.hover1}`,
         }}
       />
-      <WhatDrivesMeCard />
       {/* -------------------------------- */}
+      <WhatDrivesMeCard />
       <Divider
         sx={{
           borderRadius: 1,
@@ -39,7 +34,6 @@ const Aboutme = () => {
       />
       {/* -------------------------------- */}
       <SkillsetCard />
-      {/* -------------------------------- */}
       <Divider
         sx={{
           borderRadius: 1,

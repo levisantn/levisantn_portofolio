@@ -11,8 +11,8 @@ const ProjectCard = ({ img, title, description, link }) => {
         justifyContent: 'center',
         backgroundColor: theme.palette.primary.hover2,
         transition: 'all 0.5s ease-out',
-        width: { xs: '315px', md: '366px', lg: '425px' },
-        height: { xs: '400px', md: '445px', lg: '515px' },
+        width: { xs: '31.5rem', md: '36.6rem', lg: '42.5rem' },
+        height: { xs: '40rem', md: '44.5rem', lg: '51.5rem' },
         '&:hover': {
           boxShadow: `0rem 0rem 0.75rem ${theme.palette.primary.light}`,
           transform: 'scale(1.05)',

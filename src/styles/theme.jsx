@@ -96,8 +96,8 @@ const myTheme = createTheme({
     },
     headerSectionMono: {
       fontFamily: ['var(--mono-font-stack)', 'var(--mono-font)'],
-      fontWeight: '600',
-      fontSize: '3.5rem',
+      fontWeight: '500',
+      fontSize: '2.8rem',
       // fontSize={{ xs: '1.48rem', sm: '1.8rem', md: '2.14rem', lg: '2.47rem', xl: '2.8rem' }}
     },
 
@@ -109,7 +109,7 @@ const myTheme = createTheme({
     },
     subHeaderSectionMono: {
       fontFamily: ['var(--mono-font-stack)', 'var(--mono-font)'],
-      fontWeight: '500',
+      fontWeight: '400',
       fontSize: '1.875rem',
       // fontSize: { xs: '0.99rem', sm: '1.21rem', md: '1.43rem', lg: '1.65rem', xl: '1.875rem' }
     },

@@ -5,133 +5,83 @@ import bitmojiTakeCoffee from '../../../assets/imgs/bitmoji/take_coffee.png';
 const WhatIDoCard = () => {
   const theme = useTheme();
   return (
-    <Grid2 container size={12} paddingLeft='2.75rem' paddingRight='2.75rem' spacing='0.75rem'>
+    <Grid2
+      container
+      spacing={{ xs: '0rem', md: '1rem' }}
+      paddingLeft={{ xs: '0rem', md: '3.25rem' }}
+      paddingRight={{ xs: '0rem', md: '3.25rem' }}
+    >
+      {/* -------------------------------- */}
       <Grid2
         container
-        paddingTop='3.75rem'
-        paddingBottom='2.5rem'
         size={12}
-        sx={{
-          backgroundColor: 'background.default',
-          height: 'auto',
-        }}
+        paddingTop={{ xs: '2.5rem', sm: '3.75rem', md: '5rem', lg: '6.25rem', xl: '7.5rem' }}
+        paddingBottom={{ xs: '1.25rem', sm: '2.5rem', md: '3.75rem', lg: '3.75rem', xl: '3.75rem' }}
       >
-        <Grid2
-          display='flex'
-          size={3}
-          borderRadius={1}
-          // sx={{ backgroundColor: 'background.paper' }}
-        ></Grid2>
-
-        <Grid2
-          display='flex'
-          size={'grow'}
-          direction='column'
-          borderRadius={1}
-          sx={{
-            justifyContent: 'flex-start',
-            alignItems: 'center',
-            // backgroundColor: 'background.paper',
-          }}
-        >
+        <Grid2 size={3} />
+        <Grid2 size={'grow'}>
           <Typography
-            variant='h2'
+            variant='headerSection'
+            fontSize={{ xs: '1.85rem', sm: '2.26rem', md: '2.68rem', lg: '3.09rem', xl: '3.5rem' }}
             sx={{
-              fontWeight: '600',
-              fontSize: '3.5rem',
-              wordSpacing: '-0.5rem',
-              fontFamily: 'var(--mono-font)',
-              color: 'primary.light',
+              wordSpacing: '0.25rem',
+              '& span:first-of-type': { color: theme.palette.primary.main },
             }}
           >
-            What I do?
+            What I do ?
           </Typography>
         </Grid2>
-        <Grid2
-          display='flex'
-          size={3}
-          borderRadius={1}
-          // sx={{ backgroundColor: 'background.paper' }}
-        ></Grid2>
+        <Grid2 size={3} />
       </Grid2>
       {/* -------------------------------- */}
       <Grid2
         container
         size={12}
         sx={{
-          backgroundColor: 'primary.hover2',
-          height: 'auto',
-          borderRadius: '0.5rem',
+          backgroundColor: theme.palette.primary.hover2,
           transition: 'all 0.5s ease-out',
           '&:hover': {
-            boxShadow: `0rem 0rem 0.75rem ${theme.palette.primary.light}`,
-            transform: 'scale(1.025)',
+            boxShadow: { xs: 'none', md: `0rem 0rem 0.75rem ${theme.palette.primary.light}` },
+            transform: { xs: 'none', md: 'scale(1.025)' },
             transition: 'all 0.25s ease-out',
           },
         }}
       >
-        <Grid2
-          display='flex'
-          size={0.5}
-          borderRadius={1}
-          // sx={{ backgroundColor: 'background.paper' }}
-        ></Grid2>
-        <Grid2
-          display='flex'
-          size={2}
-          borderRadius={1}
-          sx={{
-            alignItems: 'flex-end',
-            justifyContent: 'center',
-            // backgroundColor: 'background.paper',
-          }}
-        >
+        <Grid2 size={0.5} />
+        <Grid2 display='flex' size={2} alignItems='flex-end' justifyContent='center'>
           <Box
             component='img'
-            alt='drinking soda bitmoji '
+            alt='drinking coffee bitmoji'
             src={bitmojiTakeCoffee}
             sx={{
-              width: '380px',
-              height: '380px',
+              width: { xs: '21.2rem', sm: '25.9rem', md: '30.6rem', lg: '35.3rem', xl: '40rem' },
+              height: { xs: '21.2rem', sm: '25.9rem', md: '30.6rem', lg: '35.3rem', xl: '40rem' },
               transform: 'scaleX(-1)',
             }}
           />
         </Grid2>
 
         <Grid2
-          display='flex'
           size={'grow'}
-          spacing={'0.5rem'}
-          padding={'0.5rem'}
-          paddingTop='2.5rem'
-          paddingBottom='2.5rem'
-          direction='column'
-          borderRadius={1}
-          sx={{
-            alignItems: 'center',
-            justifyContent: 'flex-start',
-          }}
+          padding='0.75rem'
+          paddingTop={{ xs: '0.25rem', sm: '1.5rem', md: '2.75rem', lg: '2.75rem', xl: '2.75rem' }}
+          paddingBottom={{ xs: '0.25rem', sm: '1.5rem', md: '2.75rem', lg: '2.75rem', xl: '2.75rem' }}
         >
-          <Stack direction='column' spacing={'3.75rem'}>
+          <Stack direction='column' spacing={'2.5rem'}>
             <Typography
-              variant='h3'
-              sx={{
-                paddingLeft: '5rem',
-                paddingBottom: '1.25rem',
-                fontWeight: '400',
-                '& span:first-of-type': { color: 'primary.main' },
-              }}
+              variant='headerSectionMono'
+              fontSize={{ xs: '1.48rem', sm: '1.8rem', md: '2.14rem', lg: '2.47rem', xl: '2.8rem' }}
+              paddingLeft={{ xs: '2.5rem', sm: '3.75rem', md: '5rem', lg: '6.25rem', xl: '7.5rem' }}
+              sx={{ color: theme.palette.primary.light }}
             >
-              Data processing, analysis and visualisation<span style={{ fontWeight: '500' }}></span>
+              Data processing, analysis and visualisation
             </Typography>
 
             <Typography
-              variant='h6'
+              variant='subHeaderSectionMono'
+              fontSize={{ xs: '0.99rem', sm: '1.21rem', md: '1.43rem', lg: '1.65rem', xl: '1.875rem' }}
               sx={{
-                fontFamily: 'var(--mono-font)',
-                fontWeight: '400',
-                color: 'text.secondary',
-                whiteSpace: 'pre-wrap',
+                color: theme.palette.text.secondary,
               }}
             >
               𑁋 Extract, transform, and load data from various sources.
@@ -140,12 +90,10 @@ const WhatIDoCard = () => {
             </Typography>
 
             <Typography
-              variant='h6'
+              variant='subHeaderSectionMono'
+              fontSize={{ xs: '0.99rem', sm: '1.21rem', md: '1.43rem', lg: '1.65rem', xl: '1.875rem' }}
               sx={{
-                fontFamily: 'var(--mono-font)',
-                fontWeight: '400',
-                color: 'text.secondary',
-                whiteSpace: 'pre-wrap',
+                color: theme.palette.text.secondary,
               }}
             >
               𑁋 Applying statistical modeling techniques to analyze data.
@@ -156,12 +104,10 @@ const WhatIDoCard = () => {
             </Typography>
 
             <Typography
-              variant='h6'
+              variant='subHeaderSectionMono'
+              fontSize={{ xs: '0.99rem', sm: '1.21rem', md: '1.43rem', lg: '1.65rem', xl: '1.875rem' }}
               sx={{
-                fontFamily: 'var(--mono-font)',
-                fontWeight: '400',
-                color: 'text.secondary',
-                whiteSpace: 'pre-wrap',
+                color: theme.palette.text.secondary,
               }}
             >
               𑁋 Creating data visualizations using tools like Tableau, Qgis and Python libraries (Matplotlib, Seaborn,
@@ -173,71 +119,45 @@ const WhatIDoCard = () => {
             </Typography>
           </Stack>
         </Grid2>
-        <Grid2
-          display='flex'
-          size={0.5}
-          borderRadius={1}
-          // sx={{ backgroundColor: 'background.paper' }}
-        ></Grid2>
+        <Grid2 size={0.5} />
       </Grid2>
       {/* -------------------------------- */}
       <Grid2
         container
         size={12}
         sx={{
-          backgroundColor: 'background.default',
-          height: 'auto',
-          borderRadius: '0.5rem',
+          backgroundColor: theme.palette.background.default,
           transition: 'all 0.5s ease-out',
           '&:hover': {
-            boxShadow: `0rem 0rem 0.75rem ${theme.palette.primary.light}`,
-            transform: 'scale(1.025)',
+            boxShadow: { xs: 'none', md: `0rem 0rem 0.75rem ${theme.palette.primary.light}` },
+            transform: { xs: 'none', md: 'scale(1.025)' },
             transition: 'all 0.25s ease-out',
           },
         }}
       >
-        <Grid2
-          display='flex'
-          size={4}
-          borderRadius={1}
-          // sx={{ backgroundColor: 'background.paper' }}
-        ></Grid2>
+        <Grid2 size={4} />
 
         <Grid2
-          display='flex'
           size={'grow'}
-          spacing={'0.5rem'}
-          padding={'0.5rem'}
-          paddingTop='2.5rem'
-          paddingBottom='2.5rem'
-          direction='column'
-          borderRadius={1}
-          sx={{
-            alignItems: 'center',
-            justifyContent: 'flex-end',
-            // backgroundColor: 'background.paper',
-          }}
+          padding='0.75rem'
+          paddingTop={{ xs: '0.25rem', sm: '1.5rem', md: '2.75rem', lg: '2.75rem', xl: '2.75rem' }}
+          paddingBottom={{ xs: '0.25rem', sm: '1.5rem', md: '2.75rem', lg: '2.75rem', xl: '2.75rem' }}
         >
-          <Stack direction='column' spacing={'3.75rem'}>
+          <Stack direction='column' spacing={'2.5rem'}>
             <Typography
-              variant='h3'
-              sx={{
-                paddingLeft: '5rem',
-                paddingBottom: '1.25rem',
-                fontWeight: '400',
-                '& span:first-of-type': { color: 'primary.main' },
-              }}
+              variant='headerSectionMono'
+              fontSize={{ xs: '1.48rem', sm: '1.8rem', md: '2.14rem', lg: '2.47rem', xl: '2.8rem' }}
+              paddingLeft={{ xs: '2.5rem', sm: '3.75rem', md: '5rem', lg: '6.25rem', xl: '7.5rem' }}
+              sx={{ color: theme.palette.primary.light }}
             >
               IA and Machine Learning development<span style={{ fontWeight: '500' }}></span>
             </Typography>
 
             <Typography
-              variant='h6'
+              variant='subHeaderSectionMono'
+              fontSize={{ xs: '0.99rem', sm: '1.21rem', md: '1.43rem', lg: '1.65rem', xl: '1.875rem' }}
               sx={{
-                fontFamily: 'var(--mono-font)',
-                fontWeight: '400',
-                color: 'text.secondary',
-                whiteSpace: 'pre-wrap',
+                color: theme.palette.text.secondary,
               }}
             >
               𑁋 Developing ML models for various tasks such as: segmentation, classification, regression, clustering.
@@ -248,71 +168,45 @@ const WhatIDoCard = () => {
             </Typography>
           </Stack>
         </Grid2>
-        <Grid2
-          display='flex'
-          size={0.5}
-          borderRadius={1}
-          // sx={{ backgroundColor: 'background.paper' }}
-        ></Grid2>
+        <Grid2 size={0.5} />
       </Grid2>
       {/* -------------------------------- */}
       <Grid2
         container
         size={12}
         sx={{
-          backgroundColor: 'primary.hover2',
-          height: 'auto',
-          borderRadius: '0.5rem',
+          backgroundColor: theme.palette.primary.hover2,
           transition: 'all 0.5s ease-out',
           '&:hover': {
-            boxShadow: `0rem 0rem 0.75rem ${theme.palette.primary.light}`,
-            transform: 'scale(1.025)',
+            boxShadow: { xs: 'none', md: `0rem 0rem 0.75rem ${theme.palette.primary.light}` },
+            transform: { xs: 'none', md: 'scale(1.025)' },
             transition: 'all 0.25s ease-out',
           },
         }}
       >
-        <Grid2
-          display='flex'
-          size={1}
-          borderRadius={1}
-          // sx={{ backgroundColor: 'background.paper' }}
-        ></Grid2>
+        <Grid2 size={1} />
 
         <Grid2
-          display='flex'
           size={'grow'}
-          spacing={'0.5rem'}
-          padding={'0.5rem'}
-          paddingTop='2.5rem'
-          paddingBottom='2.5rem'
-          direction='column'
-          borderRadius={1}
-          sx={{
-            alignItems: 'center',
-            justifyContent: 'flex-start',
-            // backgroundColor: 'background.paper',
-          }}
+          padding='0.75rem'
+          paddingTop={{ xs: '0.25rem', sm: '1.5rem', md: '2.75rem', lg: '2.75rem', xl: '2.75rem' }}
+          paddingBottom={{ xs: '0.25rem', sm: '1.5rem', md: '2.75rem', lg: '2.75rem', xl: '2.75rem' }}
         >
-          <Stack direction='column' spacing={'3.75rem'}>
+          <Stack direction='column' spacing={'2.5rem'}>
             <Typography
-              variant='h3'
-              sx={{
-                paddingLeft: '5rem',
-                paddingBottom: '1.25rem',
-                fontWeight: '400',
-                '& span:first-of-type': { color: 'primary.main' },
-              }}
+              variant='headerSectionMono'
+              fontSize={{ xs: '1.48rem', sm: '1.8rem', md: '2.14rem', lg: '2.47rem', xl: '2.8rem' }}
+              paddingLeft={{ xs: '2.5rem', sm: '3.75rem', md: '5rem', lg: '6.25rem', xl: '7.5rem' }}
+              sx={{ color: theme.palette.primary.light }}
             >
               Side Development skills
             </Typography>
 
             <Typography
-              variant='h6'
+              variant='subHeaderSectionMono'
+              fontSize={{ xs: '0.99rem', sm: '1.21rem', md: '1.43rem', lg: '1.65rem', xl: '1.875rem' }}
               sx={{
-                fontFamily: 'var(--mono-font)',
-                fontWeight: '400',
-                color: 'text.secondary',
-                whiteSpace: 'pre-wrap',
+                color: theme.palette.text.secondary,
               }}
             >
               𑁋 Leveraging Git for version control and collaboration.
@@ -323,12 +217,7 @@ const WhatIDoCard = () => {
             </Typography>
           </Stack>
         </Grid2>
-        <Grid2
-          display='flex'
-          size={0.5}
-          borderRadius={1}
-          // sx={{ backgroundColor: 'background.paper' }}
-        ></Grid2>
+        <Grid2 size={0.5} />
       </Grid2>
       {/* -------------------------------- */}
     </Grid2>

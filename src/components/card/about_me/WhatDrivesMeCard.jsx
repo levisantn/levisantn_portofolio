@@ -1,141 +1,62 @@
-import { Box, Grid2, Stack, Typography } from '@mui/material';
+import { Box, Grid2, Typography } from '@mui/material';
 import bitmojiWorkingBubble from '../../../assets/imgs/bitmoji/working_bubble.png';
+import { useTheme } from '@emotion/react';
 
 const WhatDrivesMeCardHome = () => {
+  const theme = useTheme();
+
   return (
     <Grid2 container size={12}>
+      {/* -------------------------------- */}
       <Grid2
         container
-        paddingTop='5rem'
         size={12}
-        sx={{
-          backgroundColor: 'background.default',
-          height: 'auto',
-        }}
+        paddingTop={{ xs: '2.5rem', sm: '3.75rem', md: '5rem', lg: '6.25rem', xl: '7.5rem' }}
+        paddingBottom={{ xs: '1.25rem', sm: '2.5rem', md: '3.75rem', lg: '3.75rem', xl: '3.75rem' }}
       >
-        <Grid2
-          display='flex'
-          size={3}
-          borderRadius={1}
-          // sx={{ backgroundColor: 'background.paper' }}
-        ></Grid2>
+        <Grid2 size={3} />
 
-        <Grid2
-          display='flex'
-          size={'grow'}
-          direction='column'
-          borderRadius={1}
-          paddingLeft={'1rem'}
-          sx={{
-            justifyContent: 'flex-end',
-            alignItems: 'center',
-            // backgroundColor: 'background.paper',
-          }}
-        >
+        <Grid2 display='flex' size={'grow'} justifyContent='flex-end'>
           <Typography
-            variant='h2'
+            variant='headerSection'
+            fontSize={{ xs: '1.85rem', sm: '2.26rem', md: '2.68rem', lg: '3.09rem', xl: '3.5rem' }}
             sx={{
-              fontWeight: '600',
-              fontSize: '3.5rem',
-              wordSpacing: '-0.5rem',
-              fontFamily: 'var(--mono-font)',
-              color: 'primary.light',
+              wordSpacing: '0.25rem',
             }}
           >
             What drives me?
           </Typography>
         </Grid2>
-        <Grid2
-          display='flex'
-          size={3}
-          borderRadius={1}
-          // sx={{ backgroundColor: 'background.paper' }}
-        ></Grid2>
+        <Grid2 size={3} />
       </Grid2>
       {/* -------------------------------- */}
       <Grid2
         container
-        paddingTop='2.5rem'
-        paddingBottom='2.5rem'
         size={12}
-        sx={{
-          backgroundColor: 'background.default',
-          height: 'auto',
-        }}
+        paddingBottom={{ xs: '1.25rem', sm: '2.5rem', md: '3.75rem', lg: '3.75rem', xl: '3.75rem' }}
       >
-        <Grid2
-          display='flex'
-          size={3}
-          borderRadius={1}
-          // sx={{ backgroundColor: 'background.paper' }}
-        ></Grid2>
-
-        <Grid2
-          display='flex'
-          size={6}
-          spacing={'0.5rem'}
-          padding={'0.5rem'}
-          paddingTop='2.5rem'
-          paddingBottom='2.5rem'
-          direction='column'
-          borderRadius={1}
-          sx={{
-            alignItems: 'center',
-            justifyContent: 'center',
-            // backgroundColor: 'background.paper',
-          }}
-        >
-          <Stack direction='column' spacing={'2.5rem'}>
-            <Typography
-              variant='h4'
-              sx={{
-                textAlign: 'center',
-                fontWeight: '400',
-                fontSize: '2.5rem',
-                whiteSpace: 'pre-wrap',
-                '& span:first-of-type': { color: 'primary.main' },
-              }}
-            >
-              &quot;I seek to contribute to impactful projects aligned with my values,
-              <br /> to solve real-world problems.&quot;
-            </Typography>
-            <Typography
-              variant='h4'
-              sx={{
-                textAlign: 'right',
-                fontWeight: '400',
-                whiteSpace: 'pre-wrap',
-                '& span:first-of-type': { color: 'primary.main' },
-              }}
-            ></Typography>
-          </Stack>
+        <Grid2 display='flex' size={'grow'} alignItems='center' justifyContent='flex-end'>
+          <Typography
+            variant='subHeaderSection'
+            fontSize={{ xs: '1.125rem', sm: '1.375rem', md: '1.625rem', lg: '1.875rem', xl: '2.125rem' }}
+            textAlign='center'
+            color={theme.palette.primary.light}
+          >
+            &quot;I seek to contribute to impactful projects aligned with my values,
+            <br /> to solve real-world problems.&quot;
+          </Typography>
         </Grid2>
-        <Grid2
-          display='flex'
-          size={2}
-          borderRadius={1}
-          sx={{
-            justifyContent: 'center',
-            alignItems: 'center',
-            // backgroundColor: 'background.paper',
-          }}
-        >
+        <Grid2 display='flex' size={4} justifyContent='center' alignItems='center'>
           <Box
             component='img'
             alt='drinking soda bitmoji '
             src={bitmojiWorkingBubble}
             sx={{
-              width: '300px',
-              height: '300px',
+              width: { xs: '15.9rem', sm: '19.4rem', md: '22.9rem', lg: '26.5rem', xl: '30rem' },
+              height: { xs: '15.9rem', sm: '19.4rem', md: '22.9rem', lg: '26.5rem', xl: '30rem' },
             }}
           />
         </Grid2>
-        <Grid2
-          display='flex'
-          size={2}
-          borderRadius={1}
-          // sx={{ backgroundColor: 'background.paper' }}
-        ></Grid2>
       </Grid2>
     </Grid2>
   );

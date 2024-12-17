@@ -56,6 +56,7 @@ const HiThereCard = () => {
             variant='headerSectionMono'
             color={theme.palette.primary.light}
             fontSize={{ xs: '1.48rem', sm: '1.8rem', md: '2.14rem', lg: '2.47rem', xl: '2.8rem' }}
+            fontWeight='600'
           >
             <Typewriter
               options={{
