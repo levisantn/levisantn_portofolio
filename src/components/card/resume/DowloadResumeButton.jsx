@@ -12,10 +12,10 @@ const DownloadResumeButton = () => {
       href={myResume}
       download='cv_Antonetti_Levis_2024'
       sx={{
-        width: { xs: '20rem', sm: '22.65rem', md: '26.76rem', lg: '30.88rem', xl: '35rem' },
-        fontSize: { xs: '1.32rem', sm: '1.62rem', md: '1.91rem', lg: '2.21rem', xl: '2.5rem' },
         borderRadius: '1rem',
         fontWeight: '700',
+        width: { xs: '20rem', sm: '22.65rem', md: '26.76rem', lg: '30.88rem', xl: '35rem' },
+        fontSize: { xs: '1.32rem', sm: '1.62rem', md: '1.91rem', lg: '2.21rem', xl: '2.5rem' },
         textTransform: 'none',
         color: theme.palette.text.secondary,
         border: '0.2rem solid',

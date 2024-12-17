@@ -1,6 +1,6 @@
 import { useTheme } from '@emotion/react';
 import { Box, Grid2, Stack, Typography } from '@mui/material';
-import bitmojiTakeCoffee from '../../../assets/imgs/bitmoji/take_coffee.png';
+import bitmojiTakeCoffee from '../../../assets/imgs/bitmoji/take_coffee_2.png';
 
 const WhatIDoCard = () => {
   const theme = useTheme();
@@ -15,11 +15,24 @@ const WhatIDoCard = () => {
       <Grid2
         container
         size={12}
-        paddingTop={{ xs: '2.5rem', sm: '3.75rem', md: '5rem', lg: '6.25rem', xl: '7.5rem' }}
-        paddingBottom={{ xs: '1.25rem', sm: '2.5rem', md: '3.75rem', lg: '3.75rem', xl: '3.75rem' }}
+        padding={{ xs: '2.5rem', sm: '3.75rem', md: '5rem', lg: '6.25rem', xl: '7.5rem' }}
+        paddingBottom={{ xs: '0rem', sm: '0rem', md: '3.75rem', lg: '3.75rem', xl: '3.75rem' }}
+        spacing={{ xs: '1.25rem', sm: '2.5rem', md: '0rem', lg: '0rem', xl: '0rem' }}
       >
-        <Grid2 size={3} />
-        <Grid2 size={'grow'}>
+        <Grid2 display={{ xs: 'none', md: 'flex' }} size={3} />
+        <Grid2 display={{ xs: 'flex', md: 'none' }} alignItems='flex-end' justifyContent='center'>
+          <Box
+            component='img'
+            alt='drinking coffee bitmoji'
+            src={bitmojiTakeCoffee}
+            sx={{
+              width: { xs: '14.6rem', sm: '17.8rem', md: '21rem', lg: '24.3rem', xl: '27.5rem' },
+              height: { xs: '19.8rem', sm: '24.3rem', md: '28.7rem', lg: '33.1rem', xl: '37.5rem' },
+              transform: 'scaleX(-1)',
+            }}
+          />
+        </Grid2>
+        <Grid2 size={'grow'} display='flex' alignItems='center'>
           <Typography
             variant='headerSection'
             fontSize={{ xs: '1.85rem', sm: '2.26rem', md: '2.68rem', lg: '3.09rem', xl: '3.5rem' }}
@@ -31,7 +44,6 @@ const WhatIDoCard = () => {
             What I do ?
           </Typography>
         </Grid2>
-        <Grid2 size={3} />
       </Grid2>
       {/* -------------------------------- */}
       <Grid2
@@ -47,15 +59,14 @@ const WhatIDoCard = () => {
           },
         }}
       >
-        <Grid2 size={0.5} />
-        <Grid2 display='flex' size={2} alignItems='flex-end' justifyContent='center'>
+        <Grid2 display={{ xs: 'none', md: 'flex' }} size='auto' alignItems='flex-end' justifyContent='center'>
           <Box
             component='img'
             alt='drinking coffee bitmoji'
             src={bitmojiTakeCoffee}
             sx={{
-              width: { xs: '21.2rem', sm: '25.9rem', md: '30.6rem', lg: '35.3rem', xl: '40rem' },
-              height: { xs: '21.2rem', sm: '25.9rem', md: '30.6rem', lg: '35.3rem', xl: '40rem' },
+              width: { xs: '14.6rem', sm: '17.8rem', md: '21rem', lg: '24.3rem', xl: '27.5rem' },
+              height: { xs: '19.8rem', sm: '24.3rem', md: '28.7rem', lg: '33.1rem', xl: '37.5rem' },
               transform: 'scaleX(-1)',
             }}
           />
@@ -63,15 +74,18 @@ const WhatIDoCard = () => {
 
         <Grid2
           size={'grow'}
-          padding='0.75rem'
-          paddingTop={{ xs: '0.25rem', sm: '1.5rem', md: '2.75rem', lg: '2.75rem', xl: '2.75rem' }}
-          paddingBottom={{ xs: '0.25rem', sm: '1.5rem', md: '2.75rem', lg: '2.75rem', xl: '2.75rem' }}
+          display='flex'
+          justifyContent='flex-start'
+          padding={{ xs: '2.5rem', sm: '2.5rem', md: '3.75rem', lg: '3.75rem', xl: '3.75rem' }}
         >
-          <Stack direction='column' spacing={'2.5rem'}>
+          <Stack
+            direction='column'
+            spacing={{ xs: '1.25rem', sm: '1.25rem', md: '2.5rem', lg: '2.5rem', xl: '2.5rem' }}
+          >
             <Typography
               variant='headerSectionMono'
-              fontSize={{ xs: '1.48rem', sm: '1.8rem', md: '2.14rem', lg: '2.47rem', xl: '2.8rem' }}
-              paddingLeft={{ xs: '2.5rem', sm: '3.75rem', md: '5rem', lg: '6.25rem', xl: '7.5rem' }}
+              fontSize={{ xs: '1.27rem', sm: '1.53rem', md: '1.83rem', lg: '2.12rem', xl: '2.4rem' }}
+              paddingLeft={{ xs: '1.25rem', sm: '2.5rem', md: '3.75rem', lg: '5rem', xl: '6.25rem' }}
               sx={{ color: theme.palette.primary.light }}
             >
               Data processing, analysis and visualisation
@@ -79,7 +93,7 @@ const WhatIDoCard = () => {
 
             <Typography
               variant='subHeaderSectionMono'
-              fontSize={{ xs: '0.99rem', sm: '1.21rem', md: '1.43rem', lg: '1.65rem', xl: '1.875rem' }}
+              fontSize={{ xs: '0.85rem', sm: '1.03rem', md: '1.22rem', lg: '1.41rem', xl: '1.6rem' }}
               sx={{
                 color: theme.palette.text.secondary,
               }}
@@ -91,7 +105,7 @@ const WhatIDoCard = () => {
 
             <Typography
               variant='subHeaderSectionMono'
-              fontSize={{ xs: '0.99rem', sm: '1.21rem', md: '1.43rem', lg: '1.65rem', xl: '1.875rem' }}
+              fontSize={{ xs: '0.85rem', sm: '1.03rem', md: '1.22rem', lg: '1.41rem', xl: '1.6rem' }}
               sx={{
                 color: theme.palette.text.secondary,
               }}
@@ -105,7 +119,7 @@ const WhatIDoCard = () => {
 
             <Typography
               variant='subHeaderSectionMono'
-              fontSize={{ xs: '0.99rem', sm: '1.21rem', md: '1.43rem', lg: '1.65rem', xl: '1.875rem' }}
+              fontSize={{ xs: '0.85rem', sm: '1.03rem', md: '1.22rem', lg: '1.41rem', xl: '1.6rem' }}
               sx={{
                 color: theme.palette.text.secondary,
               }}
@@ -119,7 +133,6 @@ const WhatIDoCard = () => {
             </Typography>
           </Stack>
         </Grid2>
-        <Grid2 size={0.5} />
       </Grid2>
       {/* -------------------------------- */}
       <Grid2
@@ -135,19 +148,20 @@ const WhatIDoCard = () => {
           },
         }}
       >
-        <Grid2 size={4} />
-
         <Grid2
           size={'grow'}
-          padding='0.75rem'
-          paddingTop={{ xs: '0.25rem', sm: '1.5rem', md: '2.75rem', lg: '2.75rem', xl: '2.75rem' }}
-          paddingBottom={{ xs: '0.25rem', sm: '1.5rem', md: '2.75rem', lg: '2.75rem', xl: '2.75rem' }}
+          display='flex'
+          justifyContent='flex-end'
+          padding={{ xs: '2.5rem', sm: '2.5rem', md: '3.75rem', lg: '3.75rem', xl: '3.75rem' }}
         >
-          <Stack direction='column' spacing={'2.5rem'}>
+          <Stack
+            direction='column'
+            spacing={{ xs: '1.25rem', sm: '1.25rem', md: '2.5rem', lg: '2.5rem', xl: '2.5rem' }}
+          >
             <Typography
               variant='headerSectionMono'
-              fontSize={{ xs: '1.48rem', sm: '1.8rem', md: '2.14rem', lg: '2.47rem', xl: '2.8rem' }}
-              paddingLeft={{ xs: '2.5rem', sm: '3.75rem', md: '5rem', lg: '6.25rem', xl: '7.5rem' }}
+              fontSize={{ xs: '1.27rem', sm: '1.53rem', md: '1.83rem', lg: '2.12rem', xl: '2.4rem' }}
+              paddingLeft={{ xs: '1.25rem', sm: '2.5rem', md: '3.75rem', lg: '5rem', xl: '6.25rem' }}
               sx={{ color: theme.palette.primary.light }}
             >
               IA and Machine Learning development<span style={{ fontWeight: '500' }}></span>
@@ -155,7 +169,7 @@ const WhatIDoCard = () => {
 
             <Typography
               variant='subHeaderSectionMono'
-              fontSize={{ xs: '0.99rem', sm: '1.21rem', md: '1.43rem', lg: '1.65rem', xl: '1.875rem' }}
+              fontSize={{ xs: '0.85rem', sm: '1.03rem', md: '1.22rem', lg: '1.41rem', xl: '1.6rem' }}
               sx={{
                 color: theme.palette.text.secondary,
               }}
@@ -168,7 +182,6 @@ const WhatIDoCard = () => {
             </Typography>
           </Stack>
         </Grid2>
-        <Grid2 size={0.5} />
       </Grid2>
       {/* -------------------------------- */}
       <Grid2
@@ -184,19 +197,20 @@ const WhatIDoCard = () => {
           },
         }}
       >
-        <Grid2 size={1} />
-
         <Grid2
           size={'grow'}
-          padding='0.75rem'
-          paddingTop={{ xs: '0.25rem', sm: '1.5rem', md: '2.75rem', lg: '2.75rem', xl: '2.75rem' }}
-          paddingBottom={{ xs: '0.25rem', sm: '1.5rem', md: '2.75rem', lg: '2.75rem', xl: '2.75rem' }}
+          display='flex'
+          justifyContent='flex-start'
+          padding={{ xs: '2.5rem', sm: '2.5rem', md: '3.75rem', lg: '3.75rem', xl: '3.75rem' }}
         >
-          <Stack direction='column' spacing={'2.5rem'}>
+          <Stack
+            direction='column'
+            spacing={{ xs: '1.25rem', sm: '1.25rem', md: '2.5rem', lg: '2.5rem', xl: '2.5rem' }}
+          >
             <Typography
               variant='headerSectionMono'
-              fontSize={{ xs: '1.48rem', sm: '1.8rem', md: '2.14rem', lg: '2.47rem', xl: '2.8rem' }}
-              paddingLeft={{ xs: '2.5rem', sm: '3.75rem', md: '5rem', lg: '6.25rem', xl: '7.5rem' }}
+              fontSize={{ xs: '1.27rem', sm: '1.53rem', md: '1.83rem', lg: '2.12rem', xl: '2.4rem' }}
+              paddingLeft={{ xs: '1.25rem', sm: '2.5rem', md: '3.75rem', lg: '5rem', xl: '6.25rem' }}
               sx={{ color: theme.palette.primary.light }}
             >
               Side Development skills
@@ -204,7 +218,7 @@ const WhatIDoCard = () => {
 
             <Typography
               variant='subHeaderSectionMono'
-              fontSize={{ xs: '0.99rem', sm: '1.21rem', md: '1.43rem', lg: '1.65rem', xl: '1.875rem' }}
+              fontSize={{ xs: '0.85rem', sm: '1.03rem', md: '1.22rem', lg: '1.41rem', xl: '1.6rem' }}
               sx={{
                 color: theme.palette.text.secondary,
               }}
@@ -217,7 +231,6 @@ const WhatIDoCard = () => {
             </Typography>
           </Stack>
         </Grid2>
-        <Grid2 size={0.5} />
       </Grid2>
       {/* -------------------------------- */}
     </Grid2>

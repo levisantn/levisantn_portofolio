@@ -13,6 +13,7 @@ const ProjectCard = ({ img, title, description, link }) => {
         transition: 'all 0.5s ease-out',
         width: { xs: '31.5rem', md: '36.6rem', lg: '42.5rem' },
         height: { xs: '40rem', md: '44.5rem', lg: '51.5rem' },
+        border: `0.25rem solid ${theme.palette.primary.hover2}`,
         '&:hover': {
           boxShadow: `0rem 0rem 0.75rem ${theme.palette.primary.light}`,
           transform: 'scale(1.05)',

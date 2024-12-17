@@ -33,12 +33,15 @@ const WhatDrivesMeCardHome = () => {
       <Grid2
         container
         size={12}
-        paddingBottom={{ xs: '1.25rem', sm: '2.5rem', md: '3.75rem', lg: '3.75rem', xl: '3.75rem' }}
+        direction={{ xs: 'column', md: 'row' }}
+        spacing={{ xs: '1.25rem', sm: '2.5rem', md: '3.75rem', lg: '5rem', xl: '6.25rem' }}
       >
-        <Grid2 display='flex' size={'grow'} alignItems='center' justifyContent='flex-end'>
+        <Grid2 size={2.5} display={{ xs: 'none', md: 'flex' }} />
+        <Grid2 display='flex' size='grow' alignItems='center' justifyContent={{ xs: 'center', md: 'flex-end' }}>
           <Typography
-            variant='subHeaderSection'
-            fontSize={{ xs: '1.125rem', sm: '1.375rem', md: '1.625rem', lg: '1.875rem', xl: '2.125rem' }}
+            variant='subHeaderSectionMono'
+            fontSize={{ xs: '0.99rem', sm: '1.21rem', md: '1.43rem', lg: '1.65rem', xl: '1.875rem' }}
+            fontWeight={600}
             textAlign='center'
             color={theme.palette.primary.light}
           >
@@ -46,7 +49,7 @@ const WhatDrivesMeCardHome = () => {
             <br /> to solve real-world problems.&quot;
           </Typography>
         </Grid2>
-        <Grid2 display='flex' size={4} justifyContent='center' alignItems='center'>
+        <Grid2 display='flex' size='grow' justifyContent={{ xs: 'center', md: 'flex-start' }}>
           <Box
             component='img'
             alt='drinking soda bitmoji '
