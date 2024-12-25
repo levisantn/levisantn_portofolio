@@ -1,6 +1,6 @@
 import { useTheme } from '@emotion/react';
 import { Box, Grid2, Stack, Typography } from '@mui/material';
-import bitmojiTakeCoffee from '../../../assets/imgs/bitmoji/take_coffee_2.png';
+import bitmojiTakeCoffee from '../../../assets/imgs/bitmoji/take_coffee_clipped.png';
 
 const WhatIDoCard = () => {
   const theme = useTheme();

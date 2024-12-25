@@ -33,11 +33,7 @@ const SkillsetCard = () => {
         </Grid2>
       </Grid2>
       {/* -------------------------------- */}
-      <Grid2
-        container
-        size={12}
-        paddingBottom={{ xs: '1.25rem', sm: '2.5rem', md: '3.75rem', lg: '3.75rem', xl: '3.75rem' }}
-      >
+      <Grid2 container size={12}>
         <Grid2 size={{ xs: 1, sm: 1.5, md: 1.5, lg: 2, xl: 2 }} />
         <Grid2
           container
