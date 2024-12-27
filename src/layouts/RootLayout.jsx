@@ -3,15 +3,18 @@ import Header from '../components/header/Header';
 import Footer from '../components/footer/Footer';
 import { Outlet } from 'react-router-dom';
 import { ScrollToTopButton } from '../components/button/ScrollToTopButton/ScrollToTopButton';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 function RootLayout() {
   const [showFooter, setShowFooter] = useState(false);
+  const previousScrollTop = useRef(0);
 
   useEffect(() => {
     const handleFooter = () => {
       const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
-      setShowFooter(scrollTop + clientHeight >= scrollHeight - 50);
+      const isNearBottom = scrollTop + clientHeight >= scrollHeight - 25;
+      setShowFooter(isNearBottom || scrollTop < previousScrollTop);
+      previousScrollTop.current = scrollTop;
     };
 
     window.addEventListener('scroll', handleFooter);
