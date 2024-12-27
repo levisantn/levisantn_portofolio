@@ -10,6 +10,7 @@ import myResumeLight from '../../../assets/docs/cv_Antonetti_Levis_2024_light_en
 
 // pdfjs.GlobalWorkerOptions.workerSrc = new URL('pdfjs-dist/build/pdf.worker.min.js', import.meta.url).toString();
 pdfjs.GlobalWorkerOptions.workerSrc = new URL('pdfjs-dist/legacy/build/pdf.worker.min.js', import.meta.url).toString();
+pdfjs.GlobalWorkerOptions.isEvalSupported = false;
 
 const ResumePdfViewerCard = () => {
   const theme = useTheme();
