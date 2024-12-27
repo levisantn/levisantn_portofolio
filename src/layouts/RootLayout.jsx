@@ -11,7 +11,7 @@ function RootLayout() {
   useEffect(() => {
     const handleFooter = () => {
       const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
-      setShowFooter(scrollTop + clientHeight >= scrollHeight - 25);
+      setShowFooter(scrollTop + clientHeight >= scrollHeight - 50);
     };
 
     window.addEventListener('scroll', handleFooter);
