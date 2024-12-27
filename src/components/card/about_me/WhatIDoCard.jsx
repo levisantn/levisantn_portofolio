@@ -38,7 +38,6 @@ const WhatIDoCard = () => {
             fontSize={{ xs: '1.85rem', sm: '2.26rem', md: '2.68rem', lg: '3.09rem', xl: '3.5rem' }}
             sx={{
               wordSpacing: '0.25rem',
-              '& span:first-of-type': { color: theme.palette.primary.main },
             }}
           >
             What I do ?

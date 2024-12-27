@@ -10,7 +10,7 @@ const SeeMyResume = () => {
       container
       size={12}
       padding={{ xs: '2.5rem', sm: '3.75rem', md: '5rem', lg: '6.25rem', xl: '7.5rem' }}
-      paddingTop={{ xs: '2.5rem', sm: '2.5rem', md: '3.75rem', lg: '3.75rem', xl: '3.75rem' }}
+      paddingTop={{ xs: '0rem', sm: '1.25rem', md: '2.5rem', lg: '2.5rem', xl: '2.5rem' }}
     >
       <Grid2 display='flex' size={'grow'} justifyContent='center'>
         <Button

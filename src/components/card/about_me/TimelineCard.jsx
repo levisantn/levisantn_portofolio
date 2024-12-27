@@ -1,17 +1,19 @@
 import Timeline from '@mui/lab/Timeline';
-import { Grid2, Typography } from '@mui/material';
+import { Grid2, Typography, useMediaQuery } from '@mui/material';
 import TimelineEducationCard from './TimelineEducationCard';
 import TimelineExperienceCard from './TimelineExperienceCard';
+import { timelineItemClasses } from '@mui/lab';
 
 const TimelineCardHome = () => {
+  const isMdUp = useMediaQuery((theme) => theme.breakpoints.up('md'));
   return (
     <Grid2 container size={12}>
       {/* -------------------------------- */}
       <Grid2
         container
         size={12}
-        paddingTop={{ xs: '2.5rem', sm: '3.75rem', md: '5rem', lg: '6.25rem', xl: '7.5rem' }}
-        paddingBottom={{ xs: '1.25rem', sm: '2.5rem', md: '3.75rem', lg: '3.75rem', xl: '3.75rem' }}
+        paddingTop={{ xs: '3.75rem', sm: '5rem', md: '6.25rem', lg: '7.5rem', xl: '8.75rem' }}
+        paddingBottom={{ xs: '0rem', sm: '1.25rem', md: '2.5rem', lg: '2.5rem', xl: '2.5rem' }}
       >
         <Grid2 display='flex' size={'grow'} justifyContent='center'>
           <Typography
@@ -26,13 +28,26 @@ const TimelineCardHome = () => {
       <Grid2 container size={12}>
         <Grid2 size={0.5} />
         <Grid2 size={'grow'}>
-          <Timeline position='alternate-reverse' sx={{ paddingTop: '2.5rem' }}>
+          <Timeline
+            position={isMdUp ? 'alternate-reverse' : 'left'}
+            sx={{
+              [`& .${timelineItemClasses.root}:before`]: isMdUp
+                ? {}
+                : {
+                    flex: 0,
+                    padding: 0,
+                  },
+              [`& .${timelineItemClasses.root}`]: {
+                marginTop: 0, // Remove default padding-top
+              },
+            }}
+          >
             <TimelineEducationCard
               year={'2024'}
               title={'Tableau Business Intelligence Analyst Professional Certificate'}
               subtitle={'Coursera'}
               description={
-                'Tableau software ・data analysis & management ・data visualization ・data presentation ・dashboards'
+                'Tableau software ・ data analysis & management ・data visualization ・ data presentation ・ dashboards'
               }
             />
             {/* -------------------------------- */}
@@ -47,7 +62,7 @@ const TimelineCardHome = () => {
             />
             {/* -------------------------------- */}
             <TimelineEducationCard
-              year={'2023'}
+              year={''}
               title={"Master's Degree in Data Science and Artificial Intelligence"}
               subtitle={'Paul Sabatier University - Toulouse'}
               description={
