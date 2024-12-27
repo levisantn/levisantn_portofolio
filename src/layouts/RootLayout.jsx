@@ -11,7 +11,7 @@ function RootLayout() {
         <Header />
         <ScrollToTopButton />
       </Grid2>
-      <Grid2 size={12} paddingBottom='6.25rem'>
+      <Grid2 size={12}>
         <Outlet />
       </Grid2>
       <Grid2 size={12}>
