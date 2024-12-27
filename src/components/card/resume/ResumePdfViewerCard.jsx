@@ -6,7 +6,8 @@ import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 import myResumeDark from '../../../assets/docs/cv_Antonetti_Levis_2024_dark_en_portfolio.pdf';
 import myResumeLight from '../../../assets/docs/cv_Antonetti_Levis_2024_light_en_portfolio.pdf';
 
-pdfjs.GlobalWorkerOptions.workerSrc = new URL('pdfjs-dist/build/pdf.worker.min.mjs', import.meta.url).toString();
+// pdfjs.GlobalWorkerOptions.workerSrc = new URL('pdfjs-dist/build/pdf.worker.min.js', import.meta.url).toString();
+pdfjs.GlobalWorkerOptions.workerSrc = new URL('pdfjs-dist/legacy/build/pdf.worker.min.js', import.meta.url).toString();
 
 const ResumePdfViewerCard = () => {
   const theme = useTheme();
