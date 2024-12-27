@@ -1,7 +1,8 @@
-import { Stack, SvgIcon } from '@mui/material';
+import { Stack } from '@mui/material';
+// import { SvgIcon } from '@mui/material';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faInstagram, faXTwitter, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import { TableauSoftwareRounded } from '../../assets/imgs/icons/CustomMuiSvgIcons';
+// import { TableauSoftwareRounded } from '../../assets/imgs/icons/CustomMuiSvgIcons';
 import ContactMediaIconButton from './ContactMediaIconButton';
 
 const ContactMediaStack = () => {
@@ -14,10 +15,10 @@ const ContactMediaStack = () => {
       {/* -------------------- */}
       <ContactMediaIconButton href='https://github.com/levisantn' icon={<FontAwesomeIcon icon={faGithub} />} />
       {/* -------------------- */}
-      <ContactMediaIconButton
+      {/* <ContactMediaIconButton
         href='https://public.tableau.com/app/profile/levisantn/vizzes'
         icon={<SvgIcon component={TableauSoftwareRounded} sx={{ fontSize: '1.1em' }} />}
-      />
+      /> */}
       {/* -------------------- */}
       <ContactMediaIconButton
         href='https://www.linkedin.com/in/levisantn/'

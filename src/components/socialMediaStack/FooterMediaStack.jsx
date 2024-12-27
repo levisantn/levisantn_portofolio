@@ -1,9 +1,10 @@
-import { Stack, SvgIcon } from '@mui/material';
+import { Stack } from '@mui/material';
+// import { SvgIcon } from '@mui/material';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { faGithub, faInstagram, faXTwitter, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { TableauSoftwareRounded } from '../../assets/imgs/icons/CustomMuiSvgIcons';
+// import { TableauSoftwareRounded } from '../../assets/imgs/icons/CustomMuiSvgIcons';
 import FooterMediaIconButton from './FooterMediaIconButton';
 
 const FooterMediaStack = () => {
@@ -20,11 +21,11 @@ const FooterMediaStack = () => {
       />
       {/* -------------------- */}
 
-      <FooterMediaIconButton
+      {/* <FooterMediaIconButton
         href='https://public.tableau.com/app/profile/levisantn/vizzes'
         icon={<SvgIcon component={TableauSoftwareRounded} sx={{ fontSize: '1.1em' }} />}
         fontSize='2.75rem'
-      />
+      /> */}
       {/* -------------------- */}
 
       <FooterMediaIconButton
