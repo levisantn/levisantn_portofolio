@@ -12,6 +12,7 @@ const Error404 = () => {
       alignItems='center'
       justifyContent='center'
       paddingTop={{ xs: '7.28rem', sm: '8.9rem', md: '10.51rem', lg: '12.5rem', xl: '13.75rem' }}
+      paddingBottom={{ xs: '6.25rem', sm: '7.5rem', md: '8.75rem', lg: '10rem', xl: '11.25rem' }}
     >
       <Box
         component='img'
