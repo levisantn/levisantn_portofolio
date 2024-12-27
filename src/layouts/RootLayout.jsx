@@ -6,22 +6,20 @@ import { ScrollToTopButton } from '../components/button/ScrollToTopButton/Scroll
 import { useEffect, useState } from 'react';
 
 function RootLayout() {
-  // const [hasScrollbar, setHasScrollbar] = useState(
-  //   window.getComputedStyle(document.documentElement).overflowY === 'visible',
-  // );
-  // const firstRenderRef = useRef(true);
   const [showFooter, setShowFooter] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
+    const handleFooter = () => {
       const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
-      setShowFooter(scrollTop + clientHeight >= scrollHeight - 100); // Add buffer for smoother transition
+      setShowFooter(scrollTop + clientHeight >= scrollHeight - 25);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleFooter);
+    window.addEventListener('resize', handleFooter);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('scroll', handleFooter);
+      window.removeEventListener('resize', handleFooter);
     };
   }, []);
 
