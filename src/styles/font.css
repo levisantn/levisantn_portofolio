@@ -13,7 +13,7 @@
     url('../assets/fonts/signature_fonts/Autography.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -23,7 +23,7 @@
     url('../assets/fonts/signature_fonts/BulgattiRegular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -33,7 +33,7 @@
     url('../assets/fonts/signature_fonts/Agustina.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -43,7 +43,7 @@
     url('../assets/fonts/signature_fonts/Magellin-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: italic;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -53,7 +53,7 @@
     url('../assets/fonts/signature_fonts/Motterdam.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -63,7 +63,7 @@
     url('../assets/fonts/signature_fonts/Tomatoes.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -73,7 +73,7 @@
     url('../assets/fonts/signature_fonts/ThePrestigeSignatureRegular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -83,7 +83,7 @@
     url('../assets/fonts/signature_fonts/SattriaHandsome.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 /* header font */
@@ -94,7 +94,7 @@
     url('../assets/fonts/Rubik/Rubik-BlackItalic.ttf')   format('truetype');
   font-weight: 900;
   font-style: italic;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -104,7 +104,7 @@
     url('../assets/fonts/Rubik/Rubik-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -114,7 +114,7 @@
     url('../assets/fonts/Rubik/Rubik-BoldItalic.ttf')   format('truetype');
   font-weight: bold;
   font-style: italic;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -124,7 +124,7 @@
     url('../assets/fonts/Rubik/Rubik-Medium.ttf')   format('truetype');
   font-weight: 500;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -134,7 +134,7 @@
     url('../assets/fonts/Rubik/Rubik-Italic.ttf')   format('truetype');
   font-weight: normal;
   font-style: italic;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -144,7 +144,7 @@
     url('../assets/fonts/Rubik/Rubik-MediumItalic.ttf')   format('truetype');
   font-weight: 500;
   font-style: italic;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -154,7 +154,7 @@
     url('../assets/fonts/Rubik/Rubik-Regular.ttf')   format('truetype');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -164,7 +164,7 @@
     url('../assets/fonts/Rubik/Rubik-Black.ttf')   format('truetype');
   font-weight: 900;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -174,7 +174,7 @@
     url('../assets/fonts/Rubik/Rubik-Light.ttf')   format('truetype');
   font-weight: 300;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -184,7 +184,7 @@
     url('../assets/fonts/Rubik/Rubik-LightItalic.ttf')   format('truetype');
   font-weight: 300;
   font-style: italic;
-  font-display: swap;
+  font-display: block;
 }
 
 /* body font */
@@ -195,7 +195,7 @@
     url('../assets/fonts/Google_Sans/GoogleSans-MediumItalic.ttf')   format('truetype');
   font-weight: 500;
   font-style: italic;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -205,7 +205,7 @@
     url('../assets/fonts/Google_Sans/GoogleSans-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -215,7 +215,7 @@
     url('../assets/fonts/Google_Sans/GoogleSans-Italic.ttf') format('truetype');
   font-weight: normal;
   font-style: italic;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -225,7 +225,7 @@
     url('../assets/fonts/Google_Sans/GoogleSans-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -235,7 +235,7 @@
     url('../assets/fonts/Google_Sans/GoogleSans-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -245,7 +245,7 @@
     url('../assets/fonts/Google_Sans/GoogleSans-BoldItalic.ttf')   format('truetype');
   font-weight: bold;
   font-style: italic;
-  font-display: swap;
+  font-display: block;
 }
 
 /* code font */
@@ -256,7 +256,7 @@
     url('../assets/fonts/JetBrains_Mono/JetBrainsMono-ExtraBold.ttf') format('truetype');
   font-weight: 800;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -266,7 +266,7 @@
     url('../assets/fonts/JetBrains_Mono/JetBrainsMono-ExtraBoldItalic.ttf') format('truetype');
   font-weight: 800;
   font-style: italic;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -276,7 +276,7 @@
     url('../assets/fonts/JetBrains_Mono/JetBrainsMono-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -286,7 +286,7 @@
     url('../assets/fonts/JetBrains_Mono/JetBrainsMono-BoldItalic.ttf') format('truetype');
   font-weight: 700;
   font-style: italic;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -296,7 +296,7 @@
     url('../assets/fonts/JetBrains_Mono/JetBrainsMono-SemiBold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -306,7 +306,7 @@
     url('../assets/fonts/JetBrains_Mono/JetBrainsMono-SemiBoldItalic.ttf') format('truetype');
   font-weight: 600;
   font-style: italic;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -316,7 +316,7 @@
     url('../assets/fonts/JetBrains_Mono/JetBrainsMono-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -326,7 +326,7 @@
     url('../assets/fonts/JetBrains_Mono/JetBrainsMono-MediumItalic.ttf') format('truetype');
   font-weight: 500;
   font-style: italic;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -336,7 +336,7 @@
     url('../assets/fonts/JetBrains_Mono/JetBrainsMono-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -346,7 +346,7 @@
     url('../assets/fonts/JetBrains_Mono/JetBrainsMono-Italic.ttf') format('truetype');
   font-weight: 400;
   font-style: italic;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -356,7 +356,7 @@
     url('../assets/fonts/JetBrains_Mono/JetBrainsMono-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -366,7 +366,7 @@
     url('../assets/fonts/JetBrains_Mono/JetBrainsMono-LightItalic.ttf') format('truetype');
   font-weight: 300;
   font-style: italic;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -376,7 +376,7 @@
     url('../assets/fonts/JetBrains_Mono/JetBrainsMono-ExtraLight.ttf') format('truetype');
   font-weight: 200;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -386,7 +386,7 @@
     url('../assets/fonts/JetBrains_Mono/JetBrainsMono-ExtraLightItalic.ttf') format('truetype');
   font-weight: 200;
   font-style: italic;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -396,7 +396,7 @@
     url('../assets/fonts/JetBrains_Mono/JetBrainsMono-Thin.ttf') format('truetype');
   font-weight: 100;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -406,5 +406,5 @@
     url('../assets/fonts/JetBrains_Mono/JetBrainsMono-ThinItalic.ttf') format('truetype');
   font-weight: 100;
   font-style: italic;
-  font-display: swap;
+  font-display: block;
 }
