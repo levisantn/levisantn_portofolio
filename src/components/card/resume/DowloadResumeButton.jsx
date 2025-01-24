@@ -1,7 +1,7 @@
 import { Button, Icon } from '@mui/material';
 import { useTheme } from '@emotion/react';
 import DownloadIcon from '@mui/icons-material/Download';
-import myResume from '../../../assets/docs/cv_Antonetti_Levis_2024_dark_en_portfolio.pdf';
+import myResume from '../../../assets/docs/cv_Antonetti_Levis_2024_dark_en.pdf';
 
 const DownloadResumeButton = () => {
   const theme = useTheme();
