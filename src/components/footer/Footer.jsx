@@ -11,7 +11,7 @@ const Footer = () => {
           variant='footer'
           fontSize={{ xs: '0.93rem', sm: '1.13rem', md: '1.34rem', lg: '1.54rem', xl: '1.75rem' }}
         >
-          Copyright&copy; 2024 levisantn
+          Copyright&copy; 2025 levisantn
         </Typography>
         {/* ----- */}
         <Typography

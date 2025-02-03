@@ -2,9 +2,8 @@ import { createBrowserRouter, Navigate } from 'react-router-dom';
 import App from './App';
 import Home from './routes/Home';
 import Aboutme from './routes/Aboutme';
-import Resume from './routes/Resume';
+import CV from './routes/CV';
 import Projects from './routes/Projects';
-// import Cheatsheets from './routes/Cheatsheets';
 import Contactme from './routes/Contactme';
 import Error404 from './routes/Error404';
 
@@ -29,13 +28,9 @@ const myRouter = createBrowserRouter([
         path: '/projects',
         Component: Projects,
       },
-      // {
-      //   path: '/cheatsheets',
-      //   Component: Cheatsheets,
-      // },
       {
-        path: '/resume',
-        Component: Resume,
+        path: '/cv',
+        Component: CV,
       },
       {
         path: '/contact_me',

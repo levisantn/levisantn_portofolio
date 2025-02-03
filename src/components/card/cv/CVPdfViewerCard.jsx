@@ -3,14 +3,14 @@ import { Document, Page, pdfjs } from 'react-pdf';
 import { useTheme } from '@emotion/react';
 import 'react-pdf/dist/esm/Page/TextLayer.css';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
-import myResumeDark from '../../../assets/docs/cv_Antonetti_Levis_2025_dark_en_portfolio.pdf';
-import myResumeLight from '../../../assets/docs/cv_Antonetti_Levis_2025_light_en_portfolio.pdf';
+import myCVDark from '../../../assets/docs/cv_Antonetti_Levis_2025_dark_en_portfolio.pdf';
+import myCVLight from '../../../assets/docs/cv_Antonetti_Levis_2025_light_en_portfolio.pdf';
 
 // pdfjs.GlobalWorkerOptions.workerSrc = new URL('pdfjs-dist/build/pdf.worker.min.js', import.meta.url).toString();
 pdfjs.GlobalWorkerOptions.workerSrc = new URL('pdfjs-dist/legacy/build/pdf.worker.min.js', import.meta.url).toString();
 pdfjs.GlobalWorkerOptions.isEvalSupported = false;
 
-const ResumePdfViewerCard = () => {
+const CVPdfViewerCard = () => {
   const theme = useTheme();
   const isDarkMode = theme.palette.mode === 'dark';
   return (
@@ -27,7 +27,7 @@ const ResumePdfViewerCard = () => {
           boxShadow: `0px 0px 50px -25px  ${theme.palette.primary.main}`,
         }}
       >
-        <Document file={isDarkMode ? myResumeDark : myResumeLight}>
+        <Document file={isDarkMode ? myCVDark : myCVLight}>
           <Page pageNumber={1} width={1000} height={1200} />
         </Document>
       </Grid2>
@@ -43,7 +43,7 @@ const ResumePdfViewerCard = () => {
           boxShadow: `0px 0px 50px -25px  ${theme.palette.primary.main}`,
         }}
       >
-        <Document file={isDarkMode ? myResumeDark : myResumeLight}>
+        <Document file={isDarkMode ? myCVDark : myCVLight}>
           <Page pageNumber={1} width={800} height={1000} />
         </Document>
       </Grid2>
@@ -59,7 +59,7 @@ const ResumePdfViewerCard = () => {
           boxShadow: `0px 0px 50px -25px  ${theme.palette.primary.main}`,
         }}
       >
-        <Document file={isDarkMode ? myResumeDark : myResumeLight}>
+        <Document file={isDarkMode ? myCVDark : myCVLight}>
           <Page pageNumber={1} width={550} height={750} />
         </Document>
       </Grid2>
@@ -74,7 +74,7 @@ const ResumePdfViewerCard = () => {
           boxShadow: `0px 0px 50px -25px  ${theme.palette.primary.main}`,
         }}
       >
-        <Document file={isDarkMode ? myResumeDark : myResumeLight}>
+        <Document file={isDarkMode ? myCVDark : myCVLight}>
           <Page pageNumber={1} width={325} height={425} />
         </Document>
       </Grid2>
@@ -83,4 +83,4 @@ const ResumePdfViewerCard = () => {
   );
 };
 
-export default ResumePdfViewerCard;
+export default CVPdfViewerCard;

@@ -2,7 +2,7 @@ import { useTheme } from '@emotion/react';
 import { Button, Grid2 } from '@mui/material';
 import { Link } from 'react-router-dom';
 
-const SeeMyResume = () => {
+const SeeMyCV = () => {
   const theme = useTheme();
 
   return (
@@ -15,7 +15,7 @@ const SeeMyResume = () => {
       <Grid2 display='flex' size={'grow'} justifyContent='center'>
         <Button
           component={Link}
-          to={'/resume'}
+          to={'/cv'}
           variant='outlined'
           sx={{
             borderRadius: '1rem',
@@ -39,11 +39,11 @@ const SeeMyResume = () => {
             },
           }}
         >
-          See my Resume
+          See my CV
         </Button>
       </Grid2>
     </Grid2>
   );
 };
 
-export default SeeMyResume;
+export default SeeMyCV;

@@ -1,7 +1,7 @@
 import { Stack, Typography, Grid2 } from '@mui/material';
 import { useTheme } from '@emotion/react';
 
-const MyResumeCard = () => {
+const MyCVCard = () => {
   const theme = useTheme();
   return (
     <Grid2
@@ -21,7 +21,7 @@ const MyResumeCard = () => {
             variant='headerSection'
             fontSize={{ xs: '1.85rem', sm: '2.26rem', md: '2.68rem', lg: '3.09rem', xl: '3.5rem' }}
           >
-            My Resume,
+            My Curriculum Vitae,
           </Typography>
 
           <Typography
@@ -40,4 +40,4 @@ const MyResumeCard = () => {
   );
 };
 
-export default MyResumeCard;
+export default MyCVCard;

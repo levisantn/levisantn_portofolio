@@ -1,10 +1,10 @@
 import { Button, Icon } from '@mui/material';
 import { useTheme } from '@emotion/react';
 import DownloadIcon from '@mui/icons-material/Download';
-import myResumeDark from '../../../assets/docs/cv_Antonetti_Levis_2025_dark_en.pdf';
-import myResumeLight from '../../../assets/docs/cv_Antonetti_Levis_2025_light_en.pdf';
+import myCVDark from '../../../assets/docs/cv_Antonetti_Levis_2025_dark_en.pdf';
+import myCVLight from '../../../assets/docs/cv_Antonetti_Levis_2025_light_en.pdf';
 
-const DownloadResumeButton = () => {
+const DownloadCVButton = () => {
   const theme = useTheme();
   const isDarkMode = theme.palette.mode === 'dark';
 
@@ -12,7 +12,7 @@ const DownloadResumeButton = () => {
     <Button
       variant='outlined'
       component='a'
-      href={isDarkMode ? myResumeDark : myResumeLight}
+      href={isDarkMode ? myCVDark : myCVLight}
       download='cv_Antonetti_Levis_2025'
       sx={{
         borderRadius: '1rem',
@@ -43,9 +43,9 @@ const DownloadResumeButton = () => {
           mr: '1.5rem',
         }}
       />
-      Download Resume
+      Download CV
     </Button>
   );
 };
 
-export default DownloadResumeButton;
+export default DownloadCVButton;

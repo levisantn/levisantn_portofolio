@@ -3,7 +3,7 @@ import WhatIDoCard from '../components/card/about_me/WhatIDoCard';
 import WhatDrivesMeCard from '../components/card/about_me/WhatDrivesMeCard';
 import TimelineCard from '../components/card/about_me/TimelineCard';
 // import { useTheme } from '@emotion/react';
-import SeeMyResume from '../components/card/about_me/SeeMyResumeCard';
+import SeeMyCV from '../components/card/about_me/SeeMyCVCard';
 import SkillsetCard from '../components/card/about_me/SkillsetCard';
 const Aboutme = () => {
   return (
@@ -18,7 +18,7 @@ const Aboutme = () => {
       {/* -------------------------------- */}
       <TimelineCard />
       {/* -------------------------------- */}
-      <SeeMyResume />
+      <SeeMyCV />
       {/* -------------------------------- */}
     </Grid2>
   );

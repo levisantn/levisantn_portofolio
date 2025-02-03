@@ -47,7 +47,7 @@ const TimelineCardHome = () => {
               title={'Tableau Business Intelligence Analyst Professional Certificate'}
               subtitle={'Coursera'}
               description={
-                'Tableau software ・ data analysis & management ・data visualization ・ data presentation ・ dashboards'
+                'Tableau software・data analysis & management・data visualization・data presentation・dashboards'
               }
             />
             {/* -------------------------------- */}
@@ -56,7 +56,7 @@ const TimelineCardHome = () => {
               title={'Google Advanced Data Analytics Professional Certificate'}
               subtitle={'Coursera'}
               description={
-                'data analysis and processing ・EDA ・statistical analysis ・regression models ・A/B testing・machine learning ・predictive modeling ・data visualization ・Tableau software'
+                'data analysis and processing・EDA・statistical analysis・regression models・A/B testing・machine learning・predictive modeling・data visualization・Tableau software'
               }
               alignItems='flex-start'
             />
@@ -72,24 +72,24 @@ const TimelineCardHome = () => {
             {/* -------------------------------- */}
             <TimelineExperienceCard
               year={''}
-              title={'GIS Developer - Analyst'}
+              title={'Data Scientist Intern'}
               subject={'Operational methodology development for urban fabric morphological segmentation'}
               subtitle={'Cerema Occitanie - Year 5, internship - Toulouse'}
               description={
-                'state-of-the-art • development of a data processing pipeline for raster and vector images • implementation of computer vision algorithms • results communication • GIS • data processing • satellite image processing • superpixels • Geopandas • QGIS • GDAL'
+                'state-of-the-art • development of a data processing pipeline for raster and vector images • implementation of computer vision algorithms • data cleaning • data preprocessing • data processing • satellite image processing • GIS • scikit-learn • superpixels • Geopandas • Qgis • Gdal • python • C++ •  results communication'
               }
               alignItems='flex-start'
             />
             {/* -------------------------------- */}
             <TimelineExperienceCard
               year={''}
-              title={'Pipeline development and maintenance, data analysis'}
+              title={'Data Analyst Intern'}
               subject={
                 'Maintenance and improvement of an information extraction pipeline in the context of social media crisis management.'
               }
               subtitle={'Computer Science Research Institute (IRIT) - Year 4, internship - Toulouse'}
               description={
-                'data processing • data mining • API scraping • maintenance and addition of functionalities to the web interface (dashboard) • deployment and management of the web interface • communication of results • JavaScript • React'
+                'data processing • data mining • data preprocessing • data cleaning • API scraping • maintenance and addition of functionalities to the web interface (dashboard) • deployment and management of the web interface • communication of results • python • sql • javascript • react'
               }
             />
             {/* -------------------------------- */}
@@ -101,7 +101,7 @@ const TimelineCardHome = () => {
               }
               subtitle={'Computer Science Research Institute (IRIT) - study project - Toulouse'}
               description={
-                'data processing • data imputation • data analysis • implementation and comparison of Machine Learning models • communication of results • linear regression • Random Forest • KNN • SVM • neural networks • XGB'
+                'data preprocessing • data processing • data imputation • data analysis • implementation and comparison of Machine Learning models • communication of results • linear regression • Random Forest • KNN • SVM • neural networks • XGB • scikit-learn • pandas • pytorch'
               }
               alignItems='flex-start'
             />

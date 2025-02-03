@@ -25,7 +25,7 @@ import DvrRoundedIcon from '@mui/icons-material/DvrRounded';
 import ArticleRoundedIcon from '@mui/icons-material/ArticleRounded';
 import ContactMailRoundedIcon from '@mui/icons-material/ContactMailRounded';
 
-const pages = ['About me', 'Projects', 'Resume', 'Contact me'];
+const pages = ['About me', 'Projects', 'Cv', 'Contact me'];
 const sx_pages = ['Home', ...pages];
 const iconSize = { xs: '2.5rem', sm: '3.75rem' };
 const drawerFontSize = { xs: '1.65rem', sm: '1.875rem' };
@@ -34,7 +34,7 @@ const icons = {
   Home: <HomeRoundedIcon sx={{ fontSize: iconSize, color: 'text.primary' }} />,
   'About me': <AccountBoxRoundedIcon sx={{ fontSize: iconSize, color: 'text.primary' }} />,
   Projects: <DvrRoundedIcon sx={{ fontSize: iconSize, color: 'text.primary' }} />,
-  Resume: <ArticleRoundedIcon sx={{ fontSize: iconSize, color: 'text.primary' }} />,
+  Cv: <ArticleRoundedIcon sx={{ fontSize: iconSize, color: 'text.primary' }} />,
   'Contact me': <ContactMailRoundedIcon sx={{ fontSize: iconSize, color: 'text.primary' }} />,
 };
 
