@@ -4,7 +4,7 @@ import imgPortofolio from '../../../assets/imgs/projects/portofolio_website_cove
 import imgUserChurnPrediction from '../../../assets/imgs/projects/user_churn_prediction_waze.png';
 import imgEmployeeRetentionPrediction from '../../../assets/imgs/projects/employee_retention_prediction.png';
 import imgTokyo2020 from '../../../assets/imgs/projects/tokyo_2020.png';
-import imgRapportStageCerema from '../../../assets/imgs/projects/rapport_de_stage_Cerema_cover.png';
+// import imgRapportStageCerema from '../../../assets/imgs/projects/rapport_de_stage_Cerema_cover.png';
 import imgSortingAlgorithms from '../../../assets/imgs/projects/app-sorting-algos.png';
 import imgDAEsignal from '../../../assets/imgs/projects/DAE-PCG-signal .png';
 
@@ -65,7 +65,7 @@ const ProjectsCard = () => {
           />
         </Grid2>
         {/* --------------------*/}
-        <Grid2 size={'auto'}>
+        {/* <Grid2 size={'auto'}>
           <ProjectCard
             img={imgRapportStageCerema}
             link='https://drive.google.com/file/d/1NPkMmMNxHBtXQY4zXDncXEzHXyDMHoo_/view?usp=sharing'
@@ -74,7 +74,7 @@ const ProjectsCard = () => {
               'As part of my end-of-study internship at Cerema Occitanie, I worked on a project focused on developing an automated pipeline for processing satellite imagery. The primary objective was to segment urban areas into coherent, homogeneous regions based on their morphological characteristics.'
             }
           />
-        </Grid2>
+        </Grid2> */}
         {/* --------------------*/}
         <Grid2 size={'auto'}>
           <ProjectCard
