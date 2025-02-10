@@ -1,18 +1,16 @@
 import { Button, Icon } from '@mui/material';
 import { useTheme } from '@emotion/react';
 import DownloadIcon from '@mui/icons-material/Download';
-import myCVDark from '../../../assets/docs/cv_Antonetti_Levis_2025_dark_en.pdf';
-import myCVLight from '../../../assets/docs/cv_Antonetti_Levis_2025_light_en.pdf';
+import myCV from '../../../assets/docs/cv_2025_en.pdf';
 
 const DownloadCVButton = () => {
   const theme = useTheme();
-  const isDarkMode = theme.palette.mode === 'dark';
 
   return (
     <Button
       variant='outlined'
       component='a'
-      href={isDarkMode ? myCVDark : myCVLight}
+      href={myCV}
       download='cv_Antonetti_Levis_2025'
       sx={{
         borderRadius: '1rem',

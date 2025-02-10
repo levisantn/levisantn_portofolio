@@ -3,8 +3,7 @@ import { Document, Page, pdfjs } from 'react-pdf';
 import { useTheme } from '@emotion/react';
 import 'react-pdf/dist/esm/Page/TextLayer.css';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
-import myCVDark from '../../../assets/docs/cv_Antonetti_Levis_2025_dark_en_portfolio.pdf';
-import myCVLight from '../../../assets/docs/cv_Antonetti_Levis_2025_light_en_portfolio.pdf';
+import myCV from '../../../assets/docs/cv_2025_portfolio_en.pdf';
 
 // pdfjs.GlobalWorkerOptions.workerSrc = new URL('pdfjs-dist/build/pdf.worker.min.js', import.meta.url).toString();
 pdfjs.GlobalWorkerOptions.workerSrc = new URL('pdfjs-dist/legacy/build/pdf.worker.min.js', import.meta.url).toString();
@@ -12,7 +11,6 @@ pdfjs.GlobalWorkerOptions.isEvalSupported = false;
 
 const CVPdfViewerCard = () => {
   const theme = useTheme();
-  const isDarkMode = theme.palette.mode === 'dark';
   return (
     <Grid2 container size={12}>
       <Grid2 size={'grow'} />
@@ -27,7 +25,7 @@ const CVPdfViewerCard = () => {
           boxShadow: `0px 0px 50px -25px  ${theme.palette.primary.main}`,
         }}
       >
-        <Document file={isDarkMode ? myCVDark : myCVLight}>
+        <Document file={myCV}>
           <Page pageNumber={1} width={1000} height={1200} />
         </Document>
       </Grid2>
@@ -43,7 +41,7 @@ const CVPdfViewerCard = () => {
           boxShadow: `0px 0px 50px -25px  ${theme.palette.primary.main}`,
         }}
       >
-        <Document file={isDarkMode ? myCVDark : myCVLight}>
+        <Document file={myCV}>
           <Page pageNumber={1} width={800} height={1000} />
         </Document>
       </Grid2>
@@ -59,7 +57,7 @@ const CVPdfViewerCard = () => {
           boxShadow: `0px 0px 50px -25px  ${theme.palette.primary.main}`,
         }}
       >
-        <Document file={isDarkMode ? myCVDark : myCVLight}>
+        <Document file={myCV}>
           <Page pageNumber={1} width={550} height={750} />
         </Document>
       </Grid2>
@@ -74,7 +72,7 @@ const CVPdfViewerCard = () => {
           boxShadow: `0px 0px 50px -25px  ${theme.palette.primary.main}`,
         }}
       >
-        <Document file={isDarkMode ? myCVDark : myCVLight}>
+        <Document file={myCV}>
           <Page pageNumber={1} width={325} height={425} />
         </Document>
       </Grid2>
