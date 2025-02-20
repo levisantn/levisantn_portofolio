@@ -7,7 +7,7 @@ import bitmojiLaptopWithHelloHands from '../../../assets/imgs/bitmoji/laptop_wit
 
 const HiThereCard = () => {
   const theme = useTheme();
-  const skills = ['Data Analyst', 'ML Developper', 'Open Source enthousiast', 'Lifelong learner'];
+  const skills = ['Data Analyst', 'Data-Driven', 'ML Developer', 'Open Source Enthousiast', 'Lifelong Learner'];
 
   return (
     <Grid2

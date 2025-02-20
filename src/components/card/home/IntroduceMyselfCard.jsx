@@ -88,11 +88,12 @@ const IntroduceMyselfCard = () => {
             as a tool for optimizing business processes and enhancing decision-making.
             <br />
             <br />
-            On my free time, I enjoy working on development projects, and solving algorithmic problems.
+            In my free time, I enjoy working on data projects, reading, and solving algorithmic puzzles to keep my mind
+            sharp, in addition to the usual leisure activities.
             <br />
             <br />
-            Besides coding, I&apos;m keen on South Korean culture and outdoor sliding sports. I like to spend my time
-            playing competitive and board games, reading manga, watching TV shows, and traveling.
+            Apart from that, I&apos;m a big passionate of sliding sports, and I love being outdoors, whether I&apos;m
+            hanging out with friends, playing sports or exploring new places.
           </Typography>
         </Stack>
       </Grid2>
